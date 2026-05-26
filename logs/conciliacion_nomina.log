@@ -1,0 +1,1423 @@
+[2026-05-26 12:39:43] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 12:39:43] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 12:39:43] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 12:39:43] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 12:39:43] [INFO] [main.py:27]: Reporte Operativo (Excel): FO-GH-005 REPORTE DE NOVEDADES NÓMINA mayo 2026.xlsx
+[2026-05-26 12:39:43] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 12:39:43] [INFO] [main.py:40]: Construyendo mapeo maestro de empleados...
+[2026-05-26 12:39:43] [INFO] [extractor.py:128]: Base de datos de empleados construida con 41 registros únicos.
+[2026-05-26 12:39:43] [INFO] [extractor.py:140]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 12:39:43] [INFO] [extractor.py:167]: CSV procesado correctamente. Registros válidos cargados: 394
+[2026-05-26 12:39:43] [INFO] [extractor.py:200]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 12:39:43] [INFO] [extractor.py:218]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-26 12:39:43] [INFO] [extractor.py:317]: Excel procesado y transformado a formato largo. Registros válidos extraídos: 258
+[2026-05-26 12:39:43] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-26 12:39:43] [WARNING] [comparator.py:46]: Se detectaron 101 filas duplicadas en el reporte Excel.
+[2026-05-26 12:39:43] [WARNING] [comparator.py:55]: Se detectaron 105 filas duplicadas en el archivo CSV de nómina.
+[2026-05-26 12:39:43] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-26 12:39:43] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 194, Diferencias: 7, Faltantes en plano: 2, Sobrantes en plano: 138
+[2026-05-26 12:39:43] [INFO] [exporter.py:96]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 12:39:44] [INFO] [exporter.py:154]: Reporte Excel corporativo guardado exitosamente.
+[2026-05-26 12:39:44] [INFO] [main.py:70]: ======================================================================
+[2026-05-26 12:39:44] [INFO] [main.py:71]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-26 12:39:44] [INFO] [main.py:72]: ======================================================================
+[2026-05-26 12:39:44] [INFO] [main.py:100]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-26 12:39:44] [INFO] [main.py:101]: ======================================================================
+[2026-05-26 12:42:26] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 12:42:26] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 12:42:26] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 12:42:26] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 12:42:26] [INFO] [main.py:27]: Reporte Operativo (Excel): FO-GH-005 REPORTE DE NOVEDADES NÓMINA mayo 2026.xlsx
+[2026-05-26 12:42:26] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 12:42:26] [INFO] [main.py:40]: Construyendo mapeo maestro de empleados...
+[2026-05-26 12:42:26] [INFO] [extractor.py:128]: Base de datos de empleados construida con 41 registros únicos.
+[2026-05-26 12:42:26] [INFO] [extractor.py:140]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 12:42:26] [INFO] [extractor.py:167]: CSV procesado correctamente. Registros válidos cargados: 394
+[2026-05-26 12:42:26] [INFO] [extractor.py:200]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 12:42:26] [INFO] [extractor.py:218]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-26 12:42:26] [INFO] [extractor.py:317]: Excel procesado y transformado a formato largo. Registros válidos extraídos: 258
+[2026-05-26 12:42:26] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-26 12:42:26] [WARNING] [comparator.py:46]: Se detectaron 101 filas duplicadas en el reporte Excel.
+[2026-05-26 12:42:26] [WARNING] [comparator.py:55]: Se detectaron 105 filas duplicadas en el archivo CSV de nómina.
+[2026-05-26 12:42:26] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-26 12:42:26] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 194, Diferencias: 7, Faltantes en plano: 2, Sobrantes en plano: 138
+[2026-05-26 12:42:26] [INFO] [exporter.py:96]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 12:42:26] [INFO] [exporter.py:154]: Reporte Excel corporativo guardado exitosamente.
+[2026-05-26 12:42:26] [INFO] [main.py:70]: ======================================================================
+[2026-05-26 12:42:26] [INFO] [main.py:71]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-26 12:42:26] [INFO] [main.py:72]: ======================================================================
+[2026-05-26 12:42:26] [INFO] [main.py:100]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-26 12:42:26] [INFO] [main.py:101]: ======================================================================
+[2026-05-26 12:55:14] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 12:55:14] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 12:55:14] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 12:55:14] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 12:55:14] [INFO] [main.py:27]: Reporte Operativo (Excel): FO-GH-005 REPORTE DE NOVEDADES NÓMINA CARLO mayo 2026.xlsx
+[2026-05-26 12:55:14] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 12:55:14] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-26 12:55:14] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 10 (Carlo)
+[2026-05-26 12:55:14] [INFO] [main.py:58]: Construyendo mapeo maestro de empleados...
+[2026-05-26 12:55:14] [INFO] [extractor.py:96]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 12:55:15] [INFO] [extractor.py:116]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 12:55:15] [INFO] [extractor.py:121]: Filtrando novedades por subordinados de jefe_id = 10 (Carlo)...
+[2026-05-26 12:55:15] [INFO] [extractor.py:125]: Filtro cargado desde la BD: se auditarán únicamente 39 empleados asignados a Carlo.
+[2026-05-26 12:55:15] [INFO] [extractor.py:178]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 12:55:15] [INFO] [extractor.py:193]: Filtro aplicado al CSV: Reducido de 394 a 260 registros correspondientes al equipo de Carlo.
+[2026-05-26 12:55:15] [INFO] [extractor.py:235]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 12:55:15] [INFO] [extractor.py:250]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-26 12:55:15] [INFO] [extractor.py:336]: Excel procesado y filtrado correctamente. Registros válidos cargados: 258
+[2026-05-26 12:55:15] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-26 12:55:15] [WARNING] [comparator.py:46]: Se detectaron 101 filas duplicadas en el reporte Excel.
+[2026-05-26 12:55:15] [WARNING] [comparator.py:55]: Se detectaron 91 filas duplicadas en el archivo CSV de nómina.
+[2026-05-26 12:55:15] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-26 12:55:15] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 194, Diferencias: 7, Faltantes en plano: 2, Sobrantes en plano: 11
+[2026-05-26 12:55:15] [INFO] [exporter.py:96]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 12:55:15] [ERROR] [main.py:129]: Se produjo un error fatal durante la conciliación de nómina:
+[2026-05-26 12:55:15] [ERROR] [main.py:130]: [Errno 13] Permission denied: 'diferencias_nomina_mayo_2026.xlsx'
+[2026-05-26 12:55:15] [ERROR] [main.py:131]: Traceback (most recent call last):
+  File "C:\Users\samuel.pineda\Documents\docs\script validacion\main.py", line 83, in run_payroll_reconciliation
+    exporter.generate_report(comp_results)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\samuel.pineda\Documents\docs\script validacion\src\exporter.py", line 153, in generate_report
+    wb.save(self.output_path)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\openpyxl\workbook\workbook.py", line 386, in save
+    save_workbook(self, filename)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\openpyxl\writer\excel.py", line 291, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\zipfile\__init__.py", line 1453, in __init__
+    self.fp = io.open(file, filemode)
+              ~~~~~~~^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'diferencias_nomina_mayo_2026.xlsx'
+
+[2026-05-26 12:56:04] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 12:56:04] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 12:56:04] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 12:56:04] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 12:56:04] [INFO] [main.py:27]: Reporte Operativo (Excel): FO-GH-005 REPORTE DE NOVEDADES NÓMINA CARLO mayo 2026.xlsx
+[2026-05-26 12:56:04] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 12:56:04] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-26 12:56:04] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 10 (Carlo)
+[2026-05-26 12:56:04] [INFO] [main.py:58]: Construyendo mapeo maestro de empleados...
+[2026-05-26 12:56:04] [INFO] [extractor.py:96]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 12:56:04] [INFO] [extractor.py:116]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 12:56:04] [INFO] [extractor.py:121]: Filtrando novedades por subordinados de jefe_id = 10 (Carlo)...
+[2026-05-26 12:56:04] [INFO] [extractor.py:125]: Filtro cargado desde la BD: se auditarán únicamente 39 empleados asignados a Carlo.
+[2026-05-26 12:56:04] [INFO] [extractor.py:178]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 12:56:04] [INFO] [extractor.py:193]: Filtro aplicado al CSV: Reducido de 394 a 260 registros correspondientes al equipo de Carlo.
+[2026-05-26 12:56:04] [INFO] [extractor.py:235]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 12:56:04] [INFO] [extractor.py:250]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-26 12:56:04] [INFO] [extractor.py:336]: Excel procesado y filtrado correctamente. Registros válidos cargados: 258
+[2026-05-26 12:56:04] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-26 12:56:04] [WARNING] [comparator.py:46]: Se detectaron 101 filas duplicadas en el reporte Excel.
+[2026-05-26 12:56:04] [WARNING] [comparator.py:55]: Se detectaron 91 filas duplicadas en el archivo CSV de nómina.
+[2026-05-26 12:56:04] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-26 12:56:04] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 194, Diferencias: 7, Faltantes en plano: 2, Sobrantes en plano: 11
+[2026-05-26 12:56:04] [INFO] [exporter.py:96]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 12:56:04] [INFO] [exporter.py:154]: Reporte Excel corporativo guardado exitosamente.
+[2026-05-26 12:56:04] [INFO] [main.py:88]: ======================================================================
+[2026-05-26 12:56:04] [INFO] [main.py:89]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-26 12:56:04] [INFO] [main.py:90]: ======================================================================
+[2026-05-26 12:56:04] [INFO] [main.py:125]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-26 12:56:04] [INFO] [main.py:126]: ======================================================================
+[2026-05-26 13:01:37] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 13:01:37] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 13:01:37] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 13:01:37] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 13:01:37] [INFO] [main.py:27]: Reporte Operativo (Excel): FO-GH-005 REPORTE DE NOVEDADES NÓMINA CARLO mayo 2026.xlsx
+[2026-05-26 13:01:37] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 13:01:37] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-26 13:01:37] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 10 (Carlo)
+[2026-05-26 13:01:37] [INFO] [main.py:58]: Construyendo mapeo maestro de empleados...
+[2026-05-26 13:01:37] [INFO] [extractor.py:96]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 13:01:37] [INFO] [extractor.py:116]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 13:01:37] [INFO] [extractor.py:121]: Filtrando novedades por subordinados de jefe_id = 10 (Carlo)...
+[2026-05-26 13:01:37] [INFO] [extractor.py:125]: Filtro cargado desde la BD: se auditarán únicamente 39 empleados asignados a Carlo.
+[2026-05-26 13:01:37] [INFO] [extractor.py:178]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 13:01:37] [INFO] [extractor.py:193]: Filtro aplicado al CSV: Reducido de 394 a 260 registros correspondientes al equipo de Carlo.
+[2026-05-26 13:01:37] [INFO] [extractor.py:235]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 13:01:37] [INFO] [extractor.py:250]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-26 13:01:37] [INFO] [extractor.py:336]: Excel procesado y filtrado correctamente. Registros válidos cargados: 258
+[2026-05-26 13:01:37] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-26 13:01:37] [WARNING] [comparator.py:46]: Se detectaron 101 filas duplicadas en el reporte Excel.
+[2026-05-26 13:01:37] [WARNING] [comparator.py:55]: Se detectaron 91 filas duplicadas en el archivo CSV de nómina.
+[2026-05-26 13:01:37] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-26 13:01:37] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 194, Diferencias: 7, Faltantes en plano: 2, Sobrantes en plano: 11
+[2026-05-26 13:01:37] [INFO] [exporter.py:96]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 13:01:37] [INFO] [exporter.py:154]: Reporte Excel corporativo guardado exitosamente.
+[2026-05-26 13:01:37] [INFO] [main.py:88]: ======================================================================
+[2026-05-26 13:01:37] [INFO] [main.py:89]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-26 13:01:37] [INFO] [main.py:90]: ======================================================================
+[2026-05-26 13:01:37] [INFO] [main.py:125]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-26 13:01:37] [INFO] [main.py:126]: ======================================================================
+[2026-05-26 14:05:53] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 14:05:53] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 14:05:53] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 14:05:53] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 14:05:53] [INFO] [main.py:27]: Reporte Operativo (Excel): FO-GH-005 REPORTE DE NOVEDADES NÓMINA CARLO mayo 2026.xlsx
+[2026-05-26 14:05:53] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 14:05:53] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-26 14:05:53] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 10 (Carlo)
+[2026-05-26 14:05:53] [INFO] [main.py:58]: Construyendo mapeo maestro de empleados...
+[2026-05-26 14:05:53] [INFO] [extractor.py:96]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 14:05:53] [INFO] [extractor.py:116]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 14:05:53] [INFO] [extractor.py:121]: Filtrando novedades por subordinados de jefe_id = 10 (Carlo)...
+[2026-05-26 14:05:53] [INFO] [extractor.py:125]: Filtro cargado desde la BD: se auditarán únicamente 39 empleados asignados a Carlo.
+[2026-05-26 14:05:53] [INFO] [extractor.py:178]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 14:05:53] [INFO] [extractor.py:193]: Filtro aplicado al CSV: Reducido de 395 a 260 registros correspondientes al equipo de Carlo.
+[2026-05-26 14:05:53] [INFO] [extractor.py:235]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 14:05:53] [INFO] [extractor.py:250]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-26 14:05:53] [INFO] [extractor.py:336]: Excel procesado y filtrado correctamente. Registros válidos cargados: 258
+[2026-05-26 14:05:53] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-26 14:05:53] [WARNING] [comparator.py:46]: Se detectaron 101 filas duplicadas en el reporte Excel.
+[2026-05-26 14:05:53] [WARNING] [comparator.py:55]: Se detectaron 91 filas duplicadas en el archivo CSV de nómina.
+[2026-05-26 14:05:53] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-26 14:05:53] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 194, Diferencias: 7, Faltantes en plano: 2, Sobrantes en plano: 11
+[2026-05-26 14:05:53] [INFO] [exporter.py:96]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 14:05:53] [INFO] [exporter.py:154]: Reporte Excel corporativo guardado exitosamente.
+[2026-05-26 14:05:53] [INFO] [main.py:88]: ======================================================================
+[2026-05-26 14:05:53] [INFO] [main.py:89]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-26 14:05:53] [INFO] [main.py:90]: ======================================================================
+[2026-05-26 14:05:53] [INFO] [main.py:125]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-26 14:05:53] [INFO] [main.py:126]: ======================================================================
+[2026-05-26 14:09:17] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 14:09:17] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 14:09:17] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 14:09:17] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 14:09:17] [INFO] [main.py:27]: Reporte Operativo (Excel): FO-GH-005 REPORTE DE NOVEDADES NÓMINA CARLO mayo 2026.xlsx
+[2026-05-26 14:09:17] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 14:09:17] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-26 14:09:17] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 10 (Carlo)
+[2026-05-26 14:09:17] [INFO] [main.py:58]: Construyendo mapeo maestro de empleados...
+[2026-05-26 14:09:17] [INFO] [extractor.py:96]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 14:09:17] [INFO] [extractor.py:116]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 14:09:17] [INFO] [extractor.py:121]: Filtrando novedades por subordinados de jefe_id = 10 (Carlo)...
+[2026-05-26 14:09:17] [INFO] [extractor.py:125]: Filtro cargado desde la BD: se auditarán únicamente 39 empleados asignados a Carlo.
+[2026-05-26 14:09:17] [INFO] [extractor.py:178]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 14:09:17] [INFO] [extractor.py:193]: Filtro aplicado al CSV: Reducido de 395 a 260 registros correspondientes al equipo de Carlo.
+[2026-05-26 14:09:17] [INFO] [extractor.py:235]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 14:09:17] [INFO] [extractor.py:250]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-26 14:09:17] [INFO] [extractor.py:336]: Excel procesado y filtrado correctamente. Registros válidos cargados: 258
+[2026-05-26 14:09:17] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-26 14:09:17] [WARNING] [comparator.py:46]: Se detectaron 99 filas duplicadas en el reporte Excel.
+[2026-05-26 14:09:17] [WARNING] [comparator.py:55]: Se detectaron 91 filas duplicadas en el archivo CSV de nómina.
+[2026-05-26 14:09:17] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-26 14:09:17] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 196, Diferencias: 6, Faltantes en plano: 2, Sobrantes en plano: 10
+[2026-05-26 14:09:17] [INFO] [exporter.py:96]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 14:09:17] [INFO] [exporter.py:154]: Reporte Excel corporativo guardado exitosamente.
+[2026-05-26 14:09:17] [INFO] [main.py:88]: ======================================================================
+[2026-05-26 14:09:17] [INFO] [main.py:89]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-26 14:09:17] [INFO] [main.py:90]: ======================================================================
+[2026-05-26 14:09:17] [INFO] [main.py:125]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-26 14:09:17] [INFO] [main.py:126]: ======================================================================
+[2026-05-26 14:28:36] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 14:28:36] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 14:28:36] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 14:28:36] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 14:28:36] [INFO] [main.py:27]: Reporte Operativo (Excel): FO-GH-005 REPORTE DE NOVEDADES NÓMINA CARLO mayo 2026.xlsx
+[2026-05-26 14:28:36] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 14:28:36] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-26 14:28:36] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 10 (Carlo)
+[2026-05-26 14:28:36] [INFO] [main.py:58]: Construyendo mapeo maestro de empleados...
+[2026-05-26 14:28:36] [INFO] [extractor.py:96]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 14:28:36] [INFO] [extractor.py:116]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 14:28:36] [INFO] [extractor.py:121]: Filtrando novedades por subordinados de jefe_id = 10 (Carlo)...
+[2026-05-26 14:28:36] [INFO] [extractor.py:125]: Filtro cargado desde la BD: se auditarán únicamente 39 empleados asignados a Carlo.
+[2026-05-26 14:28:36] [INFO] [extractor.py:178]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 14:28:36] [INFO] [extractor.py:193]: Filtro aplicado al CSV: Reducido de 395 a 260 registros correspondientes al equipo de Carlo.
+[2026-05-26 14:28:36] [INFO] [extractor.py:235]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 14:28:36] [INFO] [extractor.py:250]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-26 14:28:36] [INFO] [extractor.py:336]: Excel procesado y filtrado correctamente. Registros válidos cargados: 275
+[2026-05-26 14:28:36] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-26 14:28:36] [WARNING] [comparator.py:46]: Se detectaron 99 filas duplicadas en el reporte Excel.
+[2026-05-26 14:28:36] [WARNING] [comparator.py:55]: Se detectaron 91 filas duplicadas en el archivo CSV de nómina.
+[2026-05-26 14:28:36] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-26 14:28:36] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 196, Diferencias: 6, Faltantes en plano: 19, Sobrantes en plano: 10
+[2026-05-26 14:28:36] [INFO] [exporter.py:96]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 14:28:36] [INFO] [exporter.py:154]: Reporte Excel corporativo guardado exitosamente.
+[2026-05-26 14:28:36] [INFO] [main.py:88]: ======================================================================
+[2026-05-26 14:28:36] [INFO] [main.py:89]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-26 14:28:36] [INFO] [main.py:90]: ======================================================================
+[2026-05-26 14:28:36] [INFO] [main.py:125]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-26 14:28:36] [INFO] [main.py:126]: ======================================================================
+[2026-05-26 14:30:40] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 14:30:40] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 14:30:40] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 14:30:40] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 14:30:40] [INFO] [main.py:27]: Reporte Operativo (Excel): DEYVER_FO-GH-005 REPORTE DE NOVEDADES NÓMINA-MAYO 2026
+[2026-05-26 14:30:40] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 14:30:40] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-26 14:30:40] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 10 (Carlo)
+[2026-05-26 14:30:40] [INFO] [main.py:58]: Construyendo mapeo maestro de empleados...
+[2026-05-26 14:30:40] [INFO] [extractor.py:96]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 14:30:40] [INFO] [extractor.py:116]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 14:30:40] [INFO] [extractor.py:121]: Filtrando novedades por subordinados de jefe_id = 10 (Carlo)...
+[2026-05-26 14:30:40] [INFO] [extractor.py:125]: Filtro cargado desde la BD: se auditarán únicamente 39 empleados asignados a Carlo.
+[2026-05-26 14:30:40] [INFO] [extractor.py:178]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 14:30:40] [INFO] [extractor.py:193]: Filtro aplicado al CSV: Reducido de 395 a 260 registros correspondientes al equipo de Carlo.
+[2026-05-26 14:30:40] [ERROR] [main.py:129]: Se produjo un error fatal durante la conciliación de nómina:
+[2026-05-26 14:30:40] [ERROR] [main.py:130]: Archivo Excel no encontrado en: DEYVER_FO-GH-005 REPORTE DE NOVEDADES NÓMINA-MAYO 2026
+[2026-05-26 14:30:40] [ERROR] [main.py:131]: Traceback (most recent call last):
+  File "C:\Users\samuel.pineda\Documents\docs\script validacion\main.py", line 63, in run_payroll_reconciliation
+    df_excel = extractor.load_excel()
+  File "C:\Users\samuel.pineda\Documents\docs\script validacion\src\extractor.py", line 249, in load_excel
+    sheet_name, header_row = self.detect_novelty_sheet()
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\samuel.pineda\Documents\docs\script validacion\src\extractor.py", line 217, in detect_novelty_sheet
+    raise FileNotFoundError(f"Archivo Excel no encontrado en: {self.excel_path}")
+FileNotFoundError: Archivo Excel no encontrado en: DEYVER_FO-GH-005 REPORTE DE NOVEDADES NÓMINA-MAYO 2026
+
+[2026-05-26 14:31:54] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 14:31:54] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 14:31:54] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 14:31:54] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 14:31:54] [INFO] [main.py:27]: Reporte Operativo (Excel): DEYVER_FO-GH-005 REPORTE DE NOVEDADES NÓMINA-MAYO 2026.xlsx
+[2026-05-26 14:31:54] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 14:31:54] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-26 14:31:54] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 10 (Carlo)
+[2026-05-26 14:31:54] [INFO] [main.py:58]: Construyendo mapeo maestro de empleados...
+[2026-05-26 14:31:54] [INFO] [extractor.py:96]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 14:31:54] [INFO] [extractor.py:116]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 14:31:54] [INFO] [extractor.py:121]: Filtrando novedades por subordinados de jefe_id = 10 (Carlo)...
+[2026-05-26 14:31:54] [INFO] [extractor.py:125]: Filtro cargado desde la BD: se auditarán únicamente 39 empleados asignados a Carlo.
+[2026-05-26 14:31:54] [INFO] [extractor.py:178]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 14:31:54] [INFO] [extractor.py:193]: Filtro aplicado al CSV: Reducido de 395 a 260 registros correspondientes al equipo de Carlo.
+[2026-05-26 14:31:54] [INFO] [extractor.py:235]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 14:31:54] [INFO] [extractor.py:250]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-26 14:31:54] [WARNING] [extractor.py:333]: No se extrajeron registros del Excel para este filtro de jefe.
+[2026-05-26 14:31:54] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-26 14:31:54] [WARNING] [comparator.py:55]: Se detectaron 91 filas duplicadas en el archivo CSV de nómina.
+[2026-05-26 14:31:54] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-26 14:31:54] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 0, Diferencias: 0, Faltantes en plano: 0, Sobrantes en plano: 212
+[2026-05-26 14:31:54] [INFO] [exporter.py:96]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 14:31:54] [INFO] [exporter.py:154]: Reporte Excel corporativo guardado exitosamente.
+[2026-05-26 14:31:54] [INFO] [main.py:88]: ======================================================================
+[2026-05-26 14:31:54] [INFO] [main.py:89]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-26 14:31:54] [INFO] [main.py:90]: ======================================================================
+[2026-05-26 14:31:54] [INFO] [main.py:125]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-26 14:31:54] [INFO] [main.py:126]: ======================================================================
+[2026-05-26 14:33:41] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 14:33:41] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 14:33:41] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 14:33:41] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 14:33:41] [INFO] [main.py:27]: Reporte Operativo (Excel): DEYVER_FO-GH-005 REPORTE DE NOVEDADES NÓMINA-MAYO 2026.xlsx
+[2026-05-26 14:33:41] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 14:33:41] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-26 14:33:41] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 10 (Carlo)
+[2026-05-26 14:33:41] [INFO] [main.py:58]: Construyendo mapeo maestro de empleados...
+[2026-05-26 14:33:41] [INFO] [extractor.py:96]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 14:33:41] [INFO] [extractor.py:116]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 14:33:41] [INFO] [extractor.py:125]: Filtrando novedades por subordinados de jefe_id = 10 (ALDANA BODER CARLO JULIAN)...
+[2026-05-26 14:33:41] [INFO] [extractor.py:129]: Filtro cargado desde la BD: se auditarán únicamente 39 empleados asignados a ALDANA BODER CARLO JULIAN.
+[2026-05-26 14:33:41] [INFO] [extractor.py:182]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 14:33:41] [INFO] [extractor.py:197]: Filtro aplicado al CSV: Reducido de 395 a 260 registros correspondientes al equipo de Carlo.
+[2026-05-26 14:33:41] [INFO] [extractor.py:239]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 14:33:41] [INFO] [extractor.py:254]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-26 14:33:41] [WARNING] [extractor.py:337]: No se extrajeron registros del Excel para este filtro de jefe.
+[2026-05-26 14:33:41] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-26 14:33:41] [WARNING] [comparator.py:55]: Se detectaron 91 filas duplicadas en el archivo CSV de nómina.
+[2026-05-26 14:33:41] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-26 14:33:41] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 0, Diferencias: 0, Faltantes en plano: 0, Sobrantes en plano: 212
+[2026-05-26 14:33:41] [INFO] [exporter.py:96]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 14:33:41] [INFO] [exporter.py:154]: Reporte Excel corporativo guardado exitosamente.
+[2026-05-26 14:33:41] [INFO] [main.py:88]: ======================================================================
+[2026-05-26 14:33:41] [INFO] [main.py:89]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-26 14:33:41] [INFO] [main.py:90]: ======================================================================
+[2026-05-26 14:33:41] [INFO] [main.py:126]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-26 14:33:41] [INFO] [main.py:127]: ======================================================================
+[2026-05-26 14:34:13] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 14:34:13] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 14:34:13] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 14:34:13] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 14:34:13] [INFO] [main.py:27]: Reporte Operativo (Excel): DEYVER_FO-GH-005 REPORTE DE NOVEDADES NÓMINA-MAYO 2026.xlsx
+[2026-05-26 14:34:13] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 14:34:13] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-26 14:34:13] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 207 (Carlo)
+[2026-05-26 14:34:13] [INFO] [main.py:58]: Construyendo mapeo maestro de empleados...
+[2026-05-26 14:34:13] [INFO] [extractor.py:96]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 14:34:13] [INFO] [extractor.py:116]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 14:34:13] [INFO] [extractor.py:125]: Filtrando novedades por subordinados de jefe_id = 207 (VELEZ PUELLO DEYVER)...
+[2026-05-26 14:34:13] [INFO] [extractor.py:129]: Filtro cargado desde la BD: se auditarán únicamente 19 empleados asignados a VELEZ PUELLO DEYVER.
+[2026-05-26 14:34:13] [INFO] [extractor.py:182]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 14:34:13] [INFO] [extractor.py:197]: Filtro aplicado al CSV: Reducido de 395 a 22 registros correspondientes al equipo de Carlo.
+[2026-05-26 14:34:13] [INFO] [extractor.py:239]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 14:34:13] [INFO] [extractor.py:254]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 5 omitida: ID 1082950058 no tiene fecha.
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 6 omitida: ID 1082950058 no tiene fecha.
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 8 omitida: ID 1082950058 no tiene fecha.
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 9 omitida: ID 1082950058 no tiene fecha.
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 10 omitida: ID 1001401747 no tiene fecha.
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 11 omitida: ID 1001401747 no tiene fecha.
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 12 omitida: ID 1001401747 no tiene fecha.
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 14 omitida: ID 71778679 no tiene fecha.
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 15 omitida: ID 71778679 no tiene fecha.
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 16 omitida: ID 71778679 no tiene fecha.
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 18 omitida: ID 8431853 no tiene fecha.
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 19 omitida: ID 8431853 no tiene fecha.
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 20 omitida: ID 8431853 no tiene fecha.
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 21 omitida: ID 8431853 no tiene fecha.
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 22 omitida: ID 1128266307 no tiene fecha.
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 23 omitida: ID 1037648676 no tiene fecha.
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 24 omitida: ID 98647895 no tiene fecha.
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 26 omitida: ID 11806062 no tiene fecha.
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 28 omitida: ID 11806062 no tiene fecha.
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 29 omitida: ID 1014213204 no tiene fecha.
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 31 omitida: ID 1001027446 no tiene fecha.
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 32 omitida: ID 1001027446 no tiene fecha.
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 33 omitida: ID 1026162516 no tiene fecha.
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 35 omitida: ID 1026162516 no tiene fecha.
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 37 omitida: ID 1026162516 no tiene fecha.
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 38 omitida: ID 1011390710 no tiene fecha.
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 40 omitida: ID 1011390710 no tiene fecha.
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 41 omitida: ID 1011390710 no tiene fecha.
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 43 omitida: ID 1001440264 no tiene fecha.
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 44 omitida: ID 1018224935 no tiene fecha.
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 46 omitida: ID 1152714464 no tiene fecha.
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 47 omitida: ID 1152714464 no tiene fecha.
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 48 omitida: ID 1152714464 no tiene fecha.
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 49 omitida: ID 1037670287 no tiene fecha.
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 50 omitida: ID 1000536368 no tiene fecha.
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 51 omitida: ID 1152465660 no tiene fecha.
+[2026-05-26 14:34:13] [WARNING] [extractor.py:315]: Fila 52 omitida: ID 1023886148 no tiene fecha.
+[2026-05-26 14:34:13] [INFO] [extractor.py:340]: Excel procesado y filtrado correctamente. Registros válidos cargados: 6
+[2026-05-26 14:34:13] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-26 14:34:13] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-26 14:34:13] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 0, Diferencias: 0, Faltantes en plano: 6, Sobrantes en plano: 22
+[2026-05-26 14:34:13] [INFO] [exporter.py:96]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 14:34:13] [INFO] [exporter.py:154]: Reporte Excel corporativo guardado exitosamente.
+[2026-05-26 14:34:13] [INFO] [main.py:88]: ======================================================================
+[2026-05-26 14:34:13] [INFO] [main.py:89]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-26 14:34:13] [INFO] [main.py:90]: ======================================================================
+[2026-05-26 14:34:13] [INFO] [main.py:126]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-26 14:34:13] [INFO] [main.py:127]: ======================================================================
+[2026-05-26 14:34:30] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 14:34:30] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 14:34:30] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 14:34:30] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 14:34:30] [INFO] [main.py:27]: Reporte Operativo (Excel): DEYVER_FO-GH-005 REPORTE DE NOVEDADES NÓMINA-MAYO 2026.xlsx
+[2026-05-26 14:34:30] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 14:34:30] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-26 14:34:30] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 207 (Carlo)
+[2026-05-26 14:34:30] [INFO] [main.py:58]: Construyendo mapeo maestro de empleados...
+[2026-05-26 14:34:30] [INFO] [extractor.py:96]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 14:34:30] [INFO] [extractor.py:116]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 14:34:30] [INFO] [extractor.py:125]: Filtrando novedades por subordinados de jefe_id = 207 (VELEZ PUELLO DEYVER)...
+[2026-05-26 14:34:30] [INFO] [extractor.py:129]: Filtro cargado desde la BD: se auditarán únicamente 19 empleados asignados a VELEZ PUELLO DEYVER.
+[2026-05-26 14:34:30] [INFO] [extractor.py:182]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 14:34:30] [INFO] [extractor.py:197]: Filtro aplicado al CSV: Reducido de 395 a 22 registros correspondientes al equipo de Carlo.
+[2026-05-26 14:34:30] [INFO] [extractor.py:239]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 14:34:30] [INFO] [extractor.py:254]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-26 14:34:30] [WARNING] [extractor.py:315]: Fila 5 omitida: ID 1082950058 no tiene fecha.
+[2026-05-26 14:34:30] [WARNING] [extractor.py:315]: Fila 6 omitida: ID 1082950058 no tiene fecha.
+[2026-05-26 14:34:30] [WARNING] [extractor.py:315]: Fila 8 omitida: ID 1082950058 no tiene fecha.
+[2026-05-26 14:34:30] [WARNING] [extractor.py:315]: Fila 9 omitida: ID 1082950058 no tiene fecha.
+[2026-05-26 14:34:31] [WARNING] [extractor.py:315]: Fila 10 omitida: ID 1001401747 no tiene fecha.
+[2026-05-26 14:34:31] [WARNING] [extractor.py:315]: Fila 11 omitida: ID 1001401747 no tiene fecha.
+[2026-05-26 14:34:31] [WARNING] [extractor.py:315]: Fila 12 omitida: ID 1001401747 no tiene fecha.
+[2026-05-26 14:34:31] [WARNING] [extractor.py:315]: Fila 14 omitida: ID 71778679 no tiene fecha.
+[2026-05-26 14:34:31] [WARNING] [extractor.py:315]: Fila 15 omitida: ID 71778679 no tiene fecha.
+[2026-05-26 14:34:31] [WARNING] [extractor.py:315]: Fila 16 omitida: ID 71778679 no tiene fecha.
+[2026-05-26 14:34:31] [WARNING] [extractor.py:315]: Fila 18 omitida: ID 8431853 no tiene fecha.
+[2026-05-26 14:34:31] [WARNING] [extractor.py:315]: Fila 19 omitida: ID 8431853 no tiene fecha.
+[2026-05-26 14:34:31] [WARNING] [extractor.py:315]: Fila 20 omitida: ID 8431853 no tiene fecha.
+[2026-05-26 14:34:31] [WARNING] [extractor.py:315]: Fila 21 omitida: ID 8431853 no tiene fecha.
+[2026-05-26 14:34:31] [WARNING] [extractor.py:315]: Fila 22 omitida: ID 1128266307 no tiene fecha.
+[2026-05-26 14:34:31] [WARNING] [extractor.py:315]: Fila 23 omitida: ID 1037648676 no tiene fecha.
+[2026-05-26 14:34:31] [WARNING] [extractor.py:315]: Fila 24 omitida: ID 98647895 no tiene fecha.
+[2026-05-26 14:34:31] [WARNING] [extractor.py:315]: Fila 26 omitida: ID 11806062 no tiene fecha.
+[2026-05-26 14:34:31] [WARNING] [extractor.py:315]: Fila 28 omitida: ID 11806062 no tiene fecha.
+[2026-05-26 14:34:31] [WARNING] [extractor.py:315]: Fila 29 omitida: ID 1014213204 no tiene fecha.
+[2026-05-26 14:34:31] [WARNING] [extractor.py:315]: Fila 31 omitida: ID 1001027446 no tiene fecha.
+[2026-05-26 14:34:31] [WARNING] [extractor.py:315]: Fila 32 omitida: ID 1001027446 no tiene fecha.
+[2026-05-26 14:34:31] [WARNING] [extractor.py:315]: Fila 33 omitida: ID 1026162516 no tiene fecha.
+[2026-05-26 14:34:31] [WARNING] [extractor.py:315]: Fila 35 omitida: ID 1026162516 no tiene fecha.
+[2026-05-26 14:34:31] [WARNING] [extractor.py:315]: Fila 37 omitida: ID 1026162516 no tiene fecha.
+[2026-05-26 14:34:31] [WARNING] [extractor.py:315]: Fila 38 omitida: ID 1011390710 no tiene fecha.
+[2026-05-26 14:34:31] [WARNING] [extractor.py:315]: Fila 40 omitida: ID 1011390710 no tiene fecha.
+[2026-05-26 14:34:31] [WARNING] [extractor.py:315]: Fila 41 omitida: ID 1011390710 no tiene fecha.
+[2026-05-26 14:34:31] [WARNING] [extractor.py:315]: Fila 43 omitida: ID 1001440264 no tiene fecha.
+[2026-05-26 14:34:31] [WARNING] [extractor.py:315]: Fila 44 omitida: ID 1018224935 no tiene fecha.
+[2026-05-26 14:34:31] [WARNING] [extractor.py:315]: Fila 46 omitida: ID 1152714464 no tiene fecha.
+[2026-05-26 14:34:31] [WARNING] [extractor.py:315]: Fila 47 omitida: ID 1152714464 no tiene fecha.
+[2026-05-26 14:34:31] [WARNING] [extractor.py:315]: Fila 48 omitida: ID 1152714464 no tiene fecha.
+[2026-05-26 14:34:31] [WARNING] [extractor.py:315]: Fila 49 omitida: ID 1037670287 no tiene fecha.
+[2026-05-26 14:34:31] [WARNING] [extractor.py:315]: Fila 50 omitida: ID 1000536368 no tiene fecha.
+[2026-05-26 14:34:31] [WARNING] [extractor.py:315]: Fila 51 omitida: ID 1152465660 no tiene fecha.
+[2026-05-26 14:34:31] [WARNING] [extractor.py:315]: Fila 52 omitida: ID 1023886148 no tiene fecha.
+[2026-05-26 14:34:31] [INFO] [extractor.py:340]: Excel procesado y filtrado correctamente. Registros válidos cargados: 6
+[2026-05-26 14:34:31] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-26 14:34:31] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-26 14:34:31] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 0, Diferencias: 0, Faltantes en plano: 6, Sobrantes en plano: 22
+[2026-05-26 14:34:31] [INFO] [exporter.py:96]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 14:34:31] [INFO] [exporter.py:154]: Reporte Excel corporativo guardado exitosamente.
+[2026-05-26 14:34:31] [INFO] [main.py:88]: ======================================================================
+[2026-05-26 14:34:31] [INFO] [main.py:89]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-26 14:34:31] [INFO] [main.py:90]: ======================================================================
+[2026-05-26 14:34:31] [INFO] [main.py:126]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-26 14:34:31] [INFO] [main.py:127]: ======================================================================
+[2026-05-26 14:37:24] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 14:37:24] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 14:37:24] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 14:37:24] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 14:37:24] [INFO] [main.py:27]: Reporte Operativo (Excel): DEYVER_FO-GH-005 REPORTE DE NOVEDADES NÓMINA-MAYO 2026.xlsx
+[2026-05-26 14:37:24] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 14:37:24] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-26 14:37:24] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 207 (Carlo)
+[2026-05-26 14:37:24] [INFO] [main.py:58]: Construyendo mapeo maestro de empleados...
+[2026-05-26 14:37:24] [INFO] [extractor.py:96]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 14:37:24] [INFO] [extractor.py:116]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 14:37:24] [INFO] [extractor.py:125]: Filtrando novedades por subordinados de jefe_id = 207 (VELEZ PUELLO DEYVER)...
+[2026-05-26 14:37:24] [INFO] [extractor.py:129]: Filtro cargado desde la BD: se auditarán únicamente 19 empleados asignados a VELEZ PUELLO DEYVER.
+[2026-05-26 14:37:24] [INFO] [extractor.py:182]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 14:37:24] [INFO] [extractor.py:197]: Filtro aplicado al CSV: Reducido de 395 a 22 registros correspondientes al equipo de Carlo.
+[2026-05-26 14:37:24] [INFO] [extractor.py:239]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 14:37:24] [INFO] [extractor.py:254]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 5 omitida: ID 1082950058 no tiene fecha.
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 6 omitida: ID 1082950058 no tiene fecha.
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 8 omitida: ID 1082950058 no tiene fecha.
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 9 omitida: ID 1082950058 no tiene fecha.
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 10 omitida: ID 1001401747 no tiene fecha.
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 11 omitida: ID 1001401747 no tiene fecha.
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 12 omitida: ID 1001401747 no tiene fecha.
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 14 omitida: ID 71778679 no tiene fecha.
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 15 omitida: ID 71778679 no tiene fecha.
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 16 omitida: ID 71778679 no tiene fecha.
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 18 omitida: ID 8431853 no tiene fecha.
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 19 omitida: ID 8431853 no tiene fecha.
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 20 omitida: ID 8431853 no tiene fecha.
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 21 omitida: ID 8431853 no tiene fecha.
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 22 omitida: ID 1128266307 no tiene fecha.
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 23 omitida: ID 1037648676 no tiene fecha.
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 24 omitida: ID 98647895 no tiene fecha.
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 26 omitida: ID 11806062 no tiene fecha.
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 28 omitida: ID 11806062 no tiene fecha.
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 29 omitida: ID 1014213204 no tiene fecha.
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 31 omitida: ID 1001027446 no tiene fecha.
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 32 omitida: ID 1001027446 no tiene fecha.
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 33 omitida: ID 1026162516 no tiene fecha.
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 35 omitida: ID 1026162516 no tiene fecha.
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 37 omitida: ID 1026162516 no tiene fecha.
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 38 omitida: ID 1011390710 no tiene fecha.
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 40 omitida: ID 1011390710 no tiene fecha.
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 41 omitida: ID 1011390710 no tiene fecha.
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 43 omitida: ID 1001440264 no tiene fecha.
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 44 omitida: ID 1018224935 no tiene fecha.
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 46 omitida: ID 1152714464 no tiene fecha.
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 47 omitida: ID 1152714464 no tiene fecha.
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 48 omitida: ID 1152714464 no tiene fecha.
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 49 omitida: ID 1037670287 no tiene fecha.
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 50 omitida: ID 1000536368 no tiene fecha.
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 51 omitida: ID 1152465660 no tiene fecha.
+[2026-05-26 14:37:24] [WARNING] [extractor.py:315]: Fila 52 omitida: ID 1023886148 no tiene fecha.
+[2026-05-26 14:37:24] [INFO] [extractor.py:340]: Excel procesado y filtrado correctamente. Registros válidos cargados: 6
+[2026-05-26 14:37:24] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-26 14:37:24] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-26 14:37:24] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 0, Diferencias: 0, Faltantes en plano: 6, Sobrantes en plano: 22
+[2026-05-26 14:37:24] [INFO] [exporter.py:96]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 14:37:24] [INFO] [exporter.py:154]: Reporte Excel corporativo guardado exitosamente.
+[2026-05-26 14:37:24] [INFO] [main.py:88]: ======================================================================
+[2026-05-26 14:37:24] [INFO] [main.py:89]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-26 14:37:24] [INFO] [main.py:90]: ======================================================================
+[2026-05-26 14:37:24] [INFO] [main.py:126]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-26 14:37:24] [INFO] [main.py:127]: ======================================================================
+[2026-05-26 14:45:30] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 14:45:30] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 14:45:30] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 14:45:30] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 14:45:30] [INFO] [main.py:27]: Reporte Operativo (Excel): DEYVER_FO-GH-005 REPORTE DE NOVEDADES NÓMINA-MAYO 2026.xlsx
+[2026-05-26 14:45:30] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 14:45:30] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-26 14:45:30] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 207 (Carlo)
+[2026-05-26 14:45:30] [INFO] [main.py:58]: Construyendo mapeo maestro de empleados...
+[2026-05-26 14:45:30] [INFO] [extractor.py:96]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 14:45:31] [INFO] [extractor.py:116]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 14:45:31] [INFO] [extractor.py:125]: Filtrando novedades por subordinados de jefe_id = 207 (VELEZ PUELLO DEYVER)...
+[2026-05-26 14:45:31] [INFO] [extractor.py:129]: Filtro cargado desde la BD: se auditarán únicamente 19 empleados asignados a VELEZ PUELLO DEYVER.
+[2026-05-26 14:45:31] [INFO] [extractor.py:182]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 14:45:31] [INFO] [extractor.py:197]: Filtro aplicado al CSV: Reducido de 395 a 22 registros correspondientes al equipo de Carlo.
+[2026-05-26 14:45:31] [INFO] [extractor.py:240]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 14:45:31] [INFO] [extractor.py:255]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-26 14:45:31] [INFO] [extractor.py:365]: Fila 8: Sin fecha en Excel. Asociada a la fecha 23/05/2026 del CSV para ID 1082950058 y novedad 1.
+[2026-05-26 14:45:31] [WARNING] [extractor.py:385]: Fila 28: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 11806062.
+[2026-05-26 14:45:31] [INFO] [extractor.py:377]: Fila 37: Sin fecha en Excel ni coincidencia de novedad. Asociada a la fecha general 16/05/2026 del empleado en el CSV.
+[2026-05-26 14:45:31] [INFO] [extractor.py:377]: Fila 40: Sin fecha en Excel ni coincidencia de novedad. Asociada a la fecha general 06/05/2026 del empleado en el CSV.
+[2026-05-26 14:45:31] [INFO] [extractor.py:365]: Fila 48: Sin fecha en Excel. Asociada a la fecha 15/05/2026 del CSV para ID 1152714464 y novedad 1.
+[2026-05-26 14:45:31] [INFO] [extractor.py:404]: Excel procesado y filtrado correctamente. Registros válidos cargados: 27
+[2026-05-26 14:45:31] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-26 14:45:31] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-26 14:45:31] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 11, Diferencias: 4, Faltantes en plano: 12, Sobrantes en plano: 7
+[2026-05-26 14:45:31] [INFO] [exporter.py:96]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 14:45:31] [INFO] [exporter.py:154]: Reporte Excel corporativo guardado exitosamente.
+[2026-05-26 14:45:31] [INFO] [main.py:88]: ======================================================================
+[2026-05-26 14:45:31] [INFO] [main.py:89]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-26 14:45:31] [INFO] [main.py:90]: ======================================================================
+[2026-05-26 14:45:31] [INFO] [main.py:126]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-26 14:45:31] [INFO] [main.py:127]: ======================================================================
+[2026-05-26 14:46:05] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 14:46:05] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 14:46:05] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 14:46:05] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 14:46:05] [INFO] [main.py:27]: Reporte Operativo (Excel): DEYVER_FO-GH-005 REPORTE DE NOVEDADES NÓMINA-MAYO 2026.xlsx
+[2026-05-26 14:46:05] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 14:46:05] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-26 14:46:05] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 207 (Carlo)
+[2026-05-26 14:46:05] [INFO] [main.py:58]: Construyendo mapeo maestro de empleados...
+[2026-05-26 14:46:05] [INFO] [extractor.py:96]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 14:46:05] [INFO] [extractor.py:116]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 14:46:05] [INFO] [extractor.py:125]: Filtrando novedades por subordinados de jefe_id = 207 (VELEZ PUELLO DEYVER)...
+[2026-05-26 14:46:05] [INFO] [extractor.py:129]: Filtro cargado desde la BD: se auditarán únicamente 19 empleados asignados a VELEZ PUELLO DEYVER.
+[2026-05-26 14:46:05] [INFO] [extractor.py:182]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 14:46:05] [INFO] [extractor.py:197]: Filtro aplicado al CSV: Reducido de 395 a 22 registros correspondientes al equipo de Carlo.
+[2026-05-26 14:46:05] [INFO] [extractor.py:240]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 14:46:05] [INFO] [extractor.py:255]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-26 14:46:05] [INFO] [extractor.py:365]: Fila 8: Sin fecha en Excel. Asociada a la fecha 23/05/2026 del CSV para ID 1082950058 y novedad 1.
+[2026-05-26 14:46:05] [WARNING] [extractor.py:385]: Fila 28: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 11806062.
+[2026-05-26 14:46:05] [INFO] [extractor.py:377]: Fila 37: Sin fecha en Excel ni coincidencia de novedad. Asociada a la fecha general 16/05/2026 del empleado en el CSV.
+[2026-05-26 14:46:06] [INFO] [extractor.py:377]: Fila 40: Sin fecha en Excel ni coincidencia de novedad. Asociada a la fecha general 06/05/2026 del empleado en el CSV.
+[2026-05-26 14:46:06] [INFO] [extractor.py:365]: Fila 48: Sin fecha en Excel. Asociada a la fecha 15/05/2026 del CSV para ID 1152714464 y novedad 1.
+[2026-05-26 14:46:06] [INFO] [extractor.py:404]: Excel procesado y filtrado correctamente. Registros válidos cargados: 27
+[2026-05-26 14:46:06] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-26 14:46:06] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-26 14:46:06] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 11, Diferencias: 4, Faltantes en plano: 12, Sobrantes en plano: 7
+[2026-05-26 14:46:06] [INFO] [exporter.py:96]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 14:46:06] [INFO] [exporter.py:154]: Reporte Excel corporativo guardado exitosamente.
+[2026-05-26 14:46:06] [INFO] [main.py:88]: ======================================================================
+[2026-05-26 14:46:06] [INFO] [main.py:89]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-26 14:46:06] [INFO] [main.py:90]: ======================================================================
+[2026-05-26 14:46:06] [INFO] [main.py:126]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-26 14:46:06] [INFO] [main.py:127]: ======================================================================
+[2026-05-26 15:48:24] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 15:48:24] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 15:48:24] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 15:48:24] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 15:48:24] [INFO] [main.py:27]: Reporte Operativo (Excel): DEYVER_FO-GH-005 REPORTE DE NOVEDADES NÓMINA-MAYO 2026.xlsx
+[2026-05-26 15:48:24] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 15:48:24] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-26 15:48:24] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 207 (Carlo)
+[2026-05-26 15:48:24] [INFO] [main.py:58]: Construyendo mapeo maestro de empleados...
+[2026-05-26 15:48:24] [INFO] [extractor.py:96]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 15:48:24] [INFO] [extractor.py:116]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 15:48:24] [INFO] [extractor.py:125]: Filtrando novedades por subordinados de jefe_id = 207 (VELEZ PUELLO DEYVER)...
+[2026-05-26 15:48:24] [INFO] [extractor.py:129]: Filtro cargado desde la BD: se auditarán únicamente 19 empleados asignados a VELEZ PUELLO DEYVER.
+[2026-05-26 15:48:24] [INFO] [extractor.py:182]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 15:48:24] [INFO] [extractor.py:197]: Filtro aplicado al CSV: Reducido de 395 a 22 registros correspondientes al equipo de Carlo.
+[2026-05-26 15:48:24] [INFO] [extractor.py:251]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 15:48:24] [INFO] [extractor.py:266]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-26 15:48:24] [WARNING] [extractor.py:419]: Fila 28: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 11806062.
+[2026-05-26 15:48:24] [INFO] [extractor.py:411]: Fila 37: Sin fecha en Excel ni coincidencia de novedad. Asociada a la fecha general 01/05/2026 del empleado en el CSV.
+[2026-05-26 15:48:24] [INFO] [extractor.py:411]: Fila 40: Sin fecha en Excel ni coincidencia de novedad. Asociada a la fecha general 01/05/2026 del empleado en el CSV.
+[2026-05-26 15:48:24] [INFO] [extractor.py:438]: Excel procesado y filtrado correctamente. Registros válidos cargados: 22
+[2026-05-26 15:48:24] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-26 15:48:24] [WARNING] [comparator.py:55]: Se detectaron 15 filas duplicadas en el archivo CSV de nómina.
+[2026-05-26 15:48:24] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-26 15:48:25] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 1, Diferencias: 1, Faltantes en plano: 20, Sobrantes en plano: 12
+[2026-05-26 15:48:25] [INFO] [exporter.py:96]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 15:48:25] [ERROR] [main.py:130]: Se produjo un error fatal durante la conciliación de nómina:
+[2026-05-26 15:48:25] [ERROR] [main.py:131]: [Errno 13] Permission denied: 'diferencias_nomina_mayo_2026.xlsx'
+[2026-05-26 15:48:25] [ERROR] [main.py:132]: Traceback (most recent call last):
+  File "C:\Users\samuel.pineda\Documents\docs\script validacion\main.py", line 83, in run_payroll_reconciliation
+    exporter.generate_report(comp_results)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\samuel.pineda\Documents\docs\script validacion\src\exporter.py", line 153, in generate_report
+    wb.save(self.output_path)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\openpyxl\workbook\workbook.py", line 386, in save
+    save_workbook(self, filename)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\openpyxl\writer\excel.py", line 291, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\zipfile\__init__.py", line 1453, in __init__
+    self.fp = io.open(file, filemode)
+              ~~~~~~~^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'diferencias_nomina_mayo_2026.xlsx'
+
+[2026-05-26 15:48:46] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 15:48:46] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 15:48:46] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 15:48:46] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 15:48:46] [INFO] [main.py:27]: Reporte Operativo (Excel): DEYVER_FO-GH-005 REPORTE DE NOVEDADES NÓMINA-MAYO 2026.xlsx
+[2026-05-26 15:48:46] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 15:48:46] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-26 15:48:46] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 207 (Carlo)
+[2026-05-26 15:48:46] [INFO] [main.py:58]: Construyendo mapeo maestro de empleados...
+[2026-05-26 15:48:46] [INFO] [extractor.py:96]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 15:48:46] [INFO] [extractor.py:116]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 15:48:46] [INFO] [extractor.py:125]: Filtrando novedades por subordinados de jefe_id = 207 (VELEZ PUELLO DEYVER)...
+[2026-05-26 15:48:46] [INFO] [extractor.py:129]: Filtro cargado desde la BD: se auditarán únicamente 19 empleados asignados a VELEZ PUELLO DEYVER.
+[2026-05-26 15:48:46] [INFO] [extractor.py:182]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 15:48:46] [INFO] [extractor.py:197]: Filtro aplicado al CSV: Reducido de 395 a 22 registros correspondientes al equipo de Carlo.
+[2026-05-26 15:48:46] [INFO] [extractor.py:251]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 15:48:46] [INFO] [extractor.py:266]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-26 15:48:46] [WARNING] [extractor.py:419]: Fila 28: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 11806062.
+[2026-05-26 15:48:46] [INFO] [extractor.py:411]: Fila 37: Sin fecha en Excel ni coincidencia de novedad. Asociada a la fecha general 01/05/2026 del empleado en el CSV.
+[2026-05-26 15:48:46] [INFO] [extractor.py:411]: Fila 40: Sin fecha en Excel ni coincidencia de novedad. Asociada a la fecha general 01/05/2026 del empleado en el CSV.
+[2026-05-26 15:48:46] [INFO] [extractor.py:438]: Excel procesado y filtrado correctamente. Registros válidos cargados: 22
+[2026-05-26 15:48:46] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-26 15:48:46] [WARNING] [comparator.py:55]: Se detectaron 15 filas duplicadas en el archivo CSV de nómina.
+[2026-05-26 15:48:46] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-26 15:48:46] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 1, Diferencias: 1, Faltantes en plano: 20, Sobrantes en plano: 12
+[2026-05-26 15:48:46] [INFO] [exporter.py:96]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 15:48:46] [ERROR] [main.py:130]: Se produjo un error fatal durante la conciliación de nómina:
+[2026-05-26 15:48:46] [ERROR] [main.py:131]: cannot access local variable 'os' where it is not associated with a value
+[2026-05-26 15:48:46] [ERROR] [main.py:132]: Traceback (most recent call last):
+  File "C:\Users\samuel.pineda\Documents\docs\script validacion\main.py", line 83, in run_payroll_reconciliation
+    exporter.generate_report(comp_results)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\samuel.pineda\Documents\docs\script validacion\src\exporter.py", line 99, in generate_report
+    out_dir = os.path.dirname(self.output_path)
+              ^^
+UnboundLocalError: cannot access local variable 'os' where it is not associated with a value
+
+[2026-05-26 15:49:07] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 15:49:07] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 15:49:07] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 15:49:07] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 15:49:07] [INFO] [main.py:27]: Reporte Operativo (Excel): DEYVER_FO-GH-005 REPORTE DE NOVEDADES NÓMINA-MAYO 2026.xlsx
+[2026-05-26 15:49:07] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 15:49:07] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-26 15:49:07] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 207 (Carlo)
+[2026-05-26 15:49:07] [INFO] [main.py:58]: Construyendo mapeo maestro de empleados...
+[2026-05-26 15:49:07] [INFO] [extractor.py:96]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 15:49:07] [INFO] [extractor.py:116]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 15:49:07] [INFO] [extractor.py:125]: Filtrando novedades por subordinados de jefe_id = 207 (VELEZ PUELLO DEYVER)...
+[2026-05-26 15:49:07] [INFO] [extractor.py:129]: Filtro cargado desde la BD: se auditarán únicamente 19 empleados asignados a VELEZ PUELLO DEYVER.
+[2026-05-26 15:49:07] [INFO] [extractor.py:182]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 15:49:07] [INFO] [extractor.py:197]: Filtro aplicado al CSV: Reducido de 395 a 22 registros correspondientes al equipo de Carlo.
+[2026-05-26 15:49:08] [INFO] [extractor.py:251]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 15:49:08] [INFO] [extractor.py:266]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-26 15:49:08] [WARNING] [extractor.py:419]: Fila 28: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 11806062.
+[2026-05-26 15:49:08] [INFO] [extractor.py:411]: Fila 37: Sin fecha en Excel ni coincidencia de novedad. Asociada a la fecha general 01/05/2026 del empleado en el CSV.
+[2026-05-26 15:49:08] [INFO] [extractor.py:411]: Fila 40: Sin fecha en Excel ni coincidencia de novedad. Asociada a la fecha general 01/05/2026 del empleado en el CSV.
+[2026-05-26 15:49:08] [INFO] [extractor.py:438]: Excel procesado y filtrado correctamente. Registros válidos cargados: 22
+[2026-05-26 15:49:08] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-26 15:49:08] [WARNING] [comparator.py:55]: Se detectaron 15 filas duplicadas en el archivo CSV de nómina.
+[2026-05-26 15:49:08] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-26 15:49:08] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 1, Diferencias: 1, Faltantes en plano: 20, Sobrantes en plano: 12
+[2026-05-26 15:49:08] [INFO] [exporter.py:97]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 15:49:08] [WARNING] [exporter.py:160]: El archivo 'diferencias_nomina_mayo_2026.xlsx' está abierto o bloqueado por otra aplicación (como Microsoft Excel).
+Guardando copia en ruta alternativa: diferencias_nomina_mayo_2026_1779828548.xlsx
+[2026-05-26 15:49:08] [INFO] [exporter.py:165]: Reporte alternativo guardado exitosamente en: diferencias_nomina_mayo_2026_1779828548.xlsx
+[2026-05-26 15:49:08] [INFO] [main.py:88]: ======================================================================
+[2026-05-26 15:49:08] [INFO] [main.py:89]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-26 15:49:08] [INFO] [main.py:90]: ======================================================================
+[2026-05-26 15:49:08] [INFO] [main.py:126]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-26 15:49:08] [INFO] [main.py:127]: ======================================================================
+[2026-05-26 15:51:33] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 15:51:33] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 15:51:33] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 15:51:33] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 15:51:33] [INFO] [main.py:27]: Reporte Operativo (Excel): DEYVER_FO-GH-005 REPORTE DE NOVEDADES NÓMINA-MAYO 2026.xlsx
+[2026-05-26 15:51:33] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 15:51:33] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-26 15:51:33] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 207 (Carlo)
+[2026-05-26 15:51:33] [INFO] [main.py:58]: Construyendo mapeo maestro de empleados...
+[2026-05-26 15:51:33] [INFO] [extractor.py:96]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 15:51:33] [INFO] [extractor.py:116]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 15:51:33] [INFO] [extractor.py:125]: Filtrando novedades por subordinados de jefe_id = 207 (VELEZ PUELLO DEYVER)...
+[2026-05-26 15:51:33] [INFO] [extractor.py:129]: Filtro cargado desde la BD: se auditarán únicamente 19 empleados asignados a VELEZ PUELLO DEYVER.
+[2026-05-26 15:51:33] [INFO] [extractor.py:182]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 15:51:33] [INFO] [extractor.py:197]: Filtro aplicado al CSV: Reducido de 395 a 22 registros correspondientes al equipo de Carlo.
+[2026-05-26 15:51:33] [INFO] [extractor.py:215]: Mes de nómina principal detectado en CSV: 05/2026
+[2026-05-26 15:51:33] [INFO] [extractor.py:261]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 15:51:33] [INFO] [extractor.py:276]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-26 15:51:34] [WARNING] [extractor.py:421]: Fila 28: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 11806062.
+[2026-05-26 15:51:34] [INFO] [extractor.py:413]: Fila 37: Sin fecha en Excel ni coincidencia de novedad. Asociada a la fecha general 01/05/2026 del empleado en el CSV.
+[2026-05-26 15:51:34] [INFO] [extractor.py:413]: Fila 40: Sin fecha en Excel ni coincidencia de novedad. Asociada a la fecha general 01/05/2026 del empleado en el CSV.
+[2026-05-26 15:51:34] [INFO] [extractor.py:440]: Excel procesado y filtrado correctamente. Registros válidos cargados: 22
+[2026-05-26 15:51:34] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-26 15:51:34] [WARNING] [comparator.py:55]: Se detectaron 16 filas duplicadas en el archivo CSV de nómina.
+[2026-05-26 15:51:34] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-26 15:51:34] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 12, Diferencias: 1, Faltantes en plano: 9, Sobrantes en plano: 0
+[2026-05-26 15:51:34] [INFO] [exporter.py:97]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 15:51:34] [WARNING] [exporter.py:160]: El archivo 'diferencias_nomina_mayo_2026.xlsx' está abierto o bloqueado por otra aplicación (como Microsoft Excel).
+Guardando copia en ruta alternativa: diferencias_nomina_mayo_2026_1779828694.xlsx
+[2026-05-26 15:51:34] [INFO] [exporter.py:165]: Reporte alternativo guardado exitosamente en: diferencias_nomina_mayo_2026_1779828694.xlsx
+[2026-05-26 15:51:34] [INFO] [main.py:88]: ======================================================================
+[2026-05-26 15:51:34] [INFO] [main.py:89]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-26 15:51:34] [INFO] [main.py:90]: ======================================================================
+[2026-05-26 15:51:34] [INFO] [main.py:126]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-26 15:51:34] [INFO] [main.py:127]: ======================================================================
+[2026-05-26 15:59:03] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 15:59:03] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 15:59:03] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 15:59:03] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 15:59:03] [INFO] [main.py:27]: Reporte Operativo (Excel): DEYVER_FO-GH-005 REPORTE DE NOVEDADES NÓMINA-MAYO 2026.xlsx
+[2026-05-26 15:59:03] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 15:59:03] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-26 15:59:03] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 207 (Carlo)
+[2026-05-26 15:59:03] [INFO] [main.py:58]: Construyendo mapeo maestro de empleados...
+[2026-05-26 15:59:03] [INFO] [extractor.py:96]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 15:59:03] [INFO] [extractor.py:116]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 15:59:03] [INFO] [extractor.py:125]: Filtrando novedades por subordinados de jefe_id = 207 (VELEZ PUELLO DEYVER)...
+[2026-05-26 15:59:03] [INFO] [extractor.py:129]: Filtro cargado desde la BD: se auditarán únicamente 19 empleados asignados a VELEZ PUELLO DEYVER.
+[2026-05-26 15:59:03] [INFO] [extractor.py:182]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 15:59:03] [INFO] [extractor.py:197]: Filtro aplicado al CSV: Reducido de 395 a 22 registros correspondientes al equipo de Carlo.
+[2026-05-26 15:59:03] [INFO] [extractor.py:215]: Mes de nómina principal detectado en CSV: 05/2026
+[2026-05-26 15:59:04] [INFO] [extractor.py:261]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 15:59:04] [INFO] [extractor.py:276]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-26 15:59:04] [WARNING] [extractor.py:421]: Fila 28: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 11806062.
+[2026-05-26 15:59:04] [INFO] [extractor.py:413]: Fila 37: Sin fecha en Excel ni coincidencia de novedad. Asociada a la fecha general 01/05/2026 del empleado en el CSV.
+[2026-05-26 15:59:04] [INFO] [extractor.py:413]: Fila 40: Sin fecha en Excel ni coincidencia de novedad. Asociada a la fecha general 01/05/2026 del empleado en el CSV.
+[2026-05-26 15:59:04] [INFO] [extractor.py:440]: Excel procesado y filtrado correctamente. Registros válidos cargados: 22
+[2026-05-26 15:59:04] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-26 15:59:04] [WARNING] [comparator.py:55]: Se detectaron 16 filas duplicadas en el archivo CSV de nómina.
+[2026-05-26 15:59:04] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-26 15:59:04] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 12, Diferencias: 1, Faltantes en plano: 9, Sobrantes en plano: 0
+[2026-05-26 15:59:04] [INFO] [exporter.py:97]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 15:59:04] [INFO] [exporter.py:156]: Reporte Excel corporativo guardado exitosamente en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 15:59:04] [INFO] [main.py:88]: ======================================================================
+[2026-05-26 15:59:04] [INFO] [main.py:89]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-26 15:59:04] [INFO] [main.py:90]: ======================================================================
+[2026-05-26 15:59:04] [INFO] [main.py:126]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-26 15:59:04] [INFO] [main.py:127]: ======================================================================
+[2026-05-26 15:59:44] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 15:59:44] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 15:59:44] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 15:59:44] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 15:59:44] [INFO] [main.py:27]: Reporte Operativo (Excel): DEYVER_FO-GH-005 REPORTE DE NOVEDADES NÓMINA-MAYO 2026.xlsx
+[2026-05-26 15:59:44] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 15:59:44] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-26 15:59:44] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 207 (Carlo)
+[2026-05-26 15:59:44] [INFO] [main.py:58]: Construyendo mapeo maestro de empleados...
+[2026-05-26 15:59:44] [INFO] [extractor.py:96]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 15:59:44] [INFO] [extractor.py:116]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 15:59:44] [INFO] [extractor.py:125]: Filtrando novedades por subordinados de jefe_id = 207 (VELEZ PUELLO DEYVER)...
+[2026-05-26 15:59:44] [INFO] [extractor.py:129]: Filtro cargado desde la BD: se auditarán únicamente 19 empleados asignados a VELEZ PUELLO DEYVER.
+[2026-05-26 15:59:44] [INFO] [extractor.py:182]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 15:59:44] [INFO] [extractor.py:197]: Filtro aplicado al CSV: Reducido de 395 a 22 registros correspondientes al equipo de Carlo.
+[2026-05-26 15:59:44] [INFO] [extractor.py:215]: Mes de nómina principal detectado en CSV: 05/2026
+[2026-05-26 15:59:44] [INFO] [extractor.py:261]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 15:59:44] [INFO] [extractor.py:276]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-26 15:59:44] [WARNING] [extractor.py:421]: Fila 28: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 11806062.
+[2026-05-26 15:59:44] [INFO] [extractor.py:413]: Fila 37: Sin fecha en Excel ni coincidencia de novedad. Asociada a la fecha general 01/05/2026 del empleado en el CSV.
+[2026-05-26 15:59:44] [INFO] [extractor.py:413]: Fila 40: Sin fecha en Excel ni coincidencia de novedad. Asociada a la fecha general 01/05/2026 del empleado en el CSV.
+[2026-05-26 15:59:44] [INFO] [extractor.py:440]: Excel procesado y filtrado correctamente. Registros válidos cargados: 22
+[2026-05-26 15:59:44] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-26 15:59:44] [WARNING] [comparator.py:55]: Se detectaron 16 filas duplicadas en el archivo CSV de nómina.
+[2026-05-26 15:59:44] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-26 15:59:44] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 12, Diferencias: 1, Faltantes en plano: 9, Sobrantes en plano: 0
+[2026-05-26 15:59:44] [INFO] [exporter.py:97]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 15:59:45] [INFO] [exporter.py:156]: Reporte Excel corporativo guardado exitosamente en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 15:59:45] [INFO] [main.py:88]: ======================================================================
+[2026-05-26 15:59:45] [INFO] [main.py:89]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-26 15:59:45] [INFO] [main.py:90]: ======================================================================
+[2026-05-26 15:59:45] [INFO] [main.py:126]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-26 15:59:45] [INFO] [main.py:127]: ======================================================================
+[2026-05-26 16:01:52] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 16:01:52] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 16:01:52] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 16:01:52] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 16:01:52] [INFO] [main.py:27]: Reporte Operativo (Excel): DEYVER_FO-GH-005 REPORTE DE NOVEDADES NÓMINA-MAYO 2026.xlsx
+[2026-05-26 16:01:52] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 16:01:52] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-26 16:01:52] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 207 (Carlo)
+[2026-05-26 16:01:52] [INFO] [main.py:58]: Construyendo mapeo maestro de empleados...
+[2026-05-26 16:01:52] [INFO] [extractor.py:96]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 16:01:53] [INFO] [extractor.py:116]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 16:01:53] [INFO] [extractor.py:125]: Filtrando novedades por subordinados de jefe_id = 207 (VELEZ PUELLO DEYVER)...
+[2026-05-26 16:01:53] [INFO] [extractor.py:129]: Filtro cargado desde la BD: se auditarán únicamente 19 empleados asignados a VELEZ PUELLO DEYVER.
+[2026-05-26 16:01:53] [INFO] [extractor.py:182]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 16:01:53] [INFO] [extractor.py:303]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 16:01:53] [INFO] [extractor.py:223]: ¿Planilla Excel contiene fechas específicas para horas extras/recargos?: False
+[2026-05-26 16:01:53] [INFO] [extractor.py:238]: Filtro aplicado al CSV: Reducido de 395 a 22 registros correspondientes al equipo de Carlo.
+[2026-05-26 16:01:53] [INFO] [extractor.py:256]: Mes de nómina principal detectado en CSV: 05/2026
+[2026-05-26 16:01:53] [INFO] [extractor.py:303]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 16:01:53] [INFO] [extractor.py:318]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-26 16:01:53] [WARNING] [extractor.py:463]: Fila 28: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 11806062.
+[2026-05-26 16:01:53] [INFO] [extractor.py:455]: Fila 37: Sin fecha en Excel ni coincidencia de novedad. Asociada a la fecha general 01/05/2026 del empleado en el CSV.
+[2026-05-26 16:01:53] [INFO] [extractor.py:455]: Fila 40: Sin fecha en Excel ni coincidencia de novedad. Asociada a la fecha general 01/05/2026 del empleado en el CSV.
+[2026-05-26 16:01:53] [INFO] [extractor.py:482]: Excel procesado y filtrado correctamente. Registros válidos cargados: 22
+[2026-05-26 16:01:53] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-26 16:01:53] [WARNING] [comparator.py:55]: Se detectaron 16 filas duplicadas en el archivo CSV de nómina.
+[2026-05-26 16:01:53] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-26 16:01:53] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 12, Diferencias: 1, Faltantes en plano: 9, Sobrantes en plano: 0
+[2026-05-26 16:01:53] [INFO] [exporter.py:97]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 16:01:53] [WARNING] [exporter.py:160]: El archivo 'diferencias_nomina_mayo_2026.xlsx' está abierto o bloqueado por otra aplicación (como Microsoft Excel).
+Guardando copia en ruta alternativa: diferencias_nomina_mayo_2026_1779829313.xlsx
+[2026-05-26 16:01:53] [INFO] [exporter.py:165]: Reporte alternativo guardado exitosamente en: diferencias_nomina_mayo_2026_1779829313.xlsx
+[2026-05-26 16:01:53] [INFO] [main.py:88]: ======================================================================
+[2026-05-26 16:01:53] [INFO] [main.py:89]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-26 16:01:53] [INFO] [main.py:90]: ======================================================================
+[2026-05-26 16:01:53] [INFO] [main.py:126]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-26 16:01:53] [INFO] [main.py:127]: ======================================================================
+[2026-05-26 16:02:12] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 16:02:12] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 16:02:12] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 16:02:12] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 16:02:12] [INFO] [main.py:27]: Reporte Operativo (Excel): FO-GH-005 REPORTE DE NOVEDADES NÓMINA CARLO mayo 2026.xlsx
+[2026-05-26 16:02:12] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 16:02:12] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-26 16:02:12] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 10 (Carlo)
+[2026-05-26 16:02:12] [INFO] [main.py:58]: Construyendo mapeo maestro de empleados...
+[2026-05-26 16:02:12] [INFO] [extractor.py:96]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 16:02:13] [INFO] [extractor.py:116]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 16:02:13] [INFO] [extractor.py:125]: Filtrando novedades por subordinados de jefe_id = 10 (ALDANA BODER CARLO JULIAN)...
+[2026-05-26 16:02:13] [INFO] [extractor.py:129]: Filtro cargado desde la BD: se auditarán únicamente 39 empleados asignados a ALDANA BODER CARLO JULIAN.
+[2026-05-26 16:02:13] [INFO] [extractor.py:182]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 16:02:13] [INFO] [extractor.py:223]: ¿Planilla Excel contiene fechas específicas para horas extras/recargos?: False
+[2026-05-26 16:02:13] [INFO] [extractor.py:238]: Filtro aplicado al CSV: Reducido de 395 a 260 registros correspondientes al equipo de Carlo.
+[2026-05-26 16:02:13] [INFO] [extractor.py:256]: Mes de nómina principal detectado en CSV: 05/2026
+[2026-05-26 16:02:13] [ERROR] [main.py:130]: Se produjo un error fatal durante la conciliación de nómina:
+[2026-05-26 16:02:13] [ERROR] [main.py:131]: Archivo Excel no encontrado en: FO-GH-005 REPORTE DE NOVEDADES NÓMINA CARLO mayo 2026.xlsx
+[2026-05-26 16:02:13] [ERROR] [main.py:132]: Traceback (most recent call last):
+  File "C:\Users\samuel.pineda\Documents\docs\script validacion\main.py", line 63, in run_payroll_reconciliation
+    df_excel = extractor.load_excel()
+  File "C:\Users\samuel.pineda\Documents\docs\script validacion\src\extractor.py", line 317, in load_excel
+    sheet_name, header_row = self.detect_novelty_sheet()
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\samuel.pineda\Documents\docs\script validacion\src\extractor.py", line 285, in detect_novelty_sheet
+    raise FileNotFoundError(f"Archivo Excel no encontrado en: {self.excel_path}")
+FileNotFoundError: Archivo Excel no encontrado en: FO-GH-005 REPORTE DE NOVEDADES NÓMINA CARLO mayo 2026.xlsx
+
+[2026-05-26 16:02:36] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 16:02:36] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 16:02:36] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 16:02:36] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 16:02:36] [INFO] [main.py:27]: Reporte Operativo (Excel): DEYVER_FO-GH-005 REPORTE DE NOVEDADES NÓMINA-MAYO 2026.xlsx
+[2026-05-26 16:02:36] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 16:02:36] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-26 16:02:36] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 207 (Carlo)
+[2026-05-26 16:02:36] [INFO] [main.py:58]: Construyendo mapeo maestro de empleados...
+[2026-05-26 16:02:36] [INFO] [extractor.py:96]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 16:02:36] [INFO] [extractor.py:116]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 16:02:36] [INFO] [extractor.py:125]: Filtrando novedades por subordinados de jefe_id = 207 (VELEZ PUELLO DEYVER)...
+[2026-05-26 16:02:36] [INFO] [extractor.py:129]: Filtro cargado desde la BD: se auditarán únicamente 19 empleados asignados a VELEZ PUELLO DEYVER.
+[2026-05-26 16:02:36] [INFO] [extractor.py:182]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 16:02:36] [INFO] [extractor.py:303]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 16:02:36] [INFO] [extractor.py:223]: ¿Planilla Excel contiene fechas específicas para horas extras/recargos?: False
+[2026-05-26 16:02:36] [INFO] [extractor.py:238]: Filtro aplicado al CSV: Reducido de 395 a 22 registros correspondientes al equipo de Carlo.
+[2026-05-26 16:02:36] [INFO] [extractor.py:256]: Mes de nómina principal detectado en CSV: 05/2026
+[2026-05-26 16:02:36] [INFO] [extractor.py:303]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 16:02:36] [INFO] [extractor.py:318]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-26 16:02:36] [WARNING] [extractor.py:463]: Fila 28: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 11806062.
+[2026-05-26 16:02:36] [INFO] [extractor.py:455]: Fila 37: Sin fecha en Excel ni coincidencia de novedad. Asociada a la fecha general 01/05/2026 del empleado en el CSV.
+[2026-05-26 16:02:36] [INFO] [extractor.py:455]: Fila 40: Sin fecha en Excel ni coincidencia de novedad. Asociada a la fecha general 01/05/2026 del empleado en el CSV.
+[2026-05-26 16:02:36] [INFO] [extractor.py:482]: Excel procesado y filtrado correctamente. Registros válidos cargados: 22
+[2026-05-26 16:02:36] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-26 16:02:36] [WARNING] [comparator.py:55]: Se detectaron 16 filas duplicadas en el archivo CSV de nómina.
+[2026-05-26 16:02:36] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-26 16:02:36] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 12, Diferencias: 1, Faltantes en plano: 9, Sobrantes en plano: 0
+[2026-05-26 16:02:36] [INFO] [exporter.py:97]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 16:02:36] [WARNING] [exporter.py:160]: El archivo 'diferencias_nomina_mayo_2026.xlsx' está abierto o bloqueado por otra aplicación (como Microsoft Excel).
+Guardando copia en ruta alternativa: diferencias_nomina_mayo_2026_1779829356.xlsx
+[2026-05-26 16:02:36] [INFO] [exporter.py:165]: Reporte alternativo guardado exitosamente en: diferencias_nomina_mayo_2026_1779829356.xlsx
+[2026-05-26 16:02:36] [INFO] [main.py:88]: ======================================================================
+[2026-05-26 16:02:36] [INFO] [main.py:89]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-26 16:02:36] [INFO] [main.py:90]: ======================================================================
+[2026-05-26 16:02:36] [INFO] [main.py:126]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-26 16:02:36] [INFO] [main.py:127]: ======================================================================
+[2026-05-26 16:22:57] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 16:22:57] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 16:22:57] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 16:22:57] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 16:22:57] [INFO] [main.py:27]: Reporte Operativo (Excel): DEYVER_FO-GH-005 REPORTE DE NOVEDADES NÓMINA-MAYO 2026.xlsx
+[2026-05-26 16:22:57] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 16:22:57] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-26 16:22:57] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 207 (Carlo)
+[2026-05-26 16:22:57] [INFO] [main.py:59]: Construyendo mapeo maestro de empleados...
+[2026-05-26 16:22:57] [INFO] [extractor.py:97]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 16:22:57] [INFO] [extractor.py:117]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 16:22:57] [INFO] [extractor.py:126]: Filtrando novedades por subordinados de jefe_id = 207 (VELEZ PUELLO DEYVER)...
+[2026-05-26 16:22:57] [INFO] [extractor.py:130]: Filtro cargado desde la BD: se auditarán únicamente 19 empleados asignados a VELEZ PUELLO DEYVER.
+[2026-05-26 16:22:57] [INFO] [extractor.py:183]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 16:22:57] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 16:22:57] [INFO] [extractor.py:224]: ¿Planilla Excel contiene fechas específicas para horas extras/recargos?: False
+[2026-05-26 16:22:57] [INFO] [extractor.py:229]: Cargando archivo de novedades eventuales plano: plano_novedades_eventuales(2026-05).csv
+[2026-05-26 16:22:57] [INFO] [extractor.py:236]: Archivo de novedades eventuales cargado con 44 registros.
+[2026-05-26 16:22:57] [INFO] [extractor.py:250]: Total de registros CSV consolidados (Horas Extras + Eventuales): 439
+[2026-05-26 16:22:57] [INFO] [extractor.py:259]: Filtro aplicado al CSV: Reducido de 439 a 30 registros correspondientes al equipo de VELEZ PUELLO DEYVER.
+[2026-05-26 16:22:57] [INFO] [extractor.py:277]: Mes de nómina principal detectado en CSV: 05/2026
+[2026-05-26 16:22:57] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 16:22:57] [INFO] [extractor.py:339]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-26 16:22:57] [INFO] [extractor.py:476]: Fila 28: Sin fecha en Excel ni coincidencia de novedad. Asociada a la fecha general 12/06/2026 del empleado en el CSV.
+[2026-05-26 16:22:57] [INFO] [extractor.py:476]: Fila 37: Sin fecha en Excel ni coincidencia de novedad. Asociada a la fecha general 01/05/2026 del empleado en el CSV.
+[2026-05-26 16:22:57] [INFO] [extractor.py:476]: Fila 40: Sin fecha en Excel ni coincidencia de novedad. Asociada a la fecha general 01/05/2026 del empleado en el CSV.
+[2026-05-26 16:22:57] [INFO] [extractor.py:503]: Excel procesado y filtrado correctamente. Registros válidos cargados: 22
+[2026-05-26 16:22:57] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-26 16:22:57] [WARNING] [comparator.py:46]: Se detectaron 2 filas duplicadas en el reporte Excel.
+[2026-05-26 16:22:57] [WARNING] [comparator.py:55]: Se detectaron 16 filas duplicadas en el archivo CSV de nómina.
+[2026-05-26 16:22:57] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-26 16:22:57] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 14, Diferencias: 1, Faltantes en plano: 6, Sobrantes en plano: 6
+[2026-05-26 16:22:57] [INFO] [exporter.py:97]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 16:22:57] [INFO] [exporter.py:156]: Reporte Excel corporativo guardado exitosamente en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 16:22:57] [INFO] [main.py:89]: ======================================================================
+[2026-05-26 16:22:57] [INFO] [main.py:90]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-26 16:22:57] [INFO] [main.py:91]: ======================================================================
+[2026-05-26 16:22:57] [INFO] [main.py:127]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-26 16:22:57] [INFO] [main.py:128]: ======================================================================
+[2026-05-26 16:27:36] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 16:27:36] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 16:27:36] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 16:27:36] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 16:27:36] [INFO] [main.py:27]: Reporte Operativo (Excel): DEYVER_FO-GH-005 REPORTE DE NOVEDADES NÓMINA-MAYO 2026.xlsx
+[2026-05-26 16:27:36] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 16:27:36] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-26 16:27:36] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 207 (Carlo)
+[2026-05-26 16:27:36] [INFO] [main.py:59]: Construyendo mapeo maestro de empleados...
+[2026-05-26 16:27:36] [INFO] [extractor.py:97]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 16:27:36] [INFO] [extractor.py:117]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 16:27:36] [INFO] [extractor.py:126]: Filtrando novedades por subordinados de jefe_id = 207 (VELEZ PUELLO DEYVER)...
+[2026-05-26 16:27:36] [INFO] [extractor.py:130]: Filtro cargado desde la BD: se auditarán únicamente 19 empleados asignados a VELEZ PUELLO DEYVER.
+[2026-05-26 16:27:36] [INFO] [extractor.py:183]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 16:27:36] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 16:27:37] [INFO] [extractor.py:224]: ¿Planilla Excel contiene fechas específicas para horas extras/recargos?: False
+[2026-05-26 16:27:37] [INFO] [extractor.py:229]: Cargando archivo de novedades eventuales plano: plano_novedades_eventuales(2026-05).csv
+[2026-05-26 16:27:37] [INFO] [extractor.py:236]: Archivo de novedades eventuales cargado con 86 registros.
+[2026-05-26 16:27:37] [INFO] [extractor.py:250]: Total de registros CSV consolidados (Horas Extras + Eventuales): 481
+[2026-05-26 16:27:37] [INFO] [extractor.py:259]: Filtro aplicado al CSV: Reducido de 481 a 34 registros correspondientes al equipo de VELEZ PUELLO DEYVER.
+[2026-05-26 16:27:37] [INFO] [extractor.py:277]: Mes de nómina principal detectado en CSV: 05/2026
+[2026-05-26 16:27:37] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 16:27:37] [INFO] [extractor.py:339]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-26 16:27:37] [INFO] [extractor.py:464]: Fila 28: Sin fecha en Excel. Asociada a la fecha 12/06/2026 del CSV para ID 11806062 y novedad 16.
+[2026-05-26 16:27:37] [INFO] [extractor.py:464]: Fila 37: Sin fecha en Excel. Asociada a la fecha 19/06/2026 del CSV para ID 1026162516 y novedad 16.
+[2026-05-26 16:27:37] [INFO] [extractor.py:464]: Fila 40: Sin fecha en Excel. Asociada a la fecha 09/06/2026 del CSV para ID 1011390710 y novedad 16.
+[2026-05-26 16:27:37] [INFO] [extractor.py:503]: Excel procesado y filtrado correctamente. Registros válidos cargados: 22
+[2026-05-26 16:27:37] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-26 16:27:37] [WARNING] [comparator.py:46]: Se detectaron 4 filas duplicadas en el reporte Excel.
+[2026-05-26 16:27:37] [WARNING] [comparator.py:55]: Se detectaron 16 filas duplicadas en el archivo CSV de nómina.
+[2026-05-26 16:27:37] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-26 16:27:37] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 14, Diferencias: 4, Faltantes en plano: 2, Sobrantes en plano: 7
+[2026-05-26 16:27:37] [INFO] [exporter.py:97]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 16:27:37] [INFO] [exporter.py:156]: Reporte Excel corporativo guardado exitosamente en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 16:27:37] [INFO] [main.py:89]: ======================================================================
+[2026-05-26 16:27:37] [INFO] [main.py:90]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-26 16:27:37] [INFO] [main.py:91]: ======================================================================
+[2026-05-26 16:27:37] [INFO] [main.py:127]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-26 16:27:37] [INFO] [main.py:128]: ======================================================================
+[2026-05-26 16:42:28] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 16:42:28] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 16:42:28] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 16:42:28] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 16:42:28] [INFO] [main.py:27]: Reporte Operativo (Excel): CARLO_FO-GH-005 REPORTE DE NOVEDADES NÓMINA mayo 2026.xlsx
+[2026-05-26 16:42:28] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 16:42:28] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-26 16:42:28] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 10 (Carlo)
+[2026-05-26 16:42:28] [INFO] [main.py:59]: Construyendo mapeo maestro de empleados...
+[2026-05-26 16:42:28] [INFO] [extractor.py:97]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 16:42:28] [INFO] [extractor.py:117]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 16:42:28] [INFO] [extractor.py:126]: Filtrando novedades por subordinados de jefe_id = 10 (ALDANA BODER CARLO JULIAN)...
+[2026-05-26 16:42:28] [INFO] [extractor.py:130]: Filtro cargado desde la BD: se auditarán únicamente 39 empleados asignados a ALDANA BODER CARLO JULIAN.
+[2026-05-26 16:42:28] [INFO] [extractor.py:183]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 16:42:28] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 16:42:28] [INFO] [extractor.py:224]: ¿Planilla Excel contiene fechas específicas para horas extras/recargos?: True
+[2026-05-26 16:42:28] [INFO] [extractor.py:229]: Cargando archivo de novedades eventuales plano: plano_novedades_eventuales(2026-05).csv
+[2026-05-26 16:42:28] [INFO] [extractor.py:236]: Archivo de novedades eventuales cargado con 87 registros.
+[2026-05-26 16:42:28] [INFO] [extractor.py:250]: Total de registros CSV consolidados (Horas Extras + Eventuales): 482
+[2026-05-26 16:42:28] [INFO] [extractor.py:259]: Filtro aplicado al CSV: Reducido de 482 a 276 registros correspondientes al equipo de ALDANA BODER CARLO JULIAN.
+[2026-05-26 16:42:28] [INFO] [extractor.py:277]: Mes de nómina principal detectado en CSV: 05/2026
+[2026-05-26 16:42:28] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 16:42:28] [INFO] [extractor.py:339]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-26 16:42:28] [INFO] [extractor.py:503]: Excel procesado y filtrado correctamente. Registros válidos cargados: 275
+[2026-05-26 16:42:28] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-26 16:42:28] [WARNING] [comparator.py:46]: Se detectaron 91 filas duplicadas en el reporte Excel.
+[2026-05-26 16:42:28] [WARNING] [comparator.py:55]: Se detectaron 91 filas duplicadas en el archivo CSV de nómina.
+[2026-05-26 16:42:28] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-26 16:42:28] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 224, Diferencias: 1, Faltantes en plano: 2, Sobrantes en plano: 3
+[2026-05-26 16:42:28] [INFO] [exporter.py:97]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 16:42:29] [INFO] [exporter.py:156]: Reporte Excel corporativo guardado exitosamente en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 16:42:29] [INFO] [main.py:89]: ======================================================================
+[2026-05-26 16:42:29] [INFO] [main.py:90]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-26 16:42:29] [INFO] [main.py:91]: ======================================================================
+[2026-05-26 16:42:29] [INFO] [main.py:127]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-26 16:42:29] [INFO] [main.py:128]: ======================================================================
+[2026-05-26 17:02:53] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 17:02:53] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 17:02:53] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 17:02:53] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 17:02:53] [INFO] [main.py:27]: Reporte Operativo (Excel): SISTEMAS_FO-GH-005 REPORTE DE NOVEDADES NÓMINA mayo 2026.xlsx
+[2026-05-26 17:02:53] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 17:02:53] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-26 17:02:53] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 10 (Carlo)
+[2026-05-26 17:02:53] [INFO] [main.py:59]: Construyendo mapeo maestro de empleados...
+[2026-05-26 17:02:53] [INFO] [extractor.py:97]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 17:02:53] [INFO] [extractor.py:117]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 17:02:53] [INFO] [extractor.py:126]: Filtrando novedades por subordinados de jefe_id = 10 (ALDANA BODER CARLO JULIAN)...
+[2026-05-26 17:02:53] [INFO] [extractor.py:130]: Filtro cargado desde la BD: se auditarán únicamente 39 empleados asignados a ALDANA BODER CARLO JULIAN.
+[2026-05-26 17:02:53] [INFO] [extractor.py:183]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 17:02:53] [ERROR] [extractor.py:330]: Error detectando hoja de novedades automáticamente: Worksheet named 'TH' not found
+Traceback (most recent call last):
+  File "C:\Users\samuel.pineda\Documents\docs\script validacion\src\extractor.py", line 313, in detect_novelty_sheet
+    df_sample = pd.read_excel(self.excel_path, sheet_name=sheet_name, nrows=20, header=None)
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_base.py", line 494, in read_excel
+    data = io.parse(
+        sheet_name=sheet_name,
+    ...<20 lines>...
+        dtype_backend=dtype_backend,
+    )
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_base.py", line 1780, in parse
+    return self._reader.parse(
+           ~~~~~~~~~~~~~~~~~~^
+        sheet_name=sheet_name,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<16 lines>...
+        **kwds,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_base.py", line 753, in parse
+    sheet = self.get_sheet_by_name(asheetname)
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 589, in get_sheet_by_name
+    self.raise_if_bad_sheet_by_name(name)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_base.py", line 605, in raise_if_bad_sheet_by_name
+    raise ValueError(f"Worksheet named '{name}' not found")
+ValueError: Worksheet named 'TH' not found
+[2026-05-26 17:02:53] [WARNING] [extractor.py:222]: No se pudo escanear el Excel para detectar fechas de horas extras: Worksheet named 'TH' not found
+[2026-05-26 17:02:53] [INFO] [extractor.py:224]: ¿Planilla Excel contiene fechas específicas para horas extras/recargos?: False
+[2026-05-26 17:02:53] [INFO] [extractor.py:229]: Cargando archivo de novedades eventuales plano: plano_novedades_eventuales(2026-05).csv
+[2026-05-26 17:02:53] [INFO] [extractor.py:236]: Archivo de novedades eventuales cargado con 87 registros.
+[2026-05-26 17:02:53] [INFO] [extractor.py:250]: Total de registros CSV consolidados (Horas Extras + Eventuales): 482
+[2026-05-26 17:02:53] [INFO] [extractor.py:259]: Filtro aplicado al CSV: Reducido de 482 a 276 registros correspondientes al equipo de ALDANA BODER CARLO JULIAN.
+[2026-05-26 17:02:54] [INFO] [extractor.py:277]: Mes de nómina principal detectado en CSV: 05/2026
+[2026-05-26 17:02:54] [ERROR] [extractor.py:330]: Error detectando hoja de novedades automáticamente: Worksheet named 'TH' not found
+Traceback (most recent call last):
+  File "C:\Users\samuel.pineda\Documents\docs\script validacion\src\extractor.py", line 313, in detect_novelty_sheet
+    df_sample = pd.read_excel(self.excel_path, sheet_name=sheet_name, nrows=20, header=None)
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_base.py", line 494, in read_excel
+    data = io.parse(
+        sheet_name=sheet_name,
+    ...<20 lines>...
+        dtype_backend=dtype_backend,
+    )
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_base.py", line 1780, in parse
+    return self._reader.parse(
+           ~~~~~~~~~~~~~~~~~~^
+        sheet_name=sheet_name,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<16 lines>...
+        **kwds,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_base.py", line 753, in parse
+    sheet = self.get_sheet_by_name(asheetname)
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 589, in get_sheet_by_name
+    self.raise_if_bad_sheet_by_name(name)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_base.py", line 605, in raise_if_bad_sheet_by_name
+    raise ValueError(f"Worksheet named '{name}' not found")
+ValueError: Worksheet named 'TH' not found
+[2026-05-26 17:02:54] [ERROR] [main.py:131]: Se produjo un error fatal durante la conciliación de nómina:
+[2026-05-26 17:02:54] [ERROR] [main.py:132]: Worksheet named 'TH' not found
+[2026-05-26 17:02:54] [ERROR] [main.py:133]: Traceback (most recent call last):
+  File "C:\Users\samuel.pineda\Documents\docs\script validacion\main.py", line 64, in run_payroll_reconciliation
+    df_excel = extractor.load_excel()
+  File "C:\Users\samuel.pineda\Documents\docs\script validacion\src\extractor.py", line 338, in load_excel
+    sheet_name, header_row = self.detect_novelty_sheet()
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\samuel.pineda\Documents\docs\script validacion\src\extractor.py", line 313, in detect_novelty_sheet
+    df_sample = pd.read_excel(self.excel_path, sheet_name=sheet_name, nrows=20, header=None)
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_base.py", line 494, in read_excel
+    data = io.parse(
+        sheet_name=sheet_name,
+    ...<20 lines>...
+        dtype_backend=dtype_backend,
+    )
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_base.py", line 1780, in parse
+    return self._reader.parse(
+           ~~~~~~~~~~~~~~~~~~^
+        sheet_name=sheet_name,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<16 lines>...
+        **kwds,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_base.py", line 753, in parse
+    sheet = self.get_sheet_by_name(asheetname)
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 589, in get_sheet_by_name
+    self.raise_if_bad_sheet_by_name(name)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_base.py", line 605, in raise_if_bad_sheet_by_name
+    raise ValueError(f"Worksheet named '{name}' not found")
+ValueError: Worksheet named 'TH' not found
+
+[2026-05-26 17:03:48] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 17:03:48] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 17:03:48] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 17:03:48] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 17:03:48] [INFO] [main.py:27]: Reporte Operativo (Excel): DEYVER_FO-GH-005 REPORTE DE NOVEDADES NÓMINA-MAYO 2026.xlsx
+[2026-05-26 17:03:48] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 17:03:48] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-26 17:03:48] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 10 (Carlo)
+[2026-05-26 17:03:48] [INFO] [main.py:59]: Construyendo mapeo maestro de empleados...
+[2026-05-26 17:03:48] [INFO] [extractor.py:97]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 17:03:48] [INFO] [extractor.py:117]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 17:03:48] [INFO] [extractor.py:126]: Filtrando novedades por subordinados de jefe_id = 10 (ALDANA BODER CARLO JULIAN)...
+[2026-05-26 17:03:48] [INFO] [extractor.py:130]: Filtro cargado desde la BD: se auditarán únicamente 39 empleados asignados a ALDANA BODER CARLO JULIAN.
+[2026-05-26 17:03:48] [INFO] [extractor.py:183]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 17:03:48] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 17:03:48] [INFO] [extractor.py:224]: ¿Planilla Excel contiene fechas específicas para horas extras/recargos?: False
+[2026-05-26 17:03:48] [INFO] [extractor.py:229]: Cargando archivo de novedades eventuales plano: plano_novedades_eventuales(2026-05).csv
+[2026-05-26 17:03:48] [INFO] [extractor.py:236]: Archivo de novedades eventuales cargado con 87 registros.
+[2026-05-26 17:03:48] [INFO] [extractor.py:250]: Total de registros CSV consolidados (Horas Extras + Eventuales): 482
+[2026-05-26 17:03:48] [INFO] [extractor.py:259]: Filtro aplicado al CSV: Reducido de 482 a 276 registros correspondientes al equipo de ALDANA BODER CARLO JULIAN.
+[2026-05-26 17:03:48] [INFO] [extractor.py:277]: Mes de nómina principal detectado en CSV: 05/2026
+[2026-05-26 17:03:48] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 17:03:48] [INFO] [extractor.py:339]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-26 17:03:48] [WARNING] [extractor.py:500]: No se extrajeron registros del Excel para este filtro de jefe.
+[2026-05-26 17:03:48] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-26 17:03:48] [WARNING] [comparator.py:55]: Se detectaron 248 filas duplicadas en el archivo CSV de nómina.
+[2026-05-26 17:03:48] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-26 17:03:48] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 0, Diferencias: 0, Faltantes en plano: 0, Sobrantes en plano: 58
+[2026-05-26 17:03:48] [INFO] [exporter.py:97]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 17:03:48] [INFO] [exporter.py:156]: Reporte Excel corporativo guardado exitosamente en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 17:03:48] [INFO] [main.py:89]: ======================================================================
+[2026-05-26 17:03:48] [INFO] [main.py:90]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-26 17:03:48] [INFO] [main.py:91]: ======================================================================
+[2026-05-26 17:03:48] [INFO] [main.py:127]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-26 17:03:48] [INFO] [main.py:128]: ======================================================================
+[2026-05-26 17:06:59] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 17:06:59] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 17:06:59] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 17:06:59] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 17:06:59] [INFO] [main.py:27]: Reporte Operativo (Excel): NOMINA_INFRA.xlsx
+[2026-05-26 17:06:59] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 17:06:59] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-26 17:06:59] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 10 (Carlo)
+[2026-05-26 17:06:59] [INFO] [main.py:59]: Construyendo mapeo maestro de empleados...
+[2026-05-26 17:06:59] [INFO] [extractor.py:97]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 17:06:59] [INFO] [extractor.py:117]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 17:06:59] [INFO] [extractor.py:126]: Filtrando novedades por subordinados de jefe_id = 10 (ALDANA BODER CARLO JULIAN)...
+[2026-05-26 17:06:59] [INFO] [extractor.py:130]: Filtro cargado desde la BD: se auditarán únicamente 39 empleados asignados a ALDANA BODER CARLO JULIAN.
+[2026-05-26 17:06:59] [INFO] [extractor.py:183]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 17:06:59] [ERROR] [extractor.py:330]: Error detectando hoja de novedades automáticamente: Worksheet named 'TH' not found
+Traceback (most recent call last):
+  File "C:\Users\samuel.pineda\Documents\docs\script validacion\src\extractor.py", line 313, in detect_novelty_sheet
+    df_sample = pd.read_excel(self.excel_path, sheet_name=sheet_name, nrows=20, header=None)
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_base.py", line 494, in read_excel
+    data = io.parse(
+        sheet_name=sheet_name,
+    ...<20 lines>...
+        dtype_backend=dtype_backend,
+    )
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_base.py", line 1780, in parse
+    return self._reader.parse(
+           ~~~~~~~~~~~~~~~~~~^
+        sheet_name=sheet_name,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<16 lines>...
+        **kwds,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_base.py", line 753, in parse
+    sheet = self.get_sheet_by_name(asheetname)
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 589, in get_sheet_by_name
+    self.raise_if_bad_sheet_by_name(name)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_base.py", line 605, in raise_if_bad_sheet_by_name
+    raise ValueError(f"Worksheet named '{name}' not found")
+ValueError: Worksheet named 'TH' not found
+[2026-05-26 17:06:59] [WARNING] [extractor.py:222]: No se pudo escanear el Excel para detectar fechas de horas extras: Worksheet named 'TH' not found
+[2026-05-26 17:06:59] [INFO] [extractor.py:224]: ¿Planilla Excel contiene fechas específicas para horas extras/recargos?: False
+[2026-05-26 17:06:59] [INFO] [extractor.py:229]: Cargando archivo de novedades eventuales plano: plano_novedades_eventuales(2026-05).csv
+[2026-05-26 17:06:59] [INFO] [extractor.py:236]: Archivo de novedades eventuales cargado con 87 registros.
+[2026-05-26 17:06:59] [INFO] [extractor.py:250]: Total de registros CSV consolidados (Horas Extras + Eventuales): 482
+[2026-05-26 17:06:59] [INFO] [extractor.py:259]: Filtro aplicado al CSV: Reducido de 482 a 276 registros correspondientes al equipo de ALDANA BODER CARLO JULIAN.
+[2026-05-26 17:06:59] [INFO] [extractor.py:277]: Mes de nómina principal detectado en CSV: 05/2026
+[2026-05-26 17:06:59] [ERROR] [extractor.py:330]: Error detectando hoja de novedades automáticamente: Worksheet named 'TH' not found
+Traceback (most recent call last):
+  File "C:\Users\samuel.pineda\Documents\docs\script validacion\src\extractor.py", line 313, in detect_novelty_sheet
+    df_sample = pd.read_excel(self.excel_path, sheet_name=sheet_name, nrows=20, header=None)
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_base.py", line 494, in read_excel
+    data = io.parse(
+        sheet_name=sheet_name,
+    ...<20 lines>...
+        dtype_backend=dtype_backend,
+    )
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_base.py", line 1780, in parse
+    return self._reader.parse(
+           ~~~~~~~~~~~~~~~~~~^
+        sheet_name=sheet_name,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<16 lines>...
+        **kwds,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_base.py", line 753, in parse
+    sheet = self.get_sheet_by_name(asheetname)
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 589, in get_sheet_by_name
+    self.raise_if_bad_sheet_by_name(name)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_base.py", line 605, in raise_if_bad_sheet_by_name
+    raise ValueError(f"Worksheet named '{name}' not found")
+ValueError: Worksheet named 'TH' not found
+[2026-05-26 17:06:59] [ERROR] [main.py:131]: Se produjo un error fatal durante la conciliación de nómina:
+[2026-05-26 17:06:59] [ERROR] [main.py:132]: Worksheet named 'TH' not found
+[2026-05-26 17:06:59] [ERROR] [main.py:133]: Traceback (most recent call last):
+  File "C:\Users\samuel.pineda\Documents\docs\script validacion\main.py", line 64, in run_payroll_reconciliation
+    df_excel = extractor.load_excel()
+  File "C:\Users\samuel.pineda\Documents\docs\script validacion\src\extractor.py", line 338, in load_excel
+    sheet_name, header_row = self.detect_novelty_sheet()
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\samuel.pineda\Documents\docs\script validacion\src\extractor.py", line 313, in detect_novelty_sheet
+    df_sample = pd.read_excel(self.excel_path, sheet_name=sheet_name, nrows=20, header=None)
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_base.py", line 494, in read_excel
+    data = io.parse(
+        sheet_name=sheet_name,
+    ...<20 lines>...
+        dtype_backend=dtype_backend,
+    )
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_base.py", line 1780, in parse
+    return self._reader.parse(
+           ~~~~~~~~~~~~~~~~~~^
+        sheet_name=sheet_name,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<16 lines>...
+        **kwds,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_base.py", line 753, in parse
+    sheet = self.get_sheet_by_name(asheetname)
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 589, in get_sheet_by_name
+    self.raise_if_bad_sheet_by_name(name)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_base.py", line 605, in raise_if_bad_sheet_by_name
+    raise ValueError(f"Worksheet named '{name}' not found")
+ValueError: Worksheet named 'TH' not found
+
+[2026-05-26 17:07:56] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 17:07:56] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 17:07:56] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 17:07:56] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 17:07:56] [INFO] [main.py:27]: Reporte Operativo (Excel): NOMINA_INFRA.xlsx
+[2026-05-26 17:07:56] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 17:07:56] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-26 17:07:56] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 10 (Carlo)
+[2026-05-26 17:07:56] [INFO] [main.py:59]: Construyendo mapeo maestro de empleados...
+[2026-05-26 17:07:56] [INFO] [extractor.py:97]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 17:07:56] [INFO] [extractor.py:117]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 17:07:56] [INFO] [extractor.py:126]: Filtrando novedades por subordinados de jefe_id = 10 (ALDANA BODER CARLO JULIAN)...
+[2026-05-26 17:07:56] [INFO] [extractor.py:130]: Filtro cargado desde la BD: se auditarán únicamente 39 empleados asignados a ALDANA BODER CARLO JULIAN.
+[2026-05-26 17:07:56] [INFO] [extractor.py:183]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 17:07:56] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 17:07:56] [INFO] [extractor.py:224]: ¿Planilla Excel contiene fechas específicas para horas extras/recargos?: True
+[2026-05-26 17:07:56] [INFO] [extractor.py:229]: Cargando archivo de novedades eventuales plano: plano_novedades_eventuales(2026-05).csv
+[2026-05-26 17:07:56] [INFO] [extractor.py:236]: Archivo de novedades eventuales cargado con 87 registros.
+[2026-05-26 17:07:56] [INFO] [extractor.py:250]: Total de registros CSV consolidados (Horas Extras + Eventuales): 482
+[2026-05-26 17:07:56] [INFO] [extractor.py:259]: Filtro aplicado al CSV: Reducido de 482 a 276 registros correspondientes al equipo de ALDANA BODER CARLO JULIAN.
+[2026-05-26 17:07:56] [INFO] [extractor.py:277]: Mes de nómina principal detectado en CSV: 05/2026
+[2026-05-26 17:07:56] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 17:07:56] [INFO] [extractor.py:339]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-26 17:07:57] [WARNING] [extractor.py:500]: No se extrajeron registros del Excel para este filtro de jefe.
+[2026-05-26 17:07:57] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-26 17:07:57] [WARNING] [comparator.py:55]: Se detectaron 91 filas duplicadas en el archivo CSV de nómina.
+[2026-05-26 17:07:57] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-26 17:07:57] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 0, Diferencias: 0, Faltantes en plano: 0, Sobrantes en plano: 228
+[2026-05-26 17:07:57] [INFO] [exporter.py:97]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 17:07:57] [INFO] [exporter.py:156]: Reporte Excel corporativo guardado exitosamente en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 17:07:57] [INFO] [main.py:89]: ======================================================================
+[2026-05-26 17:07:57] [INFO] [main.py:90]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-26 17:07:57] [INFO] [main.py:91]: ======================================================================
+[2026-05-26 17:07:57] [INFO] [main.py:127]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-26 17:07:57] [INFO] [main.py:128]: ======================================================================
+[2026-05-26 17:08:50] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 17:08:50] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 17:08:50] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 17:08:50] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 17:08:50] [INFO] [main.py:27]: Reporte Operativo (Excel): CARLO_FO-GH-005 REPORTE DE NOVEDADES NÓMINA mayo 2026.xlsx
+[2026-05-26 17:08:50] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 17:08:50] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-26 17:08:50] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 10 (Carlo)
+[2026-05-26 17:08:50] [INFO] [main.py:59]: Construyendo mapeo maestro de empleados...
+[2026-05-26 17:08:50] [INFO] [extractor.py:97]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 17:08:50] [INFO] [extractor.py:117]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 17:08:50] [INFO] [extractor.py:126]: Filtrando novedades por subordinados de jefe_id = 10 (ALDANA BODER CARLO JULIAN)...
+[2026-05-26 17:08:50] [INFO] [extractor.py:130]: Filtro cargado desde la BD: se auditarán únicamente 39 empleados asignados a ALDANA BODER CARLO JULIAN.
+[2026-05-26 17:08:50] [INFO] [extractor.py:183]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 17:08:50] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 17:08:50] [INFO] [extractor.py:224]: ¿Planilla Excel contiene fechas específicas para horas extras/recargos?: True
+[2026-05-26 17:08:50] [INFO] [extractor.py:229]: Cargando archivo de novedades eventuales plano: plano_novedades_eventuales(2026-05).csv
+[2026-05-26 17:08:50] [INFO] [extractor.py:236]: Archivo de novedades eventuales cargado con 87 registros.
+[2026-05-26 17:08:50] [INFO] [extractor.py:250]: Total de registros CSV consolidados (Horas Extras + Eventuales): 482
+[2026-05-26 17:08:50] [INFO] [extractor.py:259]: Filtro aplicado al CSV: Reducido de 482 a 276 registros correspondientes al equipo de ALDANA BODER CARLO JULIAN.
+[2026-05-26 17:08:50] [INFO] [extractor.py:277]: Mes de nómina principal detectado en CSV: 05/2026
+[2026-05-26 17:08:50] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 17:08:50] [INFO] [extractor.py:339]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-26 17:08:51] [INFO] [extractor.py:503]: Excel procesado y filtrado correctamente. Registros válidos cargados: 275
+[2026-05-26 17:08:51] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-26 17:08:51] [WARNING] [comparator.py:46]: Se detectaron 91 filas duplicadas en el reporte Excel.
+[2026-05-26 17:08:51] [WARNING] [comparator.py:55]: Se detectaron 91 filas duplicadas en el archivo CSV de nómina.
+[2026-05-26 17:08:51] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-26 17:08:51] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 224, Diferencias: 1, Faltantes en plano: 2, Sobrantes en plano: 3
+[2026-05-26 17:08:51] [INFO] [exporter.py:97]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 17:08:51] [INFO] [exporter.py:156]: Reporte Excel corporativo guardado exitosamente en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 17:08:51] [INFO] [main.py:89]: ======================================================================
+[2026-05-26 17:08:51] [INFO] [main.py:90]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-26 17:08:51] [INFO] [main.py:91]: ======================================================================
+[2026-05-26 17:08:51] [INFO] [main.py:127]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-26 17:08:51] [INFO] [main.py:128]: ======================================================================
+[2026-05-26 17:10:26] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 17:10:26] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 17:10:26] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 17:10:26] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 17:10:26] [INFO] [main.py:27]: Reporte Operativo (Excel): DEYVER_FO-GH-005 REPORTE DE NOVEDADES NÓMINA-MAYO 2026.xlsx
+[2026-05-26 17:10:26] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 17:10:26] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-26 17:10:26] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 10 (Carlo)
+[2026-05-26 17:10:26] [INFO] [main.py:59]: Construyendo mapeo maestro de empleados...
+[2026-05-26 17:10:26] [INFO] [extractor.py:97]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 17:10:26] [INFO] [extractor.py:117]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 17:10:26] [INFO] [extractor.py:126]: Filtrando novedades por subordinados de jefe_id = 10 (ALDANA BODER CARLO JULIAN)...
+[2026-05-26 17:10:26] [INFO] [extractor.py:130]: Filtro cargado desde la BD: se auditarán únicamente 39 empleados asignados a ALDANA BODER CARLO JULIAN.
+[2026-05-26 17:10:26] [INFO] [extractor.py:183]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 17:10:26] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 17:10:27] [INFO] [extractor.py:224]: ¿Planilla Excel contiene fechas específicas para horas extras/recargos?: False
+[2026-05-26 17:10:27] [INFO] [extractor.py:229]: Cargando archivo de novedades eventuales plano: plano_novedades_eventuales(2026-05).csv
+[2026-05-26 17:10:27] [INFO] [extractor.py:236]: Archivo de novedades eventuales cargado con 87 registros.
+[2026-05-26 17:10:27] [INFO] [extractor.py:250]: Total de registros CSV consolidados (Horas Extras + Eventuales): 482
+[2026-05-26 17:10:27] [INFO] [extractor.py:259]: Filtro aplicado al CSV: Reducido de 482 a 276 registros correspondientes al equipo de ALDANA BODER CARLO JULIAN.
+[2026-05-26 17:10:27] [INFO] [extractor.py:277]: Mes de nómina principal detectado en CSV: 05/2026
+[2026-05-26 17:10:27] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 17:10:27] [INFO] [extractor.py:339]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-26 17:10:27] [WARNING] [extractor.py:500]: No se extrajeron registros del Excel para este filtro de jefe.
+[2026-05-26 17:10:27] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-26 17:10:27] [WARNING] [comparator.py:55]: Se detectaron 248 filas duplicadas en el archivo CSV de nómina.
+[2026-05-26 17:10:27] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-26 17:10:27] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 0, Diferencias: 0, Faltantes en plano: 0, Sobrantes en plano: 58
+[2026-05-26 17:10:27] [INFO] [exporter.py:97]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 17:10:27] [INFO] [exporter.py:156]: Reporte Excel corporativo guardado exitosamente en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 17:10:27] [INFO] [main.py:89]: ======================================================================
+[2026-05-26 17:10:27] [INFO] [main.py:90]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-26 17:10:27] [INFO] [main.py:91]: ======================================================================
+[2026-05-26 17:10:27] [INFO] [main.py:127]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-26 17:10:27] [INFO] [main.py:128]: ======================================================================
+[2026-05-26 17:13:03] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 17:13:03] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 17:13:03] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 17:13:03] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 17:13:03] [INFO] [main.py:27]: Reporte Operativo (Excel): 2026-05 Infraestructura.xlsx
+[2026-05-26 17:13:03] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 17:13:03] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-26 17:13:03] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 10 (Carlo)
+[2026-05-26 17:13:03] [INFO] [main.py:59]: Construyendo mapeo maestro de empleados...
+[2026-05-26 17:13:03] [INFO] [extractor.py:97]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 17:13:03] [INFO] [extractor.py:117]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 17:13:03] [INFO] [extractor.py:126]: Filtrando novedades por subordinados de jefe_id = 10 (ALDANA BODER CARLO JULIAN)...
+[2026-05-26 17:13:03] [INFO] [extractor.py:130]: Filtro cargado desde la BD: se auditarán únicamente 39 empleados asignados a ALDANA BODER CARLO JULIAN.
+[2026-05-26 17:13:03] [INFO] [extractor.py:183]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 17:13:03] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 17:13:03] [INFO] [extractor.py:224]: ¿Planilla Excel contiene fechas específicas para horas extras/recargos?: True
+[2026-05-26 17:13:03] [INFO] [extractor.py:229]: Cargando archivo de novedades eventuales plano: plano_novedades_eventuales(2026-05).csv
+[2026-05-26 17:13:03] [INFO] [extractor.py:236]: Archivo de novedades eventuales cargado con 87 registros.
+[2026-05-26 17:13:03] [INFO] [extractor.py:250]: Total de registros CSV consolidados (Horas Extras + Eventuales): 482
+[2026-05-26 17:13:03] [INFO] [extractor.py:259]: Filtro aplicado al CSV: Reducido de 482 a 276 registros correspondientes al equipo de ALDANA BODER CARLO JULIAN.
+[2026-05-26 17:13:03] [INFO] [extractor.py:277]: Mes de nómina principal detectado en CSV: 05/2026
+[2026-05-26 17:13:03] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 17:13:03] [INFO] [extractor.py:339]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-26 17:13:03] [WARNING] [extractor.py:500]: No se extrajeron registros del Excel para este filtro de jefe.
+[2026-05-26 17:13:03] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-26 17:13:03] [WARNING] [comparator.py:55]: Se detectaron 91 filas duplicadas en el archivo CSV de nómina.
+[2026-05-26 17:13:03] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-26 17:13:03] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 0, Diferencias: 0, Faltantes en plano: 0, Sobrantes en plano: 228
+[2026-05-26 17:13:03] [INFO] [exporter.py:97]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 17:13:03] [INFO] [exporter.py:156]: Reporte Excel corporativo guardado exitosamente en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 17:13:03] [INFO] [main.py:89]: ======================================================================
+[2026-05-26 17:13:03] [INFO] [main.py:90]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-26 17:13:03] [INFO] [main.py:91]: ======================================================================
+[2026-05-26 17:13:03] [INFO] [main.py:127]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-26 17:13:03] [INFO] [main.py:128]: ======================================================================

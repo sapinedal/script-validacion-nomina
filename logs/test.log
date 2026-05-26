@@ -1,0 +1,44 @@
+[2026-05-26 14:41:57] [INFO] [extractor.py:96]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 14:41:57] [INFO] [extractor.py:116]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 14:41:57] [INFO] [extractor.py:125]: Filtrando novedades por subordinados de jefe_id = 207 (VELEZ PUELLO DEYVER)...
+[2026-05-26 14:41:57] [INFO] [extractor.py:129]: Filtro cargado desde la BD: se auditarán únicamente 19 empleados asignados a VELEZ PUELLO DEYVER.
+[2026-05-26 14:41:57] [INFO] [extractor.py:239]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 14:41:57] [INFO] [extractor.py:254]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 5 omitida: ID 1082950058 no tiene fecha.
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 6 omitida: ID 1082950058 no tiene fecha.
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 8 omitida: ID 1082950058 no tiene fecha.
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 9 omitida: ID 1082950058 no tiene fecha.
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 10 omitida: ID 1001401747 no tiene fecha.
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 11 omitida: ID 1001401747 no tiene fecha.
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 12 omitida: ID 1001401747 no tiene fecha.
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 14 omitida: ID 71778679 no tiene fecha.
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 15 omitida: ID 71778679 no tiene fecha.
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 16 omitida: ID 71778679 no tiene fecha.
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 18 omitida: ID 8431853 no tiene fecha.
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 19 omitida: ID 8431853 no tiene fecha.
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 20 omitida: ID 8431853 no tiene fecha.
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 21 omitida: ID 8431853 no tiene fecha.
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 22 omitida: ID 1128266307 no tiene fecha.
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 23 omitida: ID 1037648676 no tiene fecha.
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 24 omitida: ID 98647895 no tiene fecha.
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 26 omitida: ID 11806062 no tiene fecha.
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 28 omitida: ID 11806062 no tiene fecha.
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 29 omitida: ID 1014213204 no tiene fecha.
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 31 omitida: ID 1001027446 no tiene fecha.
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 32 omitida: ID 1001027446 no tiene fecha.
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 33 omitida: ID 1026162516 no tiene fecha.
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 35 omitida: ID 1026162516 no tiene fecha.
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 37 omitida: ID 1026162516 no tiene fecha.
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 38 omitida: ID 1011390710 no tiene fecha.
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 40 omitida: ID 1011390710 no tiene fecha.
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 41 omitida: ID 1011390710 no tiene fecha.
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 43 omitida: ID 1001440264 no tiene fecha.
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 44 omitida: ID 1018224935 no tiene fecha.
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 46 omitida: ID 1152714464 no tiene fecha.
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 47 omitida: ID 1152714464 no tiene fecha.
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 48 omitida: ID 1152714464 no tiene fecha.
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 49 omitida: ID 1037670287 no tiene fecha.
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 50 omitida: ID 1000536368 no tiene fecha.
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 51 omitida: ID 1152465660 no tiene fecha.
+[2026-05-26 14:41:57] [WARNING] [extractor.py:315]: Fila 52 omitida: ID 1023886148 no tiene fecha.
+[2026-05-26 14:41:57] [INFO] [extractor.py:340]: Excel procesado y filtrado correctamente. Registros válidos cargados: 6
