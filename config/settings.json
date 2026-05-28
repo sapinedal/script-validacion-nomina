@@ -1,7 +1,7 @@
 {
     "csv_filename": "plano_nomina(2026-05) (1).csv",
     "csv_eventuales_filename": "plano_novedades_eventuales(2026-05).csv",
-    "excel_filename": "2026-05 Infraestructura.xlsx",
+    "excel_filename": "SEGURIDAD_FISICA.xlsx",
     "output_filename": "diferencias_nomina_mayo_2026.xlsx",
     "novelty_mapping": {
         "HORAS EXTRAS DIURNAS": "0",
@@ -43,6 +43,6 @@
         "database_name": "trazalo",
         "username": "trazalo_db",
         "password": "S1UFfgeY9WyNzcuvjf",
-        "filter_by_jefe_id": 10
+        "filter_by_jefe_id": 274
     }
 }

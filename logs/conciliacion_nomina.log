@@ -1421,3 +1421,1266 @@ ValueError: Worksheet named 'TH' not found
 [2026-05-26 17:13:03] [INFO] [main.py:91]: ======================================================================
 [2026-05-26 17:13:03] [INFO] [main.py:127]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
 [2026-05-26 17:13:03] [INFO] [main.py:128]: ======================================================================
+[2026-05-26 17:21:28] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 17:21:28] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 17:21:28] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 17:21:28] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 17:21:28] [INFO] [main.py:27]: Reporte Operativo (Excel): 2026-05 Infraestructura.xlsx
+[2026-05-26 17:21:28] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 17:21:28] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-26 17:21:28] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 10 (Carlo)
+[2026-05-26 17:21:28] [INFO] [main.py:59]: Construyendo mapeo maestro de empleados...
+[2026-05-26 17:21:28] [INFO] [extractor.py:97]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 17:21:29] [INFO] [extractor.py:117]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 17:21:29] [INFO] [extractor.py:126]: Filtrando novedades por subordinados de jefe_id = 10 (ALDANA BODER CARLO JULIAN)...
+[2026-05-26 17:21:29] [INFO] [extractor.py:130]: Filtro cargado desde la BD: se auditarán únicamente 39 empleados asignados a ALDANA BODER CARLO JULIAN.
+[2026-05-26 17:21:29] [INFO] [extractor.py:183]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 17:21:29] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 17:21:29] [INFO] [extractor.py:224]: ¿Planilla Excel contiene fechas específicas para horas extras/recargos?: True
+[2026-05-26 17:21:29] [INFO] [extractor.py:229]: Cargando archivo de novedades eventuales plano: plano_novedades_eventuales(2026-05).csv
+[2026-05-26 17:21:29] [INFO] [extractor.py:236]: Archivo de novedades eventuales cargado con 87 registros.
+[2026-05-26 17:21:29] [INFO] [extractor.py:250]: Total de registros CSV consolidados (Horas Extras + Eventuales): 482
+[2026-05-26 17:21:29] [INFO] [extractor.py:259]: Filtro aplicado al CSV: Reducido de 482 a 276 registros correspondientes al equipo de ALDANA BODER CARLO JULIAN.
+[2026-05-26 17:21:29] [INFO] [extractor.py:277]: Mes de nómina principal detectado en CSV: 05/2026
+[2026-05-26 17:21:29] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 17:21:29] [INFO] [extractor.py:339]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-26 17:21:29] [WARNING] [extractor.py:500]: No se extrajeron registros del Excel para este filtro de jefe.
+[2026-05-26 17:21:29] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-26 17:21:29] [WARNING] [comparator.py:55]: Se detectaron 91 filas duplicadas en el archivo CSV de nómina.
+[2026-05-26 17:21:29] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-26 17:21:29] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 0, Diferencias: 0, Faltantes en plano: 0, Sobrantes en plano: 228
+[2026-05-26 17:21:29] [INFO] [exporter.py:97]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 17:21:29] [WARNING] [exporter.py:160]: El archivo 'diferencias_nomina_mayo_2026.xlsx' está abierto o bloqueado por otra aplicación (como Microsoft Excel).
+Guardando copia en ruta alternativa: diferencias_nomina_mayo_2026_1779834089.xlsx
+[2026-05-26 17:21:29] [INFO] [exporter.py:165]: Reporte alternativo guardado exitosamente en: diferencias_nomina_mayo_2026_1779834089.xlsx
+[2026-05-26 17:21:29] [INFO] [main.py:89]: ======================================================================
+[2026-05-26 17:21:29] [INFO] [main.py:90]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-26 17:21:29] [INFO] [main.py:91]: ======================================================================
+[2026-05-26 17:21:29] [INFO] [main.py:127]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-26 17:21:29] [INFO] [main.py:128]: ======================================================================
+[2026-05-26 17:23:27] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 17:23:27] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 17:23:27] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 17:23:27] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 17:23:27] [INFO] [main.py:27]: Reporte Operativo (Excel): 2026-05 Infraestructura.xlsx
+[2026-05-26 17:23:27] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 17:23:27] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-26 17:23:27] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 1017 (Carlo)
+[2026-05-26 17:23:27] [INFO] [main.py:59]: Construyendo mapeo maestro de empleados...
+[2026-05-26 17:23:27] [INFO] [extractor.py:97]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 17:23:27] [INFO] [extractor.py:117]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 17:23:27] [INFO] [extractor.py:126]: Filtrando novedades por subordinados de jefe_id = 1017 (DIAZ RICO DAVID ALEXANDER)...
+[2026-05-26 17:23:27] [INFO] [extractor.py:130]: Filtro cargado desde la BD: se auditarán únicamente 16 empleados asignados a DIAZ RICO DAVID ALEXANDER.
+[2026-05-26 17:23:27] [INFO] [extractor.py:183]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 17:23:27] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 17:23:27] [INFO] [extractor.py:224]: ¿Planilla Excel contiene fechas específicas para horas extras/recargos?: True
+[2026-05-26 17:23:27] [INFO] [extractor.py:229]: Cargando archivo de novedades eventuales plano: plano_novedades_eventuales(2026-05).csv
+[2026-05-26 17:23:27] [INFO] [extractor.py:236]: Archivo de novedades eventuales cargado con 87 registros.
+[2026-05-26 17:23:27] [INFO] [extractor.py:250]: Total de registros CSV consolidados (Horas Extras + Eventuales): 482
+[2026-05-26 17:23:27] [INFO] [extractor.py:259]: Filtro aplicado al CSV: Reducido de 482 a 122 registros correspondientes al equipo de DIAZ RICO DAVID ALEXANDER.
+[2026-05-26 17:23:27] [INFO] [extractor.py:277]: Mes de nómina principal detectado en CSV: 05/2026
+[2026-05-26 17:23:27] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 17:23:27] [INFO] [extractor.py:339]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-26 17:23:27] [WARNING] [extractor.py:86]: No se pudo convertir el valor '2026-04-10 00:00:00' a float: could not convert string to float: '2026-04-10 00:00:00'. Se asume 0.0
+[2026-05-26 17:23:27] [WARNING] [extractor.py:86]: No se pudo convertir el valor '2026-04-01 00:00:00' a float: could not convert string to float: '2026-04-01 00:00:00'. Se asume 0.0
+[2026-05-26 17:23:27] [WARNING] [extractor.py:86]: No se pudo convertir el valor '2026-04-01 00:00:00' a float: could not convert string to float: '2026-04-01 00:00:00'. Se asume 0.0
+[2026-05-26 17:23:27] [WARNING] [extractor.py:86]: No se pudo convertir el valor '2026-05-10 00:00:00' a float: could not convert string to float: '2026-05-10 00:00:00'. Se asume 0.0
+[2026-05-26 17:23:27] [INFO] [extractor.py:503]: Excel procesado y filtrado correctamente. Registros válidos cargados: 90
+[2026-05-26 17:23:27] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-26 17:23:27] [WARNING] [comparator.py:46]: Se detectaron 2 filas duplicadas en el reporte Excel.
+[2026-05-26 17:23:27] [WARNING] [comparator.py:55]: Se detectaron 4 filas duplicadas en el archivo CSV de nómina.
+[2026-05-26 17:23:27] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-26 17:23:27] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 68, Diferencias: 13, Faltantes en plano: 8, Sobrantes en plano: 39
+[2026-05-26 17:23:27] [INFO] [exporter.py:97]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 17:23:27] [WARNING] [exporter.py:160]: El archivo 'diferencias_nomina_mayo_2026.xlsx' está abierto o bloqueado por otra aplicación (como Microsoft Excel).
+Guardando copia en ruta alternativa: diferencias_nomina_mayo_2026_1779834207.xlsx
+[2026-05-26 17:23:27] [INFO] [exporter.py:165]: Reporte alternativo guardado exitosamente en: diferencias_nomina_mayo_2026_1779834207.xlsx
+[2026-05-26 17:23:27] [INFO] [main.py:89]: ======================================================================
+[2026-05-26 17:23:27] [INFO] [main.py:90]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-26 17:23:27] [INFO] [main.py:91]: ======================================================================
+[2026-05-26 17:23:27] [INFO] [main.py:127]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-26 17:23:27] [INFO] [main.py:128]: ======================================================================
+[2026-05-26 17:23:42] [INFO] [main.py:23]: ======================================================================
+[2026-05-26 17:23:42] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-26 17:23:42] [INFO] [main.py:25]: ======================================================================
+[2026-05-26 17:23:42] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-26 17:23:42] [INFO] [main.py:27]: Reporte Operativo (Excel): 2026-05 Infraestructura.xlsx
+[2026-05-26 17:23:42] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-26 17:23:42] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-26 17:23:42] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 1017 (Carlo)
+[2026-05-26 17:23:42] [INFO] [main.py:59]: Construyendo mapeo maestro de empleados...
+[2026-05-26 17:23:42] [INFO] [extractor.py:97]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-26 17:23:42] [INFO] [extractor.py:117]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-26 17:23:42] [INFO] [extractor.py:126]: Filtrando novedades por subordinados de jefe_id = 1017 (DIAZ RICO DAVID ALEXANDER)...
+[2026-05-26 17:23:42] [INFO] [extractor.py:130]: Filtro cargado desde la BD: se auditarán únicamente 16 empleados asignados a DIAZ RICO DAVID ALEXANDER.
+[2026-05-26 17:23:42] [INFO] [extractor.py:183]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-26 17:23:42] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 17:23:42] [INFO] [extractor.py:224]: ¿Planilla Excel contiene fechas específicas para horas extras/recargos?: True
+[2026-05-26 17:23:42] [INFO] [extractor.py:229]: Cargando archivo de novedades eventuales plano: plano_novedades_eventuales(2026-05).csv
+[2026-05-26 17:23:42] [INFO] [extractor.py:236]: Archivo de novedades eventuales cargado con 87 registros.
+[2026-05-26 17:23:42] [INFO] [extractor.py:250]: Total de registros CSV consolidados (Horas Extras + Eventuales): 482
+[2026-05-26 17:23:42] [INFO] [extractor.py:259]: Filtro aplicado al CSV: Reducido de 482 a 122 registros correspondientes al equipo de DIAZ RICO DAVID ALEXANDER.
+[2026-05-26 17:23:42] [INFO] [extractor.py:277]: Mes de nómina principal detectado en CSV: 05/2026
+[2026-05-26 17:23:42] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-26 17:23:42] [INFO] [extractor.py:339]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-26 17:23:43] [WARNING] [extractor.py:86]: No se pudo convertir el valor '2026-04-10 00:00:00' a float: could not convert string to float: '2026-04-10 00:00:00'. Se asume 0.0
+[2026-05-26 17:23:43] [WARNING] [extractor.py:86]: No se pudo convertir el valor '2026-04-01 00:00:00' a float: could not convert string to float: '2026-04-01 00:00:00'. Se asume 0.0
+[2026-05-26 17:23:43] [WARNING] [extractor.py:86]: No se pudo convertir el valor '2026-04-01 00:00:00' a float: could not convert string to float: '2026-04-01 00:00:00'. Se asume 0.0
+[2026-05-26 17:23:43] [WARNING] [extractor.py:86]: No se pudo convertir el valor '2026-05-10 00:00:00' a float: could not convert string to float: '2026-05-10 00:00:00'. Se asume 0.0
+[2026-05-26 17:23:43] [INFO] [extractor.py:503]: Excel procesado y filtrado correctamente. Registros válidos cargados: 90
+[2026-05-26 17:23:43] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-26 17:23:43] [WARNING] [comparator.py:46]: Se detectaron 2 filas duplicadas en el reporte Excel.
+[2026-05-26 17:23:43] [WARNING] [comparator.py:55]: Se detectaron 4 filas duplicadas en el archivo CSV de nómina.
+[2026-05-26 17:23:43] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-26 17:23:43] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 68, Diferencias: 13, Faltantes en plano: 8, Sobrantes en plano: 39
+[2026-05-26 17:23:43] [INFO] [exporter.py:97]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 17:23:43] [INFO] [exporter.py:156]: Reporte Excel corporativo guardado exitosamente en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-26 17:23:43] [INFO] [main.py:89]: ======================================================================
+[2026-05-26 17:23:43] [INFO] [main.py:90]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-26 17:23:43] [INFO] [main.py:91]: ======================================================================
+[2026-05-26 17:23:43] [INFO] [main.py:127]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-26 17:23:43] [INFO] [main.py:128]: ======================================================================
+[2026-05-27 09:32:05] [INFO] [main.py:23]: ======================================================================
+[2026-05-27 09:32:05] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-27 09:32:05] [INFO] [main.py:25]: ======================================================================
+[2026-05-27 09:32:05] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-27 09:32:05] [INFO] [main.py:27]: Reporte Operativo (Excel): DEYVER_FO-GH-005 REPORTE DE NOVEDADES NÓMINA-MAYO 2026.xlsx
+[2026-05-27 09:32:05] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-27 09:32:05] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-27 09:32:05] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 207 (Carlo)
+[2026-05-27 09:32:05] [INFO] [main.py:59]: Construyendo mapeo maestro de empleados...
+[2026-05-27 09:32:05] [INFO] [extractor.py:97]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-27 09:32:06] [INFO] [extractor.py:117]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-27 09:32:06] [INFO] [extractor.py:126]: Filtrando novedades por subordinados de jefe_id = 207 (VELEZ PUELLO DEYVER)...
+[2026-05-27 09:32:06] [INFO] [extractor.py:130]: Filtro cargado desde la BD: se auditarán únicamente 19 empleados asignados a VELEZ PUELLO DEYVER.
+[2026-05-27 09:32:06] [INFO] [extractor.py:183]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-27 09:32:06] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-27 09:32:06] [INFO] [extractor.py:224]: ¿Planilla Excel contiene fechas específicas para horas extras/recargos?: False
+[2026-05-27 09:32:06] [INFO] [extractor.py:229]: Cargando archivo de novedades eventuales plano: plano_novedades_eventuales(2026-05).csv
+[2026-05-27 09:32:06] [INFO] [extractor.py:236]: Archivo de novedades eventuales cargado con 87 registros.
+[2026-05-27 09:32:06] [INFO] [extractor.py:250]: Total de registros CSV consolidados (Horas Extras + Eventuales): 482
+[2026-05-27 09:32:06] [INFO] [extractor.py:259]: Filtro aplicado al CSV: Reducido de 482 a 34 registros correspondientes al equipo de VELEZ PUELLO DEYVER.
+[2026-05-27 09:32:06] [INFO] [extractor.py:277]: Mes de nómina principal detectado en CSV: 05/2026
+[2026-05-27 09:32:06] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-27 09:32:06] [INFO] [extractor.py:339]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-27 09:32:06] [INFO] [extractor.py:464]: Fila 28: Sin fecha en Excel. Asociada a la fecha 12/06/2026 del CSV para ID 11806062 y novedad 16.
+[2026-05-27 09:32:06] [INFO] [extractor.py:464]: Fila 37: Sin fecha en Excel. Asociada a la fecha 19/06/2026 del CSV para ID 1026162516 y novedad 16.
+[2026-05-27 09:32:06] [INFO] [extractor.py:464]: Fila 40: Sin fecha en Excel. Asociada a la fecha 09/06/2026 del CSV para ID 1011390710 y novedad 16.
+[2026-05-27 09:32:06] [INFO] [extractor.py:503]: Excel procesado y filtrado correctamente. Registros válidos cargados: 22
+[2026-05-27 09:32:06] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-27 09:32:06] [WARNING] [comparator.py:46]: Se detectaron 4 filas duplicadas en el reporte Excel.
+[2026-05-27 09:32:06] [WARNING] [comparator.py:55]: Se detectaron 16 filas duplicadas en el archivo CSV de nómina.
+[2026-05-27 09:32:06] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-27 09:32:06] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 14, Diferencias: 4, Faltantes en plano: 2, Sobrantes en plano: 7
+[2026-05-27 09:32:06] [INFO] [exporter.py:97]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-27 09:32:07] [WARNING] [exporter.py:160]: El archivo 'diferencias_nomina_mayo_2026.xlsx' está abierto o bloqueado por otra aplicación (como Microsoft Excel).
+Guardando copia en ruta alternativa: diferencias_nomina_mayo_2026_1779892327.xlsx
+[2026-05-27 09:32:07] [INFO] [exporter.py:165]: Reporte alternativo guardado exitosamente en: diferencias_nomina_mayo_2026_1779892327.xlsx
+[2026-05-27 09:32:07] [INFO] [main.py:89]: ======================================================================
+[2026-05-27 09:32:07] [INFO] [main.py:90]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-27 09:32:07] [INFO] [main.py:91]: ======================================================================
+[2026-05-27 09:32:07] [INFO] [main.py:127]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-27 09:32:07] [INFO] [main.py:128]: ======================================================================
+[2026-05-27 12:05:39] [INFO] [main.py:23]: ======================================================================
+[2026-05-27 12:05:39] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-27 12:05:39] [INFO] [main.py:25]: ======================================================================
+[2026-05-27 12:05:39] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-27 12:05:39] [INFO] [main.py:27]: Reporte Operativo (Excel): DEYVER_FO-GH-005 REPORTE DE NOVEDADES NÓMINA-MAYO 2026.xlsx
+[2026-05-27 12:05:39] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-27 12:05:39] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-27 12:05:39] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 1017 (Carlo)
+[2026-05-27 12:05:39] [INFO] [main.py:59]: Construyendo mapeo maestro de empleados...
+[2026-05-27 12:05:39] [INFO] [extractor.py:97]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-27 12:05:39] [INFO] [extractor.py:117]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-27 12:05:39] [INFO] [extractor.py:126]: Filtrando novedades por subordinados de jefe_id = 1017 (DIAZ RICO DAVID ALEXANDER)...
+[2026-05-27 12:05:39] [INFO] [extractor.py:130]: Filtro cargado desde la BD: se auditarán únicamente 16 empleados asignados a DIAZ RICO DAVID ALEXANDER.
+[2026-05-27 12:05:39] [INFO] [extractor.py:183]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-27 12:05:39] [INFO] [extractor.py:224]: ¿Planilla Excel contiene fechas específicas para horas extras/recargos?: False
+[2026-05-27 12:05:39] [INFO] [extractor.py:229]: Cargando archivo de novedades eventuales plano: plano_novedades_eventuales(2026-05).csv
+[2026-05-27 12:05:39] [INFO] [extractor.py:236]: Archivo de novedades eventuales cargado con 87 registros.
+[2026-05-27 12:05:39] [INFO] [extractor.py:250]: Total de registros CSV consolidados (Horas Extras + Eventuales): 482
+[2026-05-27 12:05:39] [INFO] [extractor.py:259]: Filtro aplicado al CSV: Reducido de 482 a 122 registros correspondientes al equipo de DIAZ RICO DAVID ALEXANDER.
+[2026-05-27 12:05:39] [INFO] [extractor.py:277]: Mes de nómina principal detectado en CSV: 05/2026
+[2026-05-27 12:05:39] [ERROR] [main.py:131]: Se produjo un error fatal durante la conciliación de nómina:
+[2026-05-27 12:05:39] [ERROR] [main.py:132]: Archivo Excel no encontrado en: DEYVER_FO-GH-005 REPORTE DE NOVEDADES NÓMINA-MAYO 2026.xlsx
+[2026-05-27 12:05:39] [ERROR] [main.py:133]: Traceback (most recent call last):
+  File "C:\Users\samuel.pineda\Documents\docs\script validacion\main.py", line 64, in run_payroll_reconciliation
+    df_excel = extractor.load_excel()
+  File "C:\Users\samuel.pineda\Documents\docs\script validacion\src\extractor.py", line 338, in load_excel
+    sheet_name, header_row = self.detect_novelty_sheet()
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\samuel.pineda\Documents\docs\script validacion\src\extractor.py", line 306, in detect_novelty_sheet
+    raise FileNotFoundError(f"Archivo Excel no encontrado en: {self.excel_path}")
+FileNotFoundError: Archivo Excel no encontrado en: DEYVER_FO-GH-005 REPORTE DE NOVEDADES NÓMINA-MAYO 2026.xlsx
+
+[2026-05-27 12:06:15] [INFO] [main.py:23]: ======================================================================
+[2026-05-27 12:06:15] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-27 12:06:15] [INFO] [main.py:25]: ======================================================================
+[2026-05-27 12:06:15] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-27 12:06:15] [INFO] [main.py:27]: Reporte Operativo (Excel): infraestructura.xlsx
+[2026-05-27 12:06:15] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-27 12:06:15] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-27 12:06:15] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 1017 (Carlo)
+[2026-05-27 12:06:15] [INFO] [main.py:59]: Construyendo mapeo maestro de empleados...
+[2026-05-27 12:06:15] [INFO] [extractor.py:97]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-27 12:06:15] [INFO] [extractor.py:117]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-27 12:06:15] [INFO] [extractor.py:126]: Filtrando novedades por subordinados de jefe_id = 1017 (DIAZ RICO DAVID ALEXANDER)...
+[2026-05-27 12:06:15] [INFO] [extractor.py:130]: Filtro cargado desde la BD: se auditarán únicamente 16 empleados asignados a DIAZ RICO DAVID ALEXANDER.
+[2026-05-27 12:06:15] [INFO] [extractor.py:183]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-27 12:06:15] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-27 12:06:16] [INFO] [extractor.py:224]: ¿Planilla Excel contiene fechas específicas para horas extras/recargos?: True
+[2026-05-27 12:06:16] [INFO] [extractor.py:229]: Cargando archivo de novedades eventuales plano: plano_novedades_eventuales(2026-05).csv
+[2026-05-27 12:06:16] [INFO] [extractor.py:236]: Archivo de novedades eventuales cargado con 87 registros.
+[2026-05-27 12:06:16] [INFO] [extractor.py:250]: Total de registros CSV consolidados (Horas Extras + Eventuales): 482
+[2026-05-27 12:06:16] [INFO] [extractor.py:259]: Filtro aplicado al CSV: Reducido de 482 a 122 registros correspondientes al equipo de DIAZ RICO DAVID ALEXANDER.
+[2026-05-27 12:06:16] [INFO] [extractor.py:277]: Mes de nómina principal detectado en CSV: 05/2026
+[2026-05-27 12:06:16] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-27 12:06:16] [INFO] [extractor.py:339]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-27 12:06:16] [WARNING] [extractor.py:86]: No se pudo convertir el valor '2026-04-10 00:00:00' a float: could not convert string to float: '2026-04-10 00:00:00'. Se asume 0.0
+[2026-05-27 12:06:16] [WARNING] [extractor.py:86]: No se pudo convertir el valor '2026-04-01 00:00:00' a float: could not convert string to float: '2026-04-01 00:00:00'. Se asume 0.0
+[2026-05-27 12:06:16] [WARNING] [extractor.py:86]: No se pudo convertir el valor '2026-04-01 00:00:00' a float: could not convert string to float: '2026-04-01 00:00:00'. Se asume 0.0
+[2026-05-27 12:06:16] [WARNING] [extractor.py:86]: No se pudo convertir el valor '2026-05-10 00:00:00' a float: could not convert string to float: '2026-05-10 00:00:00'. Se asume 0.0
+[2026-05-27 12:06:16] [INFO] [extractor.py:503]: Excel procesado y filtrado correctamente. Registros válidos cargados: 90
+[2026-05-27 12:06:16] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-27 12:06:16] [WARNING] [comparator.py:46]: Se detectaron 2 filas duplicadas en el reporte Excel.
+[2026-05-27 12:06:16] [WARNING] [comparator.py:55]: Se detectaron 4 filas duplicadas en el archivo CSV de nómina.
+[2026-05-27 12:06:16] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-27 12:06:16] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 68, Diferencias: 13, Faltantes en plano: 8, Sobrantes en plano: 39
+[2026-05-27 12:06:16] [INFO] [exporter.py:97]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-27 12:06:16] [INFO] [exporter.py:156]: Reporte Excel corporativo guardado exitosamente en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-27 12:06:16] [INFO] [main.py:89]: ======================================================================
+[2026-05-27 12:06:16] [INFO] [main.py:90]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-27 12:06:16] [INFO] [main.py:91]: ======================================================================
+[2026-05-27 12:06:16] [INFO] [main.py:127]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-27 12:06:16] [INFO] [main.py:128]: ======================================================================
+[2026-05-27 12:31:26] [INFO] [main.py:23]: ======================================================================
+[2026-05-27 12:31:26] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-27 12:31:26] [INFO] [main.py:25]: ======================================================================
+[2026-05-27 12:31:26] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-27 12:31:26] [INFO] [main.py:27]: Reporte Operativo (Excel): infraestructura.xlsx
+[2026-05-27 12:31:26] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-27 12:31:26] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-27 12:31:26] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 1017 (Carlo)
+[2026-05-27 12:31:26] [INFO] [main.py:59]: Construyendo mapeo maestro de empleados...
+[2026-05-27 12:31:26] [INFO] [extractor.py:97]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-27 12:31:26] [INFO] [extractor.py:117]: Base de datos de empleados cargada desde Producción: 1465 empleados.
+[2026-05-27 12:31:26] [INFO] [extractor.py:126]: Filtrando novedades por subordinados de jefe_id = 1017 (DIAZ RICO DAVID ALEXANDER)...
+[2026-05-27 12:31:26] [INFO] [extractor.py:130]: Filtro cargado desde la BD: se auditarán únicamente 16 empleados asignados a DIAZ RICO DAVID ALEXANDER.
+[2026-05-27 12:31:26] [INFO] [extractor.py:183]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-27 12:31:26] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-27 12:31:26] [INFO] [extractor.py:224]: ¿Planilla Excel contiene fechas específicas para horas extras/recargos?: True
+[2026-05-27 12:31:26] [INFO] [extractor.py:229]: Cargando archivo de novedades eventuales plano: plano_novedades_eventuales(2026-05).csv
+[2026-05-27 12:31:26] [INFO] [extractor.py:236]: Archivo de novedades eventuales cargado con 87 registros.
+[2026-05-27 12:31:26] [INFO] [extractor.py:250]: Total de registros CSV consolidados (Horas Extras + Eventuales): 482
+[2026-05-27 12:31:26] [INFO] [extractor.py:259]: Filtro aplicado al CSV: Reducido de 482 a 122 registros correspondientes al equipo de DIAZ RICO DAVID ALEXANDER.
+[2026-05-27 12:31:26] [INFO] [extractor.py:277]: Mes de nómina principal detectado en CSV: 05/2026
+[2026-05-27 12:31:26] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-27 12:31:26] [INFO] [extractor.py:339]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-27 12:31:26] [WARNING] [extractor.py:500]: No se extrajeron registros del Excel para este filtro de jefe.
+[2026-05-27 12:31:26] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-27 12:31:26] [WARNING] [comparator.py:55]: Se detectaron 4 filas duplicadas en el archivo CSV de nómina.
+[2026-05-27 12:31:26] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-27 12:31:26] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 0, Diferencias: 0, Faltantes en plano: 0, Sobrantes en plano: 120
+[2026-05-27 12:31:26] [INFO] [exporter.py:97]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-27 12:31:27] [INFO] [exporter.py:156]: Reporte Excel corporativo guardado exitosamente en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-27 12:31:27] [INFO] [main.py:89]: ======================================================================
+[2026-05-27 12:31:27] [INFO] [main.py:90]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-27 12:31:27] [INFO] [main.py:91]: ======================================================================
+[2026-05-27 12:31:27] [INFO] [main.py:127]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-27 12:31:27] [INFO] [main.py:128]: ======================================================================
+[2026-05-28 08:09:05] [INFO] [main.py:23]: ======================================================================
+[2026-05-28 08:09:05] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-28 08:09:05] [INFO] [main.py:25]: ======================================================================
+[2026-05-28 08:09:05] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-28 08:09:05] [INFO] [main.py:27]: Reporte Operativo (Excel): infraestructura.xlsx
+[2026-05-28 08:09:05] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-28 08:09:05] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-28 08:09:05] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 1017 (Carlo)
+[2026-05-28 08:09:05] [INFO] [main.py:59]: Construyendo mapeo maestro de empleados...
+[2026-05-28 08:09:05] [INFO] [extractor.py:97]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-28 08:09:06] [ERROR] [extractor.py:136]: Fallo la carga desde la base de datos de producción: connection to server at "192.168.0.67", port 5432 failed: FATAL:  no pg_hba.conf entry for host "192.168.101.128", user "trazalo_db", database "trazalo", SSL encryption
+connection to server at "192.168.0.67", port 5432 failed: FATAL:  no pg_hba.conf entry for host "192.168.101.128", user "trazalo_db", database "trazalo", no encryption
+. Se procederá con fallback local.
+[2026-05-28 08:09:06] [INFO] [extractor.py:139]: Construyendo base de datos de empleados localmente desde el Excel...
+[2026-05-28 08:09:06] [INFO] [extractor.py:171]: Base de datos de empleados local construida con 90 registros únicos.
+[2026-05-28 08:09:06] [INFO] [extractor.py:183]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-28 08:09:06] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-28 08:09:07] [INFO] [extractor.py:224]: ¿Planilla Excel contiene fechas específicas para horas extras/recargos?: True
+[2026-05-28 08:09:07] [INFO] [extractor.py:229]: Cargando archivo de novedades eventuales plano: plano_novedades_eventuales(2026-05).csv
+[2026-05-28 08:09:07] [INFO] [extractor.py:236]: Archivo de novedades eventuales cargado con 87 registros.
+[2026-05-28 08:09:07] [INFO] [extractor.py:250]: Total de registros CSV consolidados (Horas Extras + Eventuales): 482
+[2026-05-28 08:09:07] [INFO] [extractor.py:261]: Comparación global activa: no se realiza filtrado de equipo.
+[2026-05-28 08:09:07] [INFO] [extractor.py:277]: Mes de nómina principal detectado en CSV: 05/2026
+[2026-05-28 08:09:07] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-28 08:09:07] [INFO] [extractor.py:339]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 5: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43624192.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 6: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43453221.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 7: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 78303809.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 8: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1127349595.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 9: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43820718.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 10: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1004350184.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 12: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1152461871.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 13: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1152461871.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 14: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1152461871.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 15: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32181208.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 18: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1130667548.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 20: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1130667548.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 21: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1130667548.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 22: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1130667548.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 23: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 26607851.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 24: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 26607851.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 25: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1040320714.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 26: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1067966276.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 27: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 22698489.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 28: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43722738.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 29: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 42784427.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 31: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001509324.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 32: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001509324.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 33: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001509324.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 34: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43589326.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 36: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1036339178.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 38: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1128277744.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 40: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43605626.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 41: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43605626.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 42: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43605626.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 43: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43610844.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 44: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43610844.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 45: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43610844.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 46: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 35850805.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 47: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 35850805.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 48: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 35850805.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 52: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1152689314.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 54: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43116107.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 55: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1040797182.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 57: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1128427919.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 58: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1128427919.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 60: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 37273970.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 61: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1036631492.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 62: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1036631492.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 67: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 30317796.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 68: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 30317796.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 69: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 30317796.
+[2026-05-28 08:09:07] [WARNING] [extractor.py:484]: Fila 70: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32771515.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 71: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32771515.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 72: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32771515.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 73: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 21818542.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 74: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 21818542.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 75: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 21818542.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 76: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32144632.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 77: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32144632.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 78: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32144632.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 80: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1214720318.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 81: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1214720318.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 82: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1214720318.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 83: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1093755776.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 84: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1093755776.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 85: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1093755776.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 86: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001550263.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 87: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001550263.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 88: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001550263.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 89: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1066572835.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 90: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1066572835.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 91: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1066572835.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 93: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43542582.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 96: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 71339985.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 99: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1026150689.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 100: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1037575968.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 101: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 42787047.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 107: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 39313476.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 108: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1007550774.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 118: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43841595.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 119: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43971959.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 126: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 39317234.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:86]: No se pudo convertir el valor '26 horas+40 minutos' a float: could not convert string to float: '26 horas+40 minutos'. Se asume 0.0
+[2026-05-28 08:09:08] [INFO] [extractor.py:476]: Fila 140: Sin fecha en Excel ni coincidencia de novedad. Asociada a la fecha general 25/05/2026 del empleado en el CSV.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 141: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 44156020.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 142: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43117340.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 143: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43798158.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 146: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1037974621.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 147: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32351808.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 148: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001165277.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 149: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1036931803.
+[2026-05-28 08:09:08] [INFO] [extractor.py:464]: Fila 150: Sin fecha en Excel. Asociada a la fecha 25/04/2026 del CSV para ID 1017214205 y novedad 0.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 152: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 98595724.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 153: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1037651106.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 154: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1037651106.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 155: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1037651106.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 156: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1035419991.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 157: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1035419991.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 159: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1104414591.
+[2026-05-28 08:09:08] [WARNING] [extractor.py:484]: Fila 160: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1036623582.
+[2026-05-28 08:09:08] [INFO] [extractor.py:503]: Excel procesado y filtrado correctamente. Registros válidos cargados: 126
+[2026-05-28 08:09:08] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-28 08:09:08] [WARNING] [comparator.py:46]: Se detectaron 2 filas duplicadas en el reporte Excel.
+[2026-05-28 08:09:08] [WARNING] [comparator.py:55]: Se detectaron 107 filas duplicadas en el archivo CSV de nómina.
+[2026-05-28 08:09:08] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-28 08:09:08] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 10, Diferencias: 1, Faltantes en plano: 114, Sobrantes en plano: 413
+[2026-05-28 08:09:08] [INFO] [exporter.py:97]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-28 08:09:09] [INFO] [exporter.py:156]: Reporte Excel corporativo guardado exitosamente en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-28 08:09:09] [INFO] [main.py:89]: ======================================================================
+[2026-05-28 08:09:09] [INFO] [main.py:90]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-28 08:09:09] [INFO] [main.py:91]: ======================================================================
+[2026-05-28 08:09:09] [INFO] [main.py:127]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-28 08:09:09] [INFO] [main.py:128]: ======================================================================
+[2026-05-28 08:12:00] [INFO] [main.py:23]: ======================================================================
+[2026-05-28 08:12:00] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-28 08:12:00] [INFO] [main.py:25]: ======================================================================
+[2026-05-28 08:12:00] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05).csv
+[2026-05-28 08:12:00] [INFO] [main.py:27]: Reporte Operativo (Excel): infraestructura.xlsx
+[2026-05-28 08:12:00] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-28 08:12:00] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-28 08:12:00] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 1017 (Carlo)
+[2026-05-28 08:12:00] [INFO] [main.py:59]: Construyendo mapeo maestro de empleados...
+[2026-05-28 08:12:00] [INFO] [extractor.py:97]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-28 08:12:00] [ERROR] [extractor.py:136]: Fallo la carga desde la base de datos de producción: connection to server at "192.168.0.67", port 5432 failed: FATAL:  no pg_hba.conf entry for host "192.168.101.128", user "trazalo_db", database "trazalo", SSL encryption
+connection to server at "192.168.0.67", port 5432 failed: FATAL:  no pg_hba.conf entry for host "192.168.101.128", user "trazalo_db", database "trazalo", no encryption
+. Se procederá con fallback local.
+[2026-05-28 08:12:00] [INFO] [extractor.py:139]: Construyendo base de datos de empleados localmente desde el Excel...
+[2026-05-28 08:12:00] [INFO] [extractor.py:171]: Base de datos de empleados local construida con 90 registros únicos.
+[2026-05-28 08:12:00] [INFO] [extractor.py:183]: Cargando archivo plano CSV: plano_nomina(2026-05).csv
+[2026-05-28 08:12:00] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-28 08:12:00] [INFO] [extractor.py:224]: ¿Planilla Excel contiene fechas específicas para horas extras/recargos?: True
+[2026-05-28 08:12:00] [INFO] [extractor.py:229]: Cargando archivo de novedades eventuales plano: plano_novedades_eventuales(2026-05).csv
+[2026-05-28 08:12:00] [INFO] [extractor.py:236]: Archivo de novedades eventuales cargado con 87 registros.
+[2026-05-28 08:12:00] [INFO] [extractor.py:250]: Total de registros CSV consolidados (Horas Extras + Eventuales): 481
+[2026-05-28 08:12:00] [INFO] [extractor.py:261]: Comparación global activa: no se realiza filtrado de equipo.
+[2026-05-28 08:12:00] [INFO] [extractor.py:277]: Mes de nómina principal detectado en CSV: 05/2026
+[2026-05-28 08:12:00] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-28 08:12:00] [INFO] [extractor.py:339]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 5: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43624192.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 6: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43453221.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 7: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 78303809.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 8: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1127349595.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 9: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43820718.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 10: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1004350184.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 12: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1152461871.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 13: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1152461871.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 14: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1152461871.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 15: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32181208.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 18: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1130667548.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 20: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1130667548.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 21: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1130667548.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 22: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1130667548.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 23: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 26607851.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 24: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 26607851.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 25: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1040320714.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 26: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1067966276.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 27: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 22698489.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 28: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43722738.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 29: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 42784427.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 31: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001509324.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 32: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001509324.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 33: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001509324.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 34: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43589326.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 36: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1036339178.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 38: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1128277744.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 40: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43605626.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 41: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43605626.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 42: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43605626.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 43: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43610844.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 44: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43610844.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 45: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43610844.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 46: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 35850805.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 47: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 35850805.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 48: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 35850805.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 52: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1152689314.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 54: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43116107.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 55: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1040797182.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 57: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1128427919.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 58: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1128427919.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 60: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 37273970.
+[2026-05-28 08:12:00] [WARNING] [extractor.py:484]: Fila 61: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1036631492.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 62: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1036631492.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 67: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 30317796.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 68: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 30317796.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 69: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 30317796.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 70: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32771515.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 71: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32771515.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 72: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32771515.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 73: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 21818542.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 74: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 21818542.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 75: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 21818542.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 76: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32144632.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 77: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32144632.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 78: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32144632.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 80: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1214720318.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 81: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1214720318.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 82: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1214720318.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 83: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1093755776.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 84: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1093755776.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 85: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1093755776.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 86: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001550263.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 87: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001550263.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 88: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001550263.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 89: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1066572835.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 90: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1066572835.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 91: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1066572835.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 93: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43542582.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 96: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 71339985.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 99: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1026150689.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 100: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1037575968.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 101: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 42787047.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 107: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 39313476.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 108: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1007550774.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 118: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43841595.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 119: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43971959.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 126: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 39317234.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:86]: No se pudo convertir el valor '26 horas+40 minutos' a float: could not convert string to float: '26 horas+40 minutos'. Se asume 0.0
+[2026-05-28 08:12:01] [INFO] [extractor.py:476]: Fila 140: Sin fecha en Excel ni coincidencia de novedad. Asociada a la fecha general 25/05/2026 del empleado en el CSV.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 141: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 44156020.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 142: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43117340.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 143: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43798158.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 146: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1037974621.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 147: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32351808.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 148: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001165277.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 149: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1036931803.
+[2026-05-28 08:12:01] [INFO] [extractor.py:464]: Fila 150: Sin fecha en Excel. Asociada a la fecha 25/04/2026 del CSV para ID 1017214205 y novedad 0.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 152: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 98595724.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 153: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1037651106.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 154: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1037651106.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 155: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1037651106.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 156: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1035419991.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 157: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1035419991.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 159: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1104414591.
+[2026-05-28 08:12:01] [WARNING] [extractor.py:484]: Fila 160: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1036623582.
+[2026-05-28 08:12:01] [INFO] [extractor.py:503]: Excel procesado y filtrado correctamente. Registros válidos cargados: 126
+[2026-05-28 08:12:01] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-28 08:12:01] [WARNING] [comparator.py:46]: Se detectaron 2 filas duplicadas en el reporte Excel.
+[2026-05-28 08:12:01] [WARNING] [comparator.py:55]: Se detectaron 107 filas duplicadas en el archivo CSV de nómina.
+[2026-05-28 08:12:01] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-28 08:12:01] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 10, Diferencias: 1, Faltantes en plano: 114, Sobrantes en plano: 413
+[2026-05-28 08:12:01] [INFO] [exporter.py:97]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-28 08:12:01] [INFO] [exporter.py:156]: Reporte Excel corporativo guardado exitosamente en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-28 08:12:01] [INFO] [main.py:89]: ======================================================================
+[2026-05-28 08:12:01] [INFO] [main.py:90]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-28 08:12:01] [INFO] [main.py:91]: ======================================================================
+[2026-05-28 08:12:01] [INFO] [main.py:127]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-28 08:12:01] [INFO] [main.py:128]: ======================================================================
+[2026-05-28 08:13:26] [INFO] [main.py:23]: ======================================================================
+[2026-05-28 08:13:26] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-28 08:13:26] [INFO] [main.py:25]: ======================================================================
+[2026-05-28 08:13:26] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05).csv
+[2026-05-28 08:13:26] [INFO] [main.py:27]: Reporte Operativo (Excel): infraestructura.xlsx
+[2026-05-28 08:13:26] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-28 08:13:26] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-28 08:13:26] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 1017 (Carlo)
+[2026-05-28 08:13:26] [INFO] [main.py:59]: Construyendo mapeo maestro de empleados...
+[2026-05-28 08:13:26] [INFO] [extractor.py:97]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-28 08:13:26] [ERROR] [extractor.py:136]: Fallo la carga desde la base de datos de producción: connection to server at "192.168.0.67", port 5432 failed: FATAL:  no pg_hba.conf entry for host "192.168.101.130", user "trazalo_db", database "trazalo", SSL encryption
+connection to server at "192.168.0.67", port 5432 failed: FATAL:  no pg_hba.conf entry for host "192.168.101.130", user "trazalo_db", database "trazalo", no encryption
+. Se procederá con fallback local.
+[2026-05-28 08:13:26] [INFO] [extractor.py:139]: Construyendo base de datos de empleados localmente desde el Excel...
+[2026-05-28 08:13:26] [INFO] [extractor.py:171]: Base de datos de empleados local construida con 90 registros únicos.
+[2026-05-28 08:13:26] [INFO] [extractor.py:183]: Cargando archivo plano CSV: plano_nomina(2026-05).csv
+[2026-05-28 08:13:26] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-28 08:13:26] [INFO] [extractor.py:224]: ¿Planilla Excel contiene fechas específicas para horas extras/recargos?: True
+[2026-05-28 08:13:26] [INFO] [extractor.py:229]: Cargando archivo de novedades eventuales plano: plano_novedades_eventuales(2026-05).csv
+[2026-05-28 08:13:26] [INFO] [extractor.py:236]: Archivo de novedades eventuales cargado con 87 registros.
+[2026-05-28 08:13:26] [INFO] [extractor.py:250]: Total de registros CSV consolidados (Horas Extras + Eventuales): 481
+[2026-05-28 08:13:26] [INFO] [extractor.py:261]: Comparación global activa: no se realiza filtrado de equipo.
+[2026-05-28 08:13:26] [INFO] [extractor.py:277]: Mes de nómina principal detectado en CSV: 05/2026
+[2026-05-28 08:13:26] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-28 08:13:26] [INFO] [extractor.py:339]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 5: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43624192.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 6: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43453221.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 7: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 78303809.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 8: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1127349595.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 9: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43820718.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 10: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1004350184.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 12: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1152461871.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 13: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1152461871.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 14: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1152461871.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 15: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32181208.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 18: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1130667548.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 20: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1130667548.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 21: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1130667548.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 22: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1130667548.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 23: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 26607851.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 24: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 26607851.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 25: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1040320714.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 26: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1067966276.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 27: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 22698489.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 28: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43722738.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 29: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 42784427.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 31: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001509324.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 32: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001509324.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 33: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001509324.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 34: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43589326.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 36: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1036339178.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 38: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1128277744.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 40: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43605626.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 41: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43605626.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 42: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43605626.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 43: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43610844.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 44: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43610844.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 45: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43610844.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 46: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 35850805.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 47: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 35850805.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 48: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 35850805.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 52: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1152689314.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 54: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43116107.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 55: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1040797182.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 57: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1128427919.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 58: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1128427919.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 60: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 37273970.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 61: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1036631492.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 62: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1036631492.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 67: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 30317796.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 68: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 30317796.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 69: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 30317796.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 70: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32771515.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 71: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32771515.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 72: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32771515.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 73: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 21818542.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 74: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 21818542.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 75: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 21818542.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 76: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32144632.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 77: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32144632.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 78: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32144632.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 80: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1214720318.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 81: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1214720318.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 82: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1214720318.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 83: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1093755776.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 84: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1093755776.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 85: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1093755776.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 86: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001550263.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 87: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001550263.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 88: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001550263.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 89: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1066572835.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 90: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1066572835.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 91: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1066572835.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 93: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43542582.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 96: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 71339985.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 99: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1026150689.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 100: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1037575968.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 101: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 42787047.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 107: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 39313476.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 108: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1007550774.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 118: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43841595.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 119: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43971959.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 126: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 39317234.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:86]: No se pudo convertir el valor '26 horas+40 minutos' a float: could not convert string to float: '26 horas+40 minutos'. Se asume 0.0
+[2026-05-28 08:13:26] [INFO] [extractor.py:476]: Fila 140: Sin fecha en Excel ni coincidencia de novedad. Asociada a la fecha general 25/05/2026 del empleado en el CSV.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 141: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 44156020.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 142: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43117340.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 143: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43798158.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 146: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1037974621.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 147: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32351808.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 148: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001165277.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 149: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1036931803.
+[2026-05-28 08:13:26] [INFO] [extractor.py:464]: Fila 150: Sin fecha en Excel. Asociada a la fecha 25/04/2026 del CSV para ID 1017214205 y novedad 0.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 152: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 98595724.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 153: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1037651106.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 154: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1037651106.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 155: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1037651106.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 156: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1035419991.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 157: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1035419991.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 159: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1104414591.
+[2026-05-28 08:13:26] [WARNING] [extractor.py:484]: Fila 160: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1036623582.
+[2026-05-28 08:13:26] [INFO] [extractor.py:503]: Excel procesado y filtrado correctamente. Registros válidos cargados: 126
+[2026-05-28 08:13:26] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-28 08:13:26] [WARNING] [comparator.py:46]: Se detectaron 2 filas duplicadas en el reporte Excel.
+[2026-05-28 08:13:26] [WARNING] [comparator.py:55]: Se detectaron 107 filas duplicadas en el archivo CSV de nómina.
+[2026-05-28 08:13:26] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-28 08:13:26] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 10, Diferencias: 1, Faltantes en plano: 114, Sobrantes en plano: 413
+[2026-05-28 08:13:26] [INFO] [exporter.py:97]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-28 08:13:27] [INFO] [exporter.py:156]: Reporte Excel corporativo guardado exitosamente en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-28 08:13:27] [INFO] [main.py:89]: ======================================================================
+[2026-05-28 08:13:27] [INFO] [main.py:90]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-28 08:13:27] [INFO] [main.py:91]: ======================================================================
+[2026-05-28 08:13:27] [INFO] [main.py:127]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-28 08:13:27] [INFO] [main.py:128]: ======================================================================
+[2026-05-28 08:16:43] [INFO] [main.py:23]: ======================================================================
+[2026-05-28 08:16:43] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-28 08:16:43] [INFO] [main.py:25]: ======================================================================
+[2026-05-28 08:16:43] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05).csv
+[2026-05-28 08:16:43] [INFO] [main.py:27]: Reporte Operativo (Excel): infraestructura.xlsx
+[2026-05-28 08:16:43] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-28 08:16:43] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-28 08:16:43] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 1017 (Carlo)
+[2026-05-28 08:16:43] [INFO] [main.py:59]: Construyendo mapeo maestro de empleados...
+[2026-05-28 08:16:43] [INFO] [extractor.py:97]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-28 08:16:43] [ERROR] [extractor.py:136]: Fallo la carga desde la base de datos de producción: connection to server at "192.168.0.67", port 5432 failed: FATAL:  no pg_hba.conf entry for host "192.168.101.130", user "trazalo_db", database "trazalo", SSL encryption
+connection to server at "192.168.0.67", port 5432 failed: FATAL:  no pg_hba.conf entry for host "192.168.101.130", user "trazalo_db", database "trazalo", no encryption
+. Se procederá con fallback local.
+[2026-05-28 08:16:43] [INFO] [extractor.py:139]: Construyendo base de datos de empleados localmente desde el Excel...
+[2026-05-28 08:16:43] [INFO] [extractor.py:171]: Base de datos de empleados local construida con 90 registros únicos.
+[2026-05-28 08:16:43] [INFO] [extractor.py:183]: Cargando archivo plano CSV: plano_nomina(2026-05).csv
+[2026-05-28 08:16:43] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-28 08:16:44] [INFO] [extractor.py:224]: ¿Planilla Excel contiene fechas específicas para horas extras/recargos?: True
+[2026-05-28 08:16:44] [INFO] [extractor.py:229]: Cargando archivo de novedades eventuales plano: plano_novedades_eventuales(2026-05).csv
+[2026-05-28 08:16:44] [INFO] [extractor.py:236]: Archivo de novedades eventuales cargado con 87 registros.
+[2026-05-28 08:16:44] [INFO] [extractor.py:250]: Total de registros CSV consolidados (Horas Extras + Eventuales): 481
+[2026-05-28 08:16:44] [INFO] [extractor.py:261]: Comparación global activa: no se realiza filtrado de equipo.
+[2026-05-28 08:16:44] [INFO] [extractor.py:277]: Mes de nómina principal detectado en CSV: 05/2026
+[2026-05-28 08:16:44] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-28 08:16:44] [INFO] [extractor.py:339]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 5: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43624192.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 6: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43453221.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 7: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 78303809.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 8: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1127349595.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 9: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43820718.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 10: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1004350184.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 12: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1152461871.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 13: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1152461871.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 14: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1152461871.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 15: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32181208.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 18: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1130667548.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 20: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1130667548.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 21: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1130667548.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 22: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1130667548.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 23: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 26607851.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 24: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 26607851.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 25: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1040320714.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 26: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1067966276.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 27: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 22698489.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 28: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43722738.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 29: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 42784427.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 31: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001509324.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 32: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001509324.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 33: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001509324.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 34: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43589326.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 36: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1036339178.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 38: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1128277744.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 40: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43605626.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 41: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43605626.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 42: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43605626.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 43: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43610844.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 44: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43610844.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 45: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43610844.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 46: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 35850805.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 47: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 35850805.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 48: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 35850805.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 52: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1152689314.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 54: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43116107.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 55: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1040797182.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 57: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1128427919.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 58: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1128427919.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 60: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 37273970.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 61: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1036631492.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 62: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1036631492.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 67: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 30317796.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 68: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 30317796.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 69: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 30317796.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 70: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32771515.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 71: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32771515.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 72: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32771515.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 73: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 21818542.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 74: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 21818542.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 75: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 21818542.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 76: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32144632.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 77: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32144632.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 78: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32144632.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 80: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1214720318.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 81: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1214720318.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 82: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1214720318.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 83: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1093755776.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 84: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1093755776.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 85: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1093755776.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 86: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001550263.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 87: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001550263.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 88: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001550263.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 89: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1066572835.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 90: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1066572835.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 91: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1066572835.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 93: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43542582.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 96: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 71339985.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 99: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1026150689.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 100: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1037575968.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 101: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 42787047.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 107: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 39313476.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 108: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1007550774.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 118: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43841595.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 119: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43971959.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 126: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 39317234.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:86]: No se pudo convertir el valor '26 horas+40 minutos' a float: could not convert string to float: '26 horas+40 minutos'. Se asume 0.0
+[2026-05-28 08:16:44] [INFO] [extractor.py:476]: Fila 140: Sin fecha en Excel ni coincidencia de novedad. Asociada a la fecha general 25/05/2026 del empleado en el CSV.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 141: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 44156020.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 142: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43117340.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 143: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43798158.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 146: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1037974621.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 147: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32351808.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 148: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001165277.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 149: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1036931803.
+[2026-05-28 08:16:44] [INFO] [extractor.py:464]: Fila 150: Sin fecha en Excel. Asociada a la fecha 25/04/2026 del CSV para ID 1017214205 y novedad 0.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 152: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 98595724.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 153: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1037651106.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 154: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1037651106.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 155: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1037651106.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 156: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1035419991.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 157: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1035419991.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 159: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1104414591.
+[2026-05-28 08:16:44] [WARNING] [extractor.py:484]: Fila 160: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1036623582.
+[2026-05-28 08:16:44] [INFO] [extractor.py:503]: Excel procesado y filtrado correctamente. Registros válidos cargados: 126
+[2026-05-28 08:16:44] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-28 08:16:44] [WARNING] [comparator.py:46]: Se detectaron 2 filas duplicadas en el reporte Excel.
+[2026-05-28 08:16:44] [WARNING] [comparator.py:55]: Se detectaron 107 filas duplicadas en el archivo CSV de nómina.
+[2026-05-28 08:16:44] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-28 08:16:44] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 10, Diferencias: 1, Faltantes en plano: 114, Sobrantes en plano: 413
+[2026-05-28 08:16:44] [INFO] [exporter.py:97]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-28 08:16:44] [INFO] [exporter.py:156]: Reporte Excel corporativo guardado exitosamente en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-28 08:16:44] [INFO] [main.py:89]: ======================================================================
+[2026-05-28 08:16:44] [INFO] [main.py:90]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-28 08:16:44] [INFO] [main.py:91]: ======================================================================
+[2026-05-28 08:16:44] [INFO] [main.py:127]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-28 08:16:44] [INFO] [main.py:128]: ======================================================================
+[2026-05-28 08:17:52] [INFO] [main.py:23]: ======================================================================
+[2026-05-28 08:17:52] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-28 08:17:52] [INFO] [main.py:25]: ======================================================================
+[2026-05-28 08:17:52] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05).csv
+[2026-05-28 08:17:52] [INFO] [main.py:27]: Reporte Operativo (Excel): infraestructura.xlsx
+[2026-05-28 08:17:52] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-28 08:17:52] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-28 08:17:52] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 1017 (Carlo)
+[2026-05-28 08:17:52] [INFO] [main.py:59]: Construyendo mapeo maestro de empleados...
+[2026-05-28 08:17:52] [INFO] [extractor.py:97]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-28 08:17:54] [ERROR] [extractor.py:136]: Fallo la carga desde la base de datos de producción: connection to server at "192.168.0.67", port 5432 failed: FATAL:  no pg_hba.conf entry for host "192.168.101.130", user "trazalo_db", database "trazalo", SSL encryption
+connection to server at "192.168.0.67", port 5432 failed: FATAL:  no pg_hba.conf entry for host "192.168.101.130", user "trazalo_db", database "trazalo", no encryption
+. Se procederá con fallback local.
+[2026-05-28 08:17:54] [INFO] [extractor.py:139]: Construyendo base de datos de empleados localmente desde el Excel...
+[2026-05-28 08:17:54] [INFO] [extractor.py:171]: Base de datos de empleados local construida con 90 registros únicos.
+[2026-05-28 08:17:54] [INFO] [extractor.py:183]: Cargando archivo plano CSV: plano_nomina(2026-05).csv
+[2026-05-28 08:17:54] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-28 08:17:54] [INFO] [extractor.py:224]: ¿Planilla Excel contiene fechas específicas para horas extras/recargos?: True
+[2026-05-28 08:17:54] [INFO] [extractor.py:229]: Cargando archivo de novedades eventuales plano: plano_novedades_eventuales(2026-05).csv
+[2026-05-28 08:17:54] [INFO] [extractor.py:236]: Archivo de novedades eventuales cargado con 87 registros.
+[2026-05-28 08:17:54] [INFO] [extractor.py:250]: Total de registros CSV consolidados (Horas Extras + Eventuales): 481
+[2026-05-28 08:17:54] [INFO] [extractor.py:261]: Comparación global activa: no se realiza filtrado de equipo.
+[2026-05-28 08:17:54] [INFO] [extractor.py:277]: Mes de nómina principal detectado en CSV: 05/2026
+[2026-05-28 08:17:54] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-28 08:17:54] [INFO] [extractor.py:339]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 5: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43624192.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 6: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43453221.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 7: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 78303809.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 8: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1127349595.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 9: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43820718.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 10: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1004350184.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 12: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1152461871.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 13: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1152461871.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 14: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1152461871.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 15: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32181208.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 18: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1130667548.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 20: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1130667548.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 21: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1130667548.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 22: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1130667548.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 23: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 26607851.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 24: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 26607851.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 25: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1040320714.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 26: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1067966276.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 27: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 22698489.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 28: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43722738.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 29: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 42784427.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 31: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001509324.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 32: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001509324.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 33: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001509324.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 34: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43589326.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 36: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1036339178.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 38: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1128277744.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 40: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43605626.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 41: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43605626.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 42: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43605626.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 43: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43610844.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 44: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43610844.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 45: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43610844.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 46: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 35850805.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 47: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 35850805.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 48: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 35850805.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 52: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1152689314.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 54: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43116107.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 55: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1040797182.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 57: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1128427919.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 58: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1128427919.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 60: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 37273970.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 61: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1036631492.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 62: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1036631492.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 67: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 30317796.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 68: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 30317796.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 69: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 30317796.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 70: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32771515.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 71: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32771515.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 72: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32771515.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 73: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 21818542.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 74: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 21818542.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 75: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 21818542.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 76: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32144632.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 77: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32144632.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 78: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32144632.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 80: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1214720318.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 81: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1214720318.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 82: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1214720318.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 83: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1093755776.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 84: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1093755776.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 85: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1093755776.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 86: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001550263.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 87: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001550263.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 88: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001550263.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 89: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1066572835.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 90: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1066572835.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 91: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1066572835.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 93: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43542582.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 96: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 71339985.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 99: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1026150689.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 100: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1037575968.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 101: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 42787047.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 107: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 39313476.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 108: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1007550774.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 118: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43841595.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 119: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43971959.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 126: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 39317234.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:86]: No se pudo convertir el valor '26 horas+40 minutos' a float: could not convert string to float: '26 horas+40 minutos'. Se asume 0.0
+[2026-05-28 08:17:54] [INFO] [extractor.py:476]: Fila 140: Sin fecha en Excel ni coincidencia de novedad. Asociada a la fecha general 25/05/2026 del empleado en el CSV.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 141: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 44156020.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 142: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43117340.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 143: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43798158.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 146: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1037974621.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 147: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32351808.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 148: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001165277.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 149: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1036931803.
+[2026-05-28 08:17:54] [INFO] [extractor.py:464]: Fila 150: Sin fecha en Excel. Asociada a la fecha 25/04/2026 del CSV para ID 1017214205 y novedad 0.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 152: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 98595724.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 153: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1037651106.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 154: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1037651106.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 155: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1037651106.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 156: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1035419991.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 157: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1035419991.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 159: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1104414591.
+[2026-05-28 08:17:54] [WARNING] [extractor.py:484]: Fila 160: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1036623582.
+[2026-05-28 08:17:54] [INFO] [extractor.py:503]: Excel procesado y filtrado correctamente. Registros válidos cargados: 126
+[2026-05-28 08:17:54] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-28 08:17:54] [WARNING] [comparator.py:46]: Se detectaron 2 filas duplicadas en el reporte Excel.
+[2026-05-28 08:17:54] [WARNING] [comparator.py:55]: Se detectaron 107 filas duplicadas en el archivo CSV de nómina.
+[2026-05-28 08:17:54] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-28 08:17:54] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 10, Diferencias: 1, Faltantes en plano: 114, Sobrantes en plano: 413
+[2026-05-28 08:17:54] [INFO] [exporter.py:97]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-28 08:17:55] [INFO] [exporter.py:156]: Reporte Excel corporativo guardado exitosamente en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-28 08:17:55] [INFO] [main.py:89]: ======================================================================
+[2026-05-28 08:17:55] [INFO] [main.py:90]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-28 08:17:55] [INFO] [main.py:91]: ======================================================================
+[2026-05-28 08:17:55] [INFO] [main.py:127]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-28 08:17:55] [INFO] [main.py:128]: ======================================================================
+[2026-05-28 08:18:58] [INFO] [main.py:23]: ======================================================================
+[2026-05-28 08:18:58] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-28 08:18:58] [INFO] [main.py:25]: ======================================================================
+[2026-05-28 08:18:58] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-28 08:18:58] [INFO] [main.py:27]: Reporte Operativo (Excel): infraestructura.xlsx
+[2026-05-28 08:18:58] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-28 08:18:58] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-28 08:18:58] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 1017 (Carlo)
+[2026-05-28 08:18:58] [INFO] [main.py:59]: Construyendo mapeo maestro de empleados...
+[2026-05-28 08:18:58] [INFO] [extractor.py:97]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-28 08:18:59] [ERROR] [extractor.py:136]: Fallo la carga desde la base de datos de producción: connection to server at "192.168.0.67", port 5432 failed: FATAL:  no pg_hba.conf entry for host "192.168.101.130", user "trazalo_db", database "trazalo", SSL encryption
+connection to server at "192.168.0.67", port 5432 failed: FATAL:  no pg_hba.conf entry for host "192.168.101.130", user "trazalo_db", database "trazalo", no encryption
+. Se procederá con fallback local.
+[2026-05-28 08:18:59] [INFO] [extractor.py:139]: Construyendo base de datos de empleados localmente desde el Excel...
+[2026-05-28 08:18:59] [INFO] [extractor.py:171]: Base de datos de empleados local construida con 90 registros únicos.
+[2026-05-28 08:18:59] [INFO] [extractor.py:183]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-28 08:18:59] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-28 08:18:59] [INFO] [extractor.py:224]: ¿Planilla Excel contiene fechas específicas para horas extras/recargos?: True
+[2026-05-28 08:18:59] [INFO] [extractor.py:229]: Cargando archivo de novedades eventuales plano: plano_novedades_eventuales(2026-05).csv
+[2026-05-28 08:18:59] [INFO] [extractor.py:236]: Archivo de novedades eventuales cargado con 87 registros.
+[2026-05-28 08:18:59] [INFO] [extractor.py:250]: Total de registros CSV consolidados (Horas Extras + Eventuales): 482
+[2026-05-28 08:18:59] [INFO] [extractor.py:261]: Comparación global activa: no se realiza filtrado de equipo.
+[2026-05-28 08:18:59] [INFO] [extractor.py:277]: Mes de nómina principal detectado en CSV: 05/2026
+[2026-05-28 08:18:59] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-28 08:18:59] [INFO] [extractor.py:339]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 5: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43624192.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 6: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43453221.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 7: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 78303809.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 8: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1127349595.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 9: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43820718.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 10: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1004350184.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 12: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1152461871.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 13: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1152461871.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 14: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1152461871.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 15: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32181208.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 18: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1130667548.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 20: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1130667548.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 21: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1130667548.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 22: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1130667548.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 23: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 26607851.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 24: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 26607851.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 25: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1040320714.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 26: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1067966276.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 27: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 22698489.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 28: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43722738.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 29: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 42784427.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 31: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001509324.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 32: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001509324.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 33: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001509324.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 34: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43589326.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 36: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1036339178.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 38: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1128277744.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 40: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43605626.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 41: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43605626.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 42: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43605626.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 43: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43610844.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 44: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43610844.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 45: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43610844.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 46: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 35850805.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 47: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 35850805.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 48: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 35850805.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 52: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1152689314.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 54: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43116107.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 55: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1040797182.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 57: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1128427919.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 58: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1128427919.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 60: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 37273970.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 61: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1036631492.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 62: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1036631492.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 67: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 30317796.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 68: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 30317796.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 69: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 30317796.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 70: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32771515.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 71: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32771515.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 72: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32771515.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 73: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 21818542.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 74: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 21818542.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 75: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 21818542.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 76: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32144632.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 77: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32144632.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 78: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32144632.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 80: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1214720318.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 81: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1214720318.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 82: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1214720318.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 83: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1093755776.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 84: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1093755776.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 85: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1093755776.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 86: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001550263.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 87: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001550263.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 88: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001550263.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 89: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1066572835.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 90: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1066572835.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 91: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1066572835.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 93: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43542582.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 96: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 71339985.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 99: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1026150689.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 100: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1037575968.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 101: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 42787047.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 107: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 39313476.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 108: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1007550774.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 118: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43841595.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 119: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43971959.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 126: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 39317234.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:86]: No se pudo convertir el valor '26 horas+40 minutos' a float: could not convert string to float: '26 horas+40 minutos'. Se asume 0.0
+[2026-05-28 08:18:59] [INFO] [extractor.py:476]: Fila 140: Sin fecha en Excel ni coincidencia de novedad. Asociada a la fecha general 25/05/2026 del empleado en el CSV.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 141: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 44156020.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 142: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43117340.
+[2026-05-28 08:18:59] [WARNING] [extractor.py:484]: Fila 143: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 43798158.
+[2026-05-28 08:19:00] [WARNING] [extractor.py:484]: Fila 146: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1037974621.
+[2026-05-28 08:19:00] [WARNING] [extractor.py:484]: Fila 147: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 32351808.
+[2026-05-28 08:19:00] [WARNING] [extractor.py:484]: Fila 148: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1001165277.
+[2026-05-28 08:19:00] [WARNING] [extractor.py:484]: Fila 149: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1036931803.
+[2026-05-28 08:19:00] [INFO] [extractor.py:464]: Fila 150: Sin fecha en Excel. Asociada a la fecha 25/04/2026 del CSV para ID 1017214205 y novedad 0.
+[2026-05-28 08:19:00] [WARNING] [extractor.py:484]: Fila 152: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 98595724.
+[2026-05-28 08:19:00] [WARNING] [extractor.py:484]: Fila 153: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1037651106.
+[2026-05-28 08:19:00] [WARNING] [extractor.py:484]: Fila 154: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1037651106.
+[2026-05-28 08:19:00] [WARNING] [extractor.py:484]: Fila 155: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1037651106.
+[2026-05-28 08:19:00] [WARNING] [extractor.py:484]: Fila 156: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1035419991.
+[2026-05-28 08:19:00] [WARNING] [extractor.py:484]: Fila 157: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1035419991.
+[2026-05-28 08:19:00] [WARNING] [extractor.py:484]: Fila 159: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1104414591.
+[2026-05-28 08:19:00] [WARNING] [extractor.py:484]: Fila 160: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1036623582.
+[2026-05-28 08:19:00] [INFO] [extractor.py:503]: Excel procesado y filtrado correctamente. Registros válidos cargados: 126
+[2026-05-28 08:19:00] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-28 08:19:00] [WARNING] [comparator.py:46]: Se detectaron 2 filas duplicadas en el reporte Excel.
+[2026-05-28 08:19:00] [WARNING] [comparator.py:55]: Se detectaron 107 filas duplicadas en el archivo CSV de nómina.
+[2026-05-28 08:19:00] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-28 08:19:00] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 10, Diferencias: 1, Faltantes en plano: 114, Sobrantes en plano: 413
+[2026-05-28 08:19:00] [INFO] [exporter.py:97]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-28 08:19:00] [INFO] [exporter.py:156]: Reporte Excel corporativo guardado exitosamente en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-28 08:19:00] [INFO] [main.py:89]: ======================================================================
+[2026-05-28 08:19:00] [INFO] [main.py:90]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-28 08:19:00] [INFO] [main.py:91]: ======================================================================
+[2026-05-28 08:19:00] [INFO] [main.py:127]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-28 08:19:00] [INFO] [main.py:128]: ======================================================================
+[2026-05-28 08:28:03] [INFO] [main.py:23]: ======================================================================
+[2026-05-28 08:28:03] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-28 08:28:03] [INFO] [main.py:25]: ======================================================================
+[2026-05-28 08:28:03] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-28 08:28:03] [INFO] [main.py:27]: Reporte Operativo (Excel): CARLO_FO-GH-005 REPORTE DE NOVEDADES NÓMINA mayo 2026 (1).xlsx
+[2026-05-28 08:28:03] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-28 08:28:03] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-28 08:28:03] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 10 (Carlo)
+[2026-05-28 08:28:03] [INFO] [main.py:59]: Construyendo mapeo maestro de empleados...
+[2026-05-28 08:28:03] [INFO] [extractor.py:97]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-28 08:28:03] [ERROR] [extractor.py:136]: Fallo la carga desde la base de datos de producción: connection to server at "192.168.0.67", port 5432 failed: FATAL:  no pg_hba.conf entry for host "192.168.101.130", user "trazalo_db", database "trazalo", SSL encryption
+connection to server at "192.168.0.67", port 5432 failed: FATAL:  no pg_hba.conf entry for host "192.168.101.130", user "trazalo_db", database "trazalo", no encryption
+. Se procederá con fallback local.
+[2026-05-28 08:28:03] [INFO] [extractor.py:139]: Construyendo base de datos de empleados localmente desde el Excel...
+[2026-05-28 08:28:04] [INFO] [extractor.py:171]: Base de datos de empleados local construida con 41 registros únicos.
+[2026-05-28 08:28:04] [INFO] [extractor.py:183]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-28 08:28:04] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-28 08:28:04] [INFO] [extractor.py:224]: ¿Planilla Excel contiene fechas específicas para horas extras/recargos?: True
+[2026-05-28 08:28:04] [INFO] [extractor.py:229]: Cargando archivo de novedades eventuales plano: plano_novedades_eventuales(2026-05).csv
+[2026-05-28 08:28:04] [INFO] [extractor.py:236]: Archivo de novedades eventuales cargado con 87 registros.
+[2026-05-28 08:28:04] [INFO] [extractor.py:250]: Total de registros CSV consolidados (Horas Extras + Eventuales): 482
+[2026-05-28 08:28:04] [INFO] [extractor.py:261]: Comparación global activa: no se realiza filtrado de equipo.
+[2026-05-28 08:28:04] [INFO] [extractor.py:277]: Mes de nómina principal detectado en CSV: 05/2026
+[2026-05-28 08:28:05] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-28 08:28:05] [INFO] [extractor.py:339]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-28 08:28:05] [INFO] [extractor.py:503]: Excel procesado y filtrado correctamente. Registros válidos cargados: 275
+[2026-05-28 08:28:05] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-28 08:28:05] [WARNING] [comparator.py:46]: Se detectaron 91 filas duplicadas en el reporte Excel.
+[2026-05-28 08:28:05] [WARNING] [comparator.py:55]: Se detectaron 107 filas duplicadas en el archivo CSV de nómina.
+[2026-05-28 08:28:05] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-28 08:28:05] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 224, Diferencias: 1, Faltantes en plano: 2, Sobrantes en plano: 199
+[2026-05-28 08:28:05] [INFO] [exporter.py:97]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-28 08:28:08] [INFO] [exporter.py:156]: Reporte Excel corporativo guardado exitosamente en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-28 08:28:08] [INFO] [main.py:89]: ======================================================================
+[2026-05-28 08:28:08] [INFO] [main.py:90]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-28 08:28:08] [INFO] [main.py:91]: ======================================================================
+[2026-05-28 08:28:08] [INFO] [main.py:127]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-28 08:28:08] [INFO] [main.py:128]: ======================================================================
+[2026-05-28 10:54:10] [INFO] [main.py:23]: ======================================================================
+[2026-05-28 10:54:10] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-28 10:54:10] [INFO] [main.py:25]: ======================================================================
+[2026-05-28 10:54:10] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-28 10:54:10] [INFO] [main.py:27]: Reporte Operativo (Excel): SEGURIDAD_FISICA.xlsx
+[2026-05-28 10:54:10] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-28 10:54:10] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-28 10:54:10] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 274 (Carlo)
+[2026-05-28 10:54:10] [INFO] [main.py:59]: Construyendo mapeo maestro de empleados...
+[2026-05-28 10:54:10] [INFO] [extractor.py:97]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-28 10:54:10] [ERROR] [extractor.py:136]: Fallo la carga desde la base de datos de producción: connection to server at "192.168.0.67", port 5432 failed: FATAL:  no pg_hba.conf entry for host "192.168.101.130", user "trazalo_db", database "trazalo", SSL encryption
+connection to server at "192.168.0.67", port 5432 failed: FATAL:  no pg_hba.conf entry for host "192.168.101.130", user "trazalo_db", database "trazalo", no encryption
+. Se procederá con fallback local.
+[2026-05-28 10:54:10] [INFO] [extractor.py:139]: Construyendo base de datos de empleados localmente desde el Excel...
+[2026-05-28 10:54:10] [INFO] [extractor.py:171]: Base de datos de empleados local construida con 47 registros únicos.
+[2026-05-28 10:54:10] [INFO] [extractor.py:183]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-28 10:54:10] [ERROR] [extractor.py:330]: Error detectando hoja de novedades automáticamente: Worksheet named 'TH' not found
+Traceback (most recent call last):
+  File "C:\Users\samuel.pineda\Documents\docs\script validacion\src\extractor.py", line 313, in detect_novelty_sheet
+    df_sample = pd.read_excel(self.excel_path, sheet_name=sheet_name, nrows=20, header=None)
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_base.py", line 494, in read_excel
+    data = io.parse(
+        sheet_name=sheet_name,
+    ...<20 lines>...
+        dtype_backend=dtype_backend,
+    )
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_base.py", line 1780, in parse
+    return self._reader.parse(
+           ~~~~~~~~~~~~~~~~~~^
+        sheet_name=sheet_name,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<16 lines>...
+        **kwds,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_base.py", line 753, in parse
+    sheet = self.get_sheet_by_name(asheetname)
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 589, in get_sheet_by_name
+    self.raise_if_bad_sheet_by_name(name)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_base.py", line 605, in raise_if_bad_sheet_by_name
+    raise ValueError(f"Worksheet named '{name}' not found")
+ValueError: Worksheet named 'TH' not found
+[2026-05-28 10:54:10] [WARNING] [extractor.py:222]: No se pudo escanear el Excel para detectar fechas de horas extras: Worksheet named 'TH' not found
+[2026-05-28 10:54:10] [INFO] [extractor.py:224]: ¿Planilla Excel contiene fechas específicas para horas extras/recargos?: False
+[2026-05-28 10:54:10] [INFO] [extractor.py:229]: Cargando archivo de novedades eventuales plano: plano_novedades_eventuales(2026-05).csv
+[2026-05-28 10:54:10] [INFO] [extractor.py:236]: Archivo de novedades eventuales cargado con 87 registros.
+[2026-05-28 10:54:10] [INFO] [extractor.py:250]: Total de registros CSV consolidados (Horas Extras + Eventuales): 482
+[2026-05-28 10:54:10] [INFO] [extractor.py:261]: Comparación global activa: no se realiza filtrado de equipo.
+[2026-05-28 10:54:10] [INFO] [extractor.py:277]: Mes de nómina principal detectado en CSV: 05/2026
+[2026-05-28 10:54:10] [ERROR] [extractor.py:330]: Error detectando hoja de novedades automáticamente: Worksheet named 'TH' not found
+Traceback (most recent call last):
+  File "C:\Users\samuel.pineda\Documents\docs\script validacion\src\extractor.py", line 313, in detect_novelty_sheet
+    df_sample = pd.read_excel(self.excel_path, sheet_name=sheet_name, nrows=20, header=None)
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_base.py", line 494, in read_excel
+    data = io.parse(
+        sheet_name=sheet_name,
+    ...<20 lines>...
+        dtype_backend=dtype_backend,
+    )
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_base.py", line 1780, in parse
+    return self._reader.parse(
+           ~~~~~~~~~~~~~~~~~~^
+        sheet_name=sheet_name,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<16 lines>...
+        **kwds,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_base.py", line 753, in parse
+    sheet = self.get_sheet_by_name(asheetname)
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 589, in get_sheet_by_name
+    self.raise_if_bad_sheet_by_name(name)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_base.py", line 605, in raise_if_bad_sheet_by_name
+    raise ValueError(f"Worksheet named '{name}' not found")
+ValueError: Worksheet named 'TH' not found
+[2026-05-28 10:54:10] [ERROR] [main.py:131]: Se produjo un error fatal durante la conciliación de nómina:
+[2026-05-28 10:54:10] [ERROR] [main.py:132]: Worksheet named 'TH' not found
+[2026-05-28 10:54:10] [ERROR] [main.py:133]: Traceback (most recent call last):
+  File "C:\Users\samuel.pineda\Documents\docs\script validacion\main.py", line 64, in run_payroll_reconciliation
+    df_excel = extractor.load_excel()
+  File "C:\Users\samuel.pineda\Documents\docs\script validacion\src\extractor.py", line 338, in load_excel
+    sheet_name, header_row = self.detect_novelty_sheet()
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\samuel.pineda\Documents\docs\script validacion\src\extractor.py", line 313, in detect_novelty_sheet
+    df_sample = pd.read_excel(self.excel_path, sheet_name=sheet_name, nrows=20, header=None)
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_base.py", line 494, in read_excel
+    data = io.parse(
+        sheet_name=sheet_name,
+    ...<20 lines>...
+        dtype_backend=dtype_backend,
+    )
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_base.py", line 1780, in parse
+    return self._reader.parse(
+           ~~~~~~~~~~~~~~~~~~^
+        sheet_name=sheet_name,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<16 lines>...
+        **kwds,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_base.py", line 753, in parse
+    sheet = self.get_sheet_by_name(asheetname)
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 589, in get_sheet_by_name
+    self.raise_if_bad_sheet_by_name(name)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\samuel.pineda\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\excel\_base.py", line 605, in raise_if_bad_sheet_by_name
+    raise ValueError(f"Worksheet named '{name}' not found")
+ValueError: Worksheet named 'TH' not found
+
+[2026-05-28 10:54:32] [INFO] [main.py:23]: ======================================================================
+[2026-05-28 10:54:32] [INFO] [main.py:24]:    INICIANDO PROCESAMIENTO AUTOMATIZADO DE CONCILIACIÓN DE NÓMINA
+[2026-05-28 10:54:32] [INFO] [main.py:25]: ======================================================================
+[2026-05-28 10:54:32] [INFO] [main.py:26]: Archivo Plano (CSV): plano_nomina(2026-05) (1).csv
+[2026-05-28 10:54:32] [INFO] [main.py:27]: Reporte Operativo (Excel): SEGURIDAD_FISICA.xlsx
+[2026-05-28 10:54:32] [INFO] [main.py:28]: Tolerancia de comparación matemática: 0.01 horas
+[2026-05-28 10:54:32] [INFO] [main.py:31]: Conexión a Base de Datos de Producción ACTIVA en host: 192.168.0.67
+[2026-05-28 10:54:32] [INFO] [main.py:33]: Filtro de subordinados activo para jefe_id = 274 (Carlo)
+[2026-05-28 10:54:32] [INFO] [main.py:59]: Construyendo mapeo maestro de empleados...
+[2026-05-28 10:54:32] [INFO] [extractor.py:97]: Conectando a base de datos PostgreSQL de producción para descargar maestros...
+[2026-05-28 10:54:32] [ERROR] [extractor.py:136]: Fallo la carga desde la base de datos de producción: connection to server at "192.168.0.67", port 5432 failed: FATAL:  no pg_hba.conf entry for host "192.168.101.130", user "trazalo_db", database "trazalo", SSL encryption
+connection to server at "192.168.0.67", port 5432 failed: FATAL:  no pg_hba.conf entry for host "192.168.101.130", user "trazalo_db", database "trazalo", no encryption
+. Se procederá con fallback local.
+[2026-05-28 10:54:32] [INFO] [extractor.py:139]: Construyendo base de datos de empleados localmente desde el Excel...
+[2026-05-28 10:54:32] [INFO] [extractor.py:171]: Base de datos de empleados local construida con 47 registros únicos.
+[2026-05-28 10:54:32] [INFO] [extractor.py:183]: Cargando archivo plano CSV: plano_nomina(2026-05) (1).csv
+[2026-05-28 10:54:32] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-28 10:54:32] [INFO] [extractor.py:224]: ¿Planilla Excel contiene fechas específicas para horas extras/recargos?: False
+[2026-05-28 10:54:32] [INFO] [extractor.py:229]: Cargando archivo de novedades eventuales plano: plano_novedades_eventuales(2026-05).csv
+[2026-05-28 10:54:32] [INFO] [extractor.py:236]: Archivo de novedades eventuales cargado con 87 registros.
+[2026-05-28 10:54:32] [INFO] [extractor.py:250]: Total de registros CSV consolidados (Horas Extras + Eventuales): 482
+[2026-05-28 10:54:32] [INFO] [extractor.py:261]: Comparación global activa: no se realiza filtrado de equipo.
+[2026-05-28 10:54:32] [INFO] [extractor.py:277]: Mes de nómina principal detectado en CSV: 05/2026
+[2026-05-28 10:54:32] [INFO] [extractor.py:324]: Hoja de novedades detectada automáticamente: 'TH' en fila 4 (cabecera)
+[2026-05-28 10:54:32] [INFO] [extractor.py:339]: Cargando Excel desde hoja 'TH', fila cabecera: 3
+[2026-05-28 10:54:32] [WARNING] [extractor.py:484]: Fila 115: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1020408438.
+[2026-05-28 10:54:32] [WARNING] [extractor.py:484]: Fila 120: No se pudo determinar fecha. Usando fecha por defecto 01/05/2026 para ID 1077469239.
+[2026-05-28 10:54:32] [INFO] [extractor.py:503]: Excel procesado y filtrado correctamente. Registros válidos cargados: 111
+[2026-05-28 10:54:32] [INFO] [comparator.py:36]: Iniciando comparación y auditoría de datos...
+[2026-05-28 10:54:32] [WARNING] [comparator.py:46]: Se detectaron 2 filas duplicadas en el reporte Excel.
+[2026-05-28 10:54:32] [WARNING] [comparator.py:55]: Se detectaron 358 filas duplicadas en el archivo CSV de nómina.
+[2026-05-28 10:54:32] [INFO] [comparator.py:71]: Agrupando registros por Identificación, Novedad y Fecha...
+[2026-05-28 10:54:32] [INFO] [comparator.py:189]: Comparación ejecutada. Coincidencias: 0, Diferencias: 4, Faltantes en plano: 106, Sobrantes en plano: 176
+[2026-05-28 10:54:32] [INFO] [exporter.py:97]: Generando reporte Excel estilizado en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-28 10:54:33] [INFO] [exporter.py:156]: Reporte Excel corporativo guardado exitosamente en: diferencias_nomina_mayo_2026.xlsx
+[2026-05-28 10:54:33] [INFO] [main.py:89]: ======================================================================
+[2026-05-28 10:54:33] [INFO] [main.py:90]:    PROCESAMIENTO FINALIZADO CON ÉXITO - RESUMEN EJECUTIVO EN CONSOLA
+[2026-05-28 10:54:33] [INFO] [main.py:91]: ======================================================================
+[2026-05-28 10:54:33] [INFO] [main.py:127]: El reporte de auditoría ha sido exportado exitosamente a 'diferencias_nomina_mayo_2026.xlsx'.
+[2026-05-28 10:54:33] [INFO] [main.py:128]: ======================================================================
