@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de Nómina | Auditoría ERP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --bg: #030712;
+            --bg-card: rgba(17, 24, 39, 0.55);
+            --accent: #6366f1;
+            --accent-hover: #4f46e5;
+            --accent-glow: rgba(99, 102, 241, 0.5);
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+            --border: rgba(255, 255, 255, 0.08);
+            --border-hover: rgba(255, 255, 255, 0.15);
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Ambient Animated Background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: -50%; left: -50%; right: -50%; bottom: -50%;
+            background: 
+                radial-gradient(circle at 30% 20%, rgba(99, 102, 241, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 70% 80%, rgba(16, 185, 129, 0.1) 0%, transparent 40%),
+                radial-gradient(circle at 50% 50%, rgba(236, 72, 153, 0.1) 0%, transparent 50%);
+            animation: bgShift 15s ease-in-out infinite alternate;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        @keyframes bgShift {
+            0% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(-3%, 2%) scale(1.05); }
+            100% { transform: translate(2%, -3%) scale(1); }
+        }
+
+        /* Mouse Glow Effect Overlay */
+        .mouse-glow {
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            pointer-events: none;
+            z-index: 0;
+            background: radial-gradient(
+                600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), 
+                rgba(255, 255, 255, 0.06),
+                transparent 40%
+            );
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 580px;
+        }
+
+        /* Glass Panel */
+        .glass-panel {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 2.5rem;
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+            transition: border-color 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Subtle inner glow for glass panel tracking mouse */
+        .glass-panel::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(
+                800px circle at var(--mouse-x-card, 50%) var(--mouse-y-card, 50%), 
+                rgba(255, 255, 255, 0.04),
+                transparent 40%
+            );
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .glass-panel:hover {
+            border-color: var(--border-hover);
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .logo-wrapper {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 72px;
+            height: 72px;
+            border-radius: 20px;
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(16, 185, 129, 0.2));
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 1.5rem;
+            box-shadow: 0 0 30px var(--accent-glow);
+            animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        .logo-wrapper i {
+            font-size: 36px;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(to right, #fff, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p.subtitle {
+            color: var(--text-muted);
+            font-size: 1rem;
+            font-weight: 300;
+        }
+
+        /* Status Bar */
+        .status-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            padding: 0.75rem 1.25rem;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            position: relative;
+            z-index: 1;
+        }
+
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--text-muted);
+        }
+
+        .status-dot.ok { background: var(--success); box-shadow: 0 0 12px rgba(16, 185, 129, 0.6); }
+        .status-dot.error { background: var(--danger); box-shadow: 0 0 12px rgba(239, 68, 68, 0.6); }
+        .status-dot.loading { background: var(--warning); animation: pulse 1.5s infinite; }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+
+        /* Upload Zone */
+        .upload-zone {
+            border: 2px dashed rgba(255, 255, 255, 0.15);
+            border-radius: 20px;
+            padding: 3rem 2rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            background: rgba(255, 255, 255, 0.02);
+            margin-bottom: 1.5rem;
+            z-index: 1;
+        }
+
+        .upload-zone:hover, .upload-zone.dragover {
+            border-color: var(--accent);
+            background: rgba(99, 102, 241, 0.05);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px -10px rgba(99, 102, 241, 0.3);
+        }
+
+        .upload-zone.has-file {
+            border-style: solid;
+            border-color: var(--success);
+            background: rgba(16, 185, 129, 0.05);
+        }
+
+        .upload-zone input[type="file"] {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        .upload-icon {
+            font-size: 56px;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .upload-zone:hover .upload-icon, .upload-zone.dragover .upload-icon {
+            color: var(--accent);
+            transform: scale(1.1);
+        }
+        .upload-zone.has-file .upload-icon { 
+            color: var(--success); 
+            animation: bounceIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0); opacity: 0; }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        .upload-title {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 0.35rem;
+        }
+
+        .upload-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .file-name {
+            display: none;
+            margin-top: 1.25rem;
+            padding: 0.6rem 1rem;
+            background: rgba(16, 185, 129, 0.15);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            border-radius: 10px;
+            color: var(--success);
+            font-weight: 500;
+            font-size: 0.95rem;
+            word-break: break-all;
+        }
+
+        .upload-zone.has-file .file-name {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            animation: slideUp 0.3s ease forwards;
+        }
+
+        /* Submit Button */
+        .btn-submit {
+            width: 100%;
+            padding: 1.1rem;
+            background: linear-gradient(135deg, var(--accent), var(--accent-hover));
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 14px;
+            font-family: inherit;
+            font-size: 1.05rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            box-shadow: 0 10px 20px -10px var(--accent);
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        /* Botón shine effect */
+        .btn-submit::after {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%; width: 50%; height: 100%;
+            background: linear-gradient(to right, transparent, rgba(255,255,255,0.2), transparent);
+            transform: skewX(-20deg);
+            transition: all 0.5s ease;
+        }
+
+        .btn-submit:hover:not(:disabled)::after {
+            left: 150%;
+        }
+
+        .btn-submit:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 25px -10px var(--accent);
+        }
+
+        .btn-submit:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            box-shadow: none;
+            transform: none;
+        }
+
+        .btn-submit i { font-size: 1.25rem; transition: transform 0.3s ease; }
+        .btn-submit:hover:not(:disabled) i { transform: translateX(3px); }
+
+        .spinner {
+            display: none;
+            width: 22px; height: 22px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-top-color: #fff;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        .btn-submit.loading .btn-text, .btn-submit.loading i.ph-bold { display: none; }
+        .btn-submit.loading .spinner { display: block; }
+
+        /* Alerts */
+        .result-box {
+            display: none;
+            margin-top: 1.5rem;
+            padding: 1rem 1.25rem;
+            border-radius: 12px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            align-items: center;
+            gap: 0.75rem;
+            animation: slideUp 0.3s ease forwards;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .result-box i { font-size: 1.35rem; }
+
+        .result-box.success {
+            display: flex;
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            color: var(--success);
+        }
+
+        .result-box.error {
+            display: flex;
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            color: var(--danger);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Mouse Tracking Glow Overlays -->
+    <div class="mouse-glow"></div>
+
+    <div class="container">
+        <div class="glass-panel" id="glassPanel">
+            
+            <div class="header">
+                <div class="logo-wrapper">
+                    <i class="ph-fill ph-files"></i>
+                </div>
+                <h1>Conciliador de Nómina</h1>
+                <p class="subtitle">Auditoría automatizada de novedades Excel vs ERP</p>
+            </div>
+
+            <div class="status-container" id="statusBar">
+                <div class="status-dot loading" id="statusDot"></div>
+                <span id="statusText">Verificando conexión al ERP...</span>
+            </div>
+
+            <form id="uploadForm">
+                <div class="upload-zone" id="uploadZone">
+                    <input type="file" id="fileInput" accept=".xlsx,.xls" />
+                    <i class="ph-duotone ph-cloud-arrow-up upload-icon" id="uploadIcon"></i>
+                    <div class="upload-title">Arrastra tu reporte operativo</div>
+                    <div class="upload-desc">Archivos soportados: .xlsx, .xls</div>
+                    <div class="file-name" id="fileName">
+                        <i class="ph-bold ph-file-xls"></i>
+                        <span id="fileNameText"></span>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit" id="submitBtn" disabled>
+                    <i class="ph-bold ph-magic-wand"></i>
+                    <span class="btn-text">Generar Auditoría</span>
+                    <span class="spinner"></span>
+                </button>
+            </form>
+
+            <div id="resultMessage"></div>
+
+        </div>
+    </div>
+
+    <script>
+        // Mouse Tracking Glow
+        document.body.addEventListener("mousemove", (e) => {
+            // Global glow
+            document.body.style.setProperty("--mouse-x", `${e.clientX}px`);
+            document.body.style.setProperty("--mouse-y", `${e.clientY}px`);
+            
+            // Local panel glow
+            const panel = document.getElementById("glassPanel");
+            const rect = panel.getBoundingClientRect();
+            panel.style.setProperty("--mouse-x-card", `${e.clientX - rect.left}px`);
+            panel.style.setProperty("--mouse-y-card", `${e.clientY - rect.top}px`);
+        });
+
+        // DOM Elements
+        const fileInput = document.getElementById('fileInput');
+        const uploadZone = document.getElementById('uploadZone');
+        const fileNameText = document.getElementById('fileNameText');
+        const submitBtn = document.getElementById('submitBtn');
+        const uploadForm = document.getElementById('uploadForm');
+        const resultMessage = document.getElementById('resultMessage');
+        const statusDot = document.getElementById('statusDot');
+        const statusText = document.getElementById('statusText');
+        const uploadIcon = document.getElementById('uploadIcon');
+
+        // Check Health
+        async function checkHealth() {
+            try {
+                const res = await fetch('/api/health');
+                const data = await res.json();
+                if (data.status === 'OK') {
+                    statusDot.className = 'status-dot ok';
+                    statusText.textContent = `ERP Conectado · Periodo: ${data.periodo_actual}`;
+                } else {
+                    statusDot.className = 'status-dot error';
+                    statusText.textContent = `Error BD: ${data.detail || 'Sin detalle'}`;
+                }
+            } catch (e) {
+                statusDot.className = 'status-dot error';
+                statusText.textContent = 'Servidor inalcanzable';
+            }
+        }
+        checkHealth();
+
+        // Drag events
+        ['dragover', 'dragenter'].forEach(evt => {
+            uploadZone.addEventListener(evt, e => {
+                e.preventDefault();
+                uploadZone.classList.add('dragover');
+            });
+        });
+        
+        ['dragleave', 'drop'].forEach(evt => {
+            uploadZone.addEventListener(evt, e => {
+                e.preventDefault();
+                uploadZone.classList.remove('dragover');
+            });
+        });
+
+        uploadZone.addEventListener('drop', e => {
+            if (e.dataTransfer.files.length) {
+                fileInput.files = e.dataTransfer.files;
+                handleFileSelect();
+            }
+        });
+
+        fileInput.addEventListener('change', handleFileSelect);
+
+        function handleFileSelect() {
+            const file = fileInput.files[0];
+            if (file) {
+                fileNameText.textContent = `${file.name} (${(file.size / 1024).toFixed(0)} KB)`;
+                uploadZone.classList.add('has-file');
+                uploadIcon.className = 'ph-fill ph-check-circle upload-icon';
+                submitBtn.disabled = false;
+                resultMessage.style.display = 'none';
+            }
+        }
+
+        uploadForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const file = fileInput.files[0];
+            if (!file) return;
+
+            submitBtn.classList.add('loading');
+            submitBtn.disabled = true;
+            resultMessage.style.display = 'none';
+
+            const formData = new FormData();
+            formData.append('file_excel', file);
+
+            try {
+                const response = await fetch('/api/validar', {
+                    method: 'POST',
+                    body: formData,
+                });
+
+                if (response.ok) {
+                    const blob = await response.blob();
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = response.headers.get('content-disposition')?.split('filename=')[1]?.replace(/"/g, '') || 'Auditoria_Nomina.xlsx';
+                    document.body.appendChild(a);
+                    a.click();
+                    a.remove();
+                    URL.revokeObjectURL(url);
+
+                    resultMessage.className = 'result-box success';
+                    resultMessage.innerHTML = '<i class="ph-fill ph-check-circle"></i> Auditoría generada y descargada exitosamente.';
+                } else {
+                    const err = await response.json();
+                    resultMessage.className = 'result-box error';
+                    resultMessage.innerHTML = `<i class="ph-fill ph-warning-circle"></i> Error: ${err.detail || 'Fallo interno en la conciliación'}`;
+                }
+            } catch (error) {
+                resultMessage.className = 'result-box error';
+                resultMessage.innerHTML = `<i class="ph-fill ph-warning-circle"></i> Error de red: ${error.message}`;
+            } finally {
+                submitBtn.classList.remove('loading');
+                submitBtn.disabled = false;
+            }
+        });
+    </script>
+</body>
+</html>

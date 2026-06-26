@@ -136,29 +136,38 @@ class ConfigLoader:
     
     @property
     def db_enabled(self) -> bool:
+        env_val = os.getenv("DB_ENABLED")
+        if env_val is not None:
+            return env_val.lower() in ("true", "1", "yes", "t")
         return bool(self.config.get("database", {}).get("enabled", False))
 
     @property
     def db_host(self) -> str:
-        return str(self.config.get("database", {}).get("host", "localhost"))
+        return os.getenv("DB_HOST", str(self.config.get("database", {}).get("host", "localhost")))
 
     @property
     def db_port(self) -> int:
+        env_val = os.getenv("DB_PORT")
+        if env_val is not None:
+            return int(env_val)
         return int(self.config.get("database", {}).get("port", 5432))
 
     @property
     def db_name(self) -> str:
-        return str(self.config.get("database", {}).get("database_name", ""))
+        return os.getenv("DB_NAME", str(self.config.get("database", {}).get("database_name", "")))
 
     @property
     def db_username(self) -> str:
-        return str(self.config.get("database", {}).get("username", ""))
+        return os.getenv("DB_USER", str(self.config.get("database", {}).get("username", "")))
 
     @property
     def db_password(self) -> str:
-        return str(self.config.get("database", {}).get("password", ""))
+        return os.getenv("DB_PASSWORD", str(self.config.get("database", {}).get("password", "")))
 
     @property
     def db_filter_by_jefe_id(self):
+        env_val = os.getenv("DB_FILTER_BY_JEFE_ID")
+        if env_val is not None:
+            return int(env_val) if env_val else None
         val = self.config.get("database", {}).get("filter_by_jefe_id", None)
         return int(val) if val is not None else None
