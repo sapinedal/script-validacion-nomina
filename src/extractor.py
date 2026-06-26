@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 import openpyxl
 import logging
+import difflib
 
 class PayrollExtractor:
     """
@@ -314,9 +315,9 @@ class PayrollExtractor:
                 for r_idx in range(len(df_sample)):
                     row_vals = [str(x).strip().upper() for x in df_sample.iloc[r_idx].tolist()]
                     
-                    has_id = any("IDENTIFICACI" in val or "CEDULA" in val for val in row_vals)
+                    has_id = any("IDENTIFICACI" in val or "CEDULA" in val or "DOC" in val or "ID" == val or "ID EMPLEADO" in val for val in row_vals)
                     has_novelty_cols = any(
-                        "HORAS EXTRAS DIURNAS" in val or "RECARGO NOCTURNO" in val or "HORAS EXTRAS NOCTURNAS" in val
+                        "HORAS EXTRAS DIURNAS" in val or "RECARGO NOCTURNO" in val or "HORAS EXTRAS NOCTURNAS" in val or "INCAPACIDAD" in val or "VACACIONES" in val or "EXTRA" in val
                         for val in row_vals
                     )
                     
@@ -345,7 +346,8 @@ class PayrollExtractor:
             # Buscar columna de ID
             id_col = None
             for col in df.columns:
-                if "IDENTIFICACI" in col or "CEDULA" in col:
+                col_upper = str(col).strip().upper()
+                if "IDENTIFICACI" in col_upper or "CEDULA" in col_upper or "DOC" in col_upper or "ID EMPLEADO" in col_upper or "ID" == col_upper:
                     id_col = col
                     break
                     
@@ -420,13 +422,57 @@ class PayrollExtractor:
                         if parsed_m and parsed_m not in detected_dates:
                             detected_dates.append(parsed_m)
 
-                for col_name, code in mapeo_upper.items():
-                    if col_name in df.columns:
+                for col_name in df.columns:
+                    col_upper = str(col_name).strip().upper()
+                    
+                    matched_novelty_key = None
+                    if col_upper in mapeo_upper:
+                        matched_novelty_key = col_upper
+                    else:
+                        if "EXTRA" in col_upper or "EXTRAS" in col_upper or "H." in col_upper or "HE" in col_upper:
+                            if "DIURNA" in col_upper and "FESTIVA" not in col_upper: 
+                                matched_novelty_key = "HORAS EXTRAS DIURNAS"
+                            elif "NOCTURNA" in col_upper and "FESTIVA" not in col_upper: 
+                                matched_novelty_key = "HORAS EXTRAS NOCTURNAS"
+                            elif "DIURNA" in col_upper and "FESTIVA" in col_upper: 
+                                matched_novelty_key = "HORAS EXTRAS DIURNAS FESTIVAS"
+                            elif "NOCTURNA" in col_upper and "FESTIVA" in col_upper: 
+                                matched_novelty_key = "HORAS EXTRAS NOCTURNAS FESTIVAS"
+                            
+                        elif "RECARGO" in col_upper or "RN" in col_upper:
+                            if "NOCTURNO" in col_upper and "FESTIVO" not in col_upper: 
+                                matched_novelty_key = "RECARGO NOCTURNO"
+                            elif "FESTIVO" in col_upper and "NOCTURNO" not in col_upper: 
+                                matched_novelty_key = "RECARGO FESTIVO"
+                            elif "FESTIVO" in col_upper and "NOCTURNO" in col_upper: 
+                                matched_novelty_key = "RECARGO FESTIVO NOCTURNO"
+                            
+                        elif "INCAPACIDAD" in col_upper or "INCAP" in col_upper: 
+                            matched_novelty_key = "INCAPACIDAD"
+                        elif "VACACION" in col_upper or "VACACIONES" in col_upper:
+                            if "DINERO" in col_upper: 
+                                matched_novelty_key = "VACACIONES EN DINERO"
+                            else: 
+                                matched_novelty_key = "VACACIONES DISFRUTADAS"
+                        elif "RENUNCIA" in col_upper: 
+                            matched_novelty_key = "RENUNCIA"
+                        elif "TERMINACION" in col_upper or "CONTRATO" in col_upper: 
+                            matched_novelty_key = "TERMINACION DE CONTRATO"
+                        elif "MATER" in col_upper or "PATERN" in col_upper: 
+                            matched_novelty_key = "LICENCIA MATER"
+                        elif "CALAMIDAD" in col_upper: 
+                            matched_novelty_key = "CALAMIDAD"
+                        else:
+                            close_matches = difflib.get_close_matches(col_upper, mapeo_upper.keys(), n=1, cutoff=0.75)
+                            if close_matches:
+                                matched_novelty_key = close_matches[0]
+                                
+                    if matched_novelty_key:
+                        code = mapeo_upper[matched_novelty_key]
                         raw_val = row[col_name]
                         val_float = self.parse_value(raw_val)
                         
                         if val_float > 0.0:
-                            # Si es novedad de horas extras o recargos (códigos 0,1,4,5,6,7,8), se acumula mensualmente solo si la planilla NO tiene fechas específicas
                             if str(code) in ["0", "1", "4", "5", "6", "7", "8"] and not getattr(self, 'has_overtime_dates', False):
                                 excel_records.append({
                                     'IDENTIFICACION': clean_id,
@@ -437,7 +483,6 @@ class PayrollExtractor:
                                     'ORIGINAL_ROW': idx + header_row + 2
                                 })
                             else:
-                                # Si detectamos fechas en observaciones/columnas, distribuimos o asignamos (para eventualidades)
                                 if detected_dates:
                                     split_val = val_float / len(detected_dates)
                                     for d in detected_dates:
@@ -450,7 +495,6 @@ class PayrollExtractor:
                                             'ORIGINAL_ROW': idx + header_row + 2
                                         })
                                 else:
-                                    # Fallback 1: Buscar en el CSV la fecha de este tipo de novedad para este empleado
                                     clean_date = None
                                     if hasattr(self, 'df_csv') and self.df_csv is not None:
                                         matching_csv = self.df_csv[
@@ -461,30 +505,16 @@ class PayrollExtractor:
                                             csv_dates = matching_csv['FECHA'].dropna().unique()
                                             if len(csv_dates) > 0:
                                                 clean_date = csv_dates[0]
-                                                self.logger.info(
-                                                    f"Fila {idx + header_row + 2}: Sin fecha en Excel. "
-                                                    f"Asociada a la fecha {clean_date} del CSV para ID {clean_id} y novedad {code}."
-                                                )
                                         
-                                        # Fallback 2: Buscar cualquier fecha de este empleado en el CSV
                                         if clean_date is None:
                                             matching_emp = self.df_csv[self.df_csv['IDENTIFICACION'] == clean_id]
                                             if not matching_emp.empty:
                                                 emp_dates = matching_emp['FECHA'].dropna().unique()
                                                 if len(emp_dates) > 0:
                                                     clean_date = emp_dates[0]
-                                                    self.logger.info(
-                                                        f"Fila {idx + header_row + 2}: Sin fecha en Excel ni coincidencia de novedad. "
-                                                        f"Asociada a la fecha general {clean_date} del empleado en el CSV."
-                                                    )
                                     
-                                    # Fallback 3: Usar la fecha del primer día del mes
                                     if clean_date is None:
                                         clean_date = "01/05/2026"
-                                        self.logger.warning(
-                                            f"Fila {idx + header_row + 2}: No se pudo determinar fecha. "
-                                            f"Usando fecha por defecto {clean_date} para ID {clean_id}."
-                                        )
                                     
                                     excel_records.append({
                                         'IDENTIFICACION': clean_id,
